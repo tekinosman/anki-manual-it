@@ -1,86 +1,56 @@
-# Packaged Decks
+# Mazzi impacchettati
 
 <!-- toc -->
 
-Anki packages (.apkg files) enable you to import decks, notes, notetypes, and cards from
-other users. They are commonly shared on [AnkiWeb](https://ankiweb.net/shared/decks).
+I pacchetti Anki (file .apkg) permettono di importare mazzi, note, tipi di note e carte da altri utenti. Sono comunemente condivisi su [AnkiWeb](https://ankiweb.net/shared/decks).
 
-## Scheduling
+## Pianificazione
 
-Anki packages may also contain scheduling information, which is useful if you want to
-transfer decks between devices or profiles. However, when importing
-a deck shared by someone else, you typically do not want to adopt their card intervals
-or review history.
+I pacchetti Anki possono contenere anche informazioni sulla pianificazione, utili se desideri trasferire mazzi tra dispositivi o profili. Tuttavia, quando importi un mazzo condiviso da qualcun altro, non è generalmente desiderabile utilizzare i loro intervalli di ripasso o la cronologia delle ripetizioni.
 
-If you encounter imported cards with unexpectedly large intevals, the deck author may
-accidentally have included their scheduling information. You can use the
-[Set Due Date feature](../browsing.md#cards) to reset the imported cards. On Anki
-23.10 and later, you can remove any scheduling information during the import process.
+Se le carte importate hanno intervalli inaspettatamente grandi, l'autore del mazzo potrebbe aver accidentalmente incluso le sue informazioni di pianificazione. È possibile utilizzare la funzione [Imposta Data di Scadenza](../browsing.md#cards) per reimpostare le carte importate. A partire da Anki 23.10, è possibile rimuovere le informazioni di pianificazione durante il processo di importazione, lasciando deselezionata l'opzione "Importa anche eventuali progressi di apprendimento". In questo modo verranno anche rimosse eventuali etichette sanguisuga (leech) o contrassegnate (marked) dalle carte importate.
 
-## Updating
+## Aggiornamento
 
-When you import an .apkg file, Anki will identify any notes in it that are
-already in your collection due to a previous import. If the notes in the file
-are newer than your local copy, the notes will be updated with the contents of
-the file by default.
+Quando importi un file .apkg, Anki identifica tutte le note in esso presenti che sono già presenti nella tua collezione per via di un'importazione precedente. Se le note nel file sono più recenti della tua copia locale, verrano aggiornate con il contenuto del file per impostazione predefinita.
 
-This updating process is generally not possible if the notetype is changed (e.g if either
-you or the deck author do things like add an extra field to the notetype).
-You will still be able to import any missing notes from the file, but
-notes you have imported previously will not be updated if the deck author
-has made changes.
+Questo processo di aggiornamento non è generalmente possibile se il tipo di nota viene modificato (ad esempio, se tu o l'autore del mazzo avete aggiunto un campo extra al tipo di nota). Tuttavia, puoi comunque importare tutte le note mancanti dal file, ma le note che hai importato in precedenza non verranno aggiornate se l'autore del mazzo ha apportato delle modifiche.
 
-### Anki 23.10 and Later
+### Anki 23.10 e versioni successive
 
-Anki 23.10 introduced more flexibility: You can choose to unconditionally
-update notes and notetypes, always overwriting your modifications,
-or, on the other hand, never update existing objects.
+La versione 23.10 di Anki ha introdotto una maggiore flessibilità: è ora possibile scegliere di aggiornare incondizionatamente le note e i tipi di nota, sovrascrivendo sempre le modifiche apportate, oppure, al contrario, di non aggiornare mai gli oggetti esistenti.
 
-Also, if both you and the deck author modified the same notetype, you can now decide to
-_merge_ the two versions. This will preserve all templates and fields contained in
-either one, but will require a full sync, and may mark other existing notes as modified.
+Inoltre, se sia tu che l'autore del mazzo avete modificato lo stesso tipo di nota, ora puoi decidere di _unire_ le due versioni. In questo modo si preservano tutti i modelli e i campi contenuti nell'uno o nell'altro, richiedendo però una sincronizzazione completa e potrebbe contrassegnare altre note esistenti come modificate.
 
-#### Note to Deck Authors
+#### Nota agli autori dei mazzi
 
-Merging relies on template and field ids, which were introduced in Anki 2.1.67.
-If a template or field lacks an id, because it has been created with an earlier
-release, Anki attempts to find an equivalent by comparing names.
+L'unione si basa sugli id dei modelli e dei campi, che sono stati introdotti nella versione 2.1.67 di Anki. Se un modello o un campo non ha un id, perché creato con una versione precedente, Anki cerca di trovare un equivalente mediante il confronto dei nomi.
 
-See this [this add-on](https://ankiweb.net/shared/info/2063785767) for why it is
-advantageous to share notetypes with field and template ids, and how to add them to
-existing ones.
+Consulta [questo add-on](https://ankiweb.net/shared/info/2063785767) per capire perché è vantaggioso condividere i tipi di nota con id di campo e modello, e come aggiungerli a quelli esistenti.
 
-### Workaround for Anki 2.1.66 and Earlier
+### Soluzione per Anki 2.1.66 e versioni precedenti
 
-If you know the deck author has made changes and you wish to gain access to
-them, changing the notetype back is possible, but rather difficult. You'll need
-to do the following:
+Se sai che l'autore del mazzo ha apportato delle modifiche e desideri accedervi, ripristinare il tipo di nota è possibile, ma la procedura è piuttosto complessa. Ecco i passaggi da seguire:
 
-- Create a new profile, and import the .apkg file into it.
-- Locate one of the notes that failed to update in the Browse screen and select it.
-- Use the Fields & Cards buttons to check the field names and card template names,
-  and note them down.
-- Use the [debug console](https://docs.ankiweb.net/misc.html#debug-console) to determine the notetype id.
-  It will be the number on the last line.
+- Crea un nuovo profilo e importa il file .apkg.
+- Nella schermata Sfoglia, individua una delle note che non si è aggiornata e selezionala.
+- Usa i tasti Campi e Carte per controllare i nomi dei campi e del modello e annotali.
+- Usa la [console di debug](https://docs.ankiweb.net/misc.html#debug-console) per determinare l'id del tipo di nota. L'id è il numero che compare alla fine della riga.
 
 ```
 nt = bcard().note().note_type()
-print("notetype", nt["name"], "has id", nt["id"])
+print("L'id del tipo di nota", nt["name"], "è", nt["id"])
 ```
 
-- Return to your normal profile, locate the same card, and select it. Run the following
-  in the debug console, replacing `xxx` with the ID you got above:
+- Torna al profilo normale, individua la stessa carta e selezionala. Quindi esegui quanto segue:
 
 ```
 nt = bcard().note().note_type()
-print("current:", nt["name"], "has id", nt["id"])
+print("attuale: l'id di", nt["name"], "è", nt["id"])
 nt = mw.col.models.get(xxx)
-print("desired:", nt["name"], "has id", nt["id"])
+print("desiderato: l'id di", nt["name"], "è", nt["id"])
 ```
 
-- If it prints two different notetype names, you will need to use the Change Notetype
-  action to change the notetype of your existing notes to the desired one.
+- Se i nomi dei due tipi di nota sono diversi, utilizza l'azione Modifica Tipo di Nota per cambiare il tipo di nota delle note esistenti con quello desiderato.
 
-- You then need to use the Fields and Cards buttons to check the field and template
-  names match the one in your test profile. They must match exactly - there should be no
-  more or less, and the spelling should be identical.
+- Usa i tasti Campi e Carte per verificare che i nomi dei campi e del modello corrispondano _esattamente_ a quello del profilo di test. Non devono esserci campi in meno o in più, e devono essere scritti alla stessa identica maniera.
