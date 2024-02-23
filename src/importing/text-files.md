@@ -1,248 +1,178 @@
-# Text Files
+# File di testo
 
 <!-- toc -->
 
-Any **plain text** file that contains fields separated by commas,
-semicolons or tabs can be imported into Anki, provided some conditions
-are met.
+Anki può importare qualsiasi file di **testo semplice** contenente campi separati da virgole, punti e virgola o tabulazioni, purché siano soddisfatte alcune condizioni.
 
-- The files must be plain text (myfile.txt). Other formats like
-  myfile.xls, myfile.rtf, myfile.doc must be saved as a plain text
-  file first.
+- I file devono essere puramente testuali (miofile.txt). Altri formati come
+  miofile.xls, miofile.rtf, miofile.doc devono essere prima salvati prima come
+  file di testo semplice. 
 
-- The files must be in UTF-8 format (see below).
+- I file devono essere codificati nel formato UTF-8 (vedi sotto).
 
-- The first line also defines the separating character – if Anki finds
-  a ';' on the first line it will use that, if it finds a comma it’ll
-  use that, etc.
+- La prima riga definisce anche il carattere di separazione: se Anki trova
+  un punto e virgola (;) nella prima riga userà quello, se trova una virgola (,)
+  userà quella, ecc.
 
-- Anki determines the number of fields in the file by looking at the first
-  (non-commented) line. If some of the later records in the file contain fewer
-  fields, Anki will treat the missing fields as if they were blank. If some of your
-  records contain extra fields, the extra content will not be imported.
+- Anki determina il numero di campi nel file analizzando la prima riga _non commentata_.
+  Se alcune delle righe successive contengono un numero inferiore di campi, Anki considera quelli mancanti come vuoti. Se alcune righe contengono campi aggiuntivi, il contenuto extra non viene importato.
 
-Fields in your text file can be mapped to any field in your notes,
-including the tags field. You can choose which field in the text file
-corresponds to which field in the note when you import.
+I campi del file di testo possono essere mappati a qualsiasi campo delle tue note, incluso il campo delle etichette. Durante l'importazione è possibile scegliere quale campo del file di testo corrisponde ad uno specifico campo della nota.
 
-When you import a text file, you can choose what deck to put the cards
-in. Keep in mind that if you have the deck override option set for one
-or more of your templates, the cards will go to that deck rather than
-the one you’ve selected.
+Quando importi un file di testo, puoi scegliere in quale mazzo inserire le carte. Tieni presente, però, che se hai abilitato l'opzione di sovrascrittura del mazzo per uno o più dei tuoi modelli, le carte verranno inserite in quel mazzo specifico anziché in quello selezionato durante l'importazione.
 
-This is an example of a valid file with three fields:
+Questo è un esempio di un file valido avente tre campi:
 
-    apple;banana;grape
-    some text;other text;yet more text
+    mela;banana;uva
+    del testo;altro testo;ancora più testo
 
-There are two ways to include newlines or the field separator in fields.
+Ci sono due modi per includere righe a capo o il separatore di campo stesso, all'interno dei campi.
 
-**Escape the characters by placing the contents of the field in
-quotation marks**:
+**Delimitare il contenuto del campo con le virgolette**:
 
-    hello;"this is
-    a two line answer"
-    two;this is a one line field
-    "this includes a ; (semicolon)";another field
+    ciao;"questa è
+    una risposta su due righe"
+    due;questo è un campo su una riga
+    "questo include ; (punto e virgola)";un altro campo
 
-Because quotes are used to mark where a field begins and ends, if you
-wish to include them inside your field, you need to replace a single
-doublequote with two doublequotes to "escape" them from the regular
-handling, like so:
+Poiché le virgolette delimitano l'inizio e la fine di un campo, se desideri inserirle all'interno del campo stesso, devi sostituire ogni singola virgoletta con due virgolette per "escluderle" dall'interpretazione predefinita, come mostrato nel seguente esempio:
 
-    field one;"field two with ""escaped quotes"" inside it"
+    campo uno;"campo due con ""virgolette doppie"" al suo interno"
 
-When you use a spreadsheet program like Libreoffice to create the CSV
-file for you, it will automatically take care of escaping double quotes.
+Quando utilizzi un programma di fogli di calcolo come LibreOffice per creare il file CSV, questo si occupa automaticamente di codificare correttamente le virgolette.
 
-**Use HTML new lines**:
+**Utilizzare il tag HTML &lt;br&gt;**:
 
-    hello; this is<br>a two line answer
-    two; this is a one line one
+    ciao; questa è<br>una risposta su due righe
+    due; questa è una riga unica
 
-You need to turn on the "allow HTML in fields" checkbox in the import
-dialog for HTML newlines to work.
+Per abilitare le interruzioni di riga HTML, devi spuntare la casella "Consenti l'HTML nei campi" nella finestra di dialogo di importazione.
 
-Escaped multi-lines will not work correctly if you are using cloze
-deletions that span multiple lines. In this case, please use HTML
-newlines instead.
+Le righe multiple correttamente codificate non funzionano correttamente se utilizzi eliminazioni cloze
+su più righe. In questo caso, è necessario usare le interruzioni di riga HTML.
 
-You can also include tags in another field and select it as a tags field
-in the import dialog:
+Puoi anche includere le etichette in un altro campo e selezionarli come campo delle etichette nel dialogo di importazione:
 
-    first field;second field;tags
+    primo campo;secondo campo;etichette
 
-This is an example of a valid file where the first line is ignored (\#):
+Questo è un esempio di un file valido, in cui la prima riga è ignorata (\#):
 
-    # this is a comment and is ignored
-    foo bar;bar baz;baz quux
-    field1;field2;field3
+    # questo è un commento ed è ignorato
+    pippo pluto;pluto paperino;paperino quaquo
+    campo1;campo2;campo3
 
-## Spreadsheets and UTF-8
+## Fogli di calcolo e UTF-8
 
-If you have non-Latin characters in your file (such as accents, Japanese
-and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
-easiest way to do this is to use the free LibreOffice spreadsheet
-program instead of Excel to edit your file, as it supports UTF-8 easily,
-and also exports multi-line content properly, unlike Excel. If you wish
-to keep using Excel, please see [this forum post](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
-for more information.
+Se il tuo file contiene caratteri non latini (come gli accenti, il giapponese ecc.), Anki si aspetta che sia salvato con la codifica "UTF-8". Il modo più semplice per farlo è quello di utilizzare il programma gratuito LibreOffice Calc al posto di Excel per modificare il file, poiché supporta facilmente UTF-8 e, a differenza di Excel, esporta correttamente i contenuti multi-riga. Se invece preferisci continuare a utilizzare Excel, consulta [questo post del forum](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing) (inglese) per maggiori informazioni.
 
-To save your spreadsheet to a file Anki can read with LibreOffice, go to
-File&gt;Save As, and then select CSV for the type of file. After
-accepting the default options, LibreOffice will save the file and you
-can then import the saved file into Anki.
+Per salvare il tuo foglio di calcolo in un file che Anki possa leggere, usando LibreOffice, vai su File&gt; Salva con nome e quindi seleziona CSV come tipo di file. Dopo aver accettato le opzioni predefinite, LibreOffice salverà il file e potrai quindi importarlo in Anki.
 
 ## HTML
 
-Anki can treat text imported from text files as HTML (the language used
-for web pages). This means that text with bold, italics and other
-formatting can be exported to a text file and imported again. If you
-want to include HTML formatting, you can check the "allow HTML in
-fields" checkbox when importing. You may wish to turn this off if you’re
-trying to import cards whose content contains angle brackets or other
-HTML syntax.
+Anki può interpretare il testo importato da file testuali come HTML (il linguaggio usato per le pagine web). Ciò significa che il testo in grassetto, corsivo e altre formattazioni può essere esportato in un file di testo e successivamente reimportato. Se desideri includere la formattazione HTML, puoi spuntare la casella "Consenti HTML nei campi" durante l'importazione. È però consigliato disattivare questa opzione se stai cercando di importare carte che contengono parentesi uncinate (&lt;&gt;) o altra sintassi HTML.
 
 If you wish to use HTML for formatting your file but also wish to
 include angle brackets or ampersands, you may use the following replacements:
 
-| Character | Replacement |
+Se vuoi utilizzare l'HTML per formattare il tuo file, ma devi anche includere le parentesi uncinate, puoi usare le seguenti sostituzioni:
+
+| Carattere | Sostituzione |
 | --------- | ----------- |
 | &lt;      | `&lt;`      |
 | &gt;      | `&gt;`      |
 | &amp;     | `&amp;`     |
 
-## Importing Media
+## Importazione di file multimediali
 
-If you want to include audio and pictures from a text file import, copy
-the files into the [collection.media folder](../files.md). **Do not put
-subdirectories in the media folder, or some features will not work.**
+Se vuoi includere audio e immagini durante l'importazione da un file di testo, devi copiare i file nella [cartella collection.media](../files.md). **Non creare sottocartelle all'interno della cartella "media", poiché potrebbe causare malfunzionamenti.**
 
-After you’ve copied the files, change one of the fields in your text
-file as follows.
+Dopo aver copiato i file, modifica uno dei campi nel tuo file di testo come segue:
 
-    <img src="myimage.jpg">
+    <img src="miaimmagine.jpg">
 
-or
+oppure
 
-    [sound:myaudio.mp3]
+    [sound:mioaudio.mp3]
 
-Alternatively, you can use the [find and replace](../browsing.md) feature
-in the browse screen to update all the fields at once. If each field
-contains text like "myaudio", and you wish to make it play a sound,
-you’d search for (.\*) and replace it with "\[sound:\\1.mp3\]", with the
-'regular expressions' option enabled.
+Alternativamente, puoi utilizzare la funzionalità [Trova e sostituisci](../browsing.md) nella schermata "Sfoglia" per aggiornare tutti i campi contemporaneamente. Se ciascun campo contiene testo come "mioaudio" e vuoi che riproduca un suono, puoi cercare (.\*) e sostituirlo con "\[sound:\\1.mp3\]", avendo l'accortezza di abilitare l'opzione 'Considera l'immissione come espressione regolare'.
 
 When importing a text file with these references, you must make sure to
 enable the "Allow HTML" option.
 
+Quando importi un file testuale con tali riferimenti, assicurati di abilitare l'opzione "Consenti HTML".
+
 You might be tempted to do this in a template, like:
 
-    <img src="{{field name}}">
+Potresti essere tentato di fare ciò in un modello, come per esempio:
 
-Anki doesn’t support this for two reasons: searching for used media is
-expensive, as each card has to be rendered, and such functionality isn’t
-obvious to shared deck users. Please use the find & replace technique
-instead.
+    <img src="{{nome del campo}}">
 
-## Bulk Media
+Tuttavia Anki non lo supporta per due motivi: la ricerca dei media è dispendiosa, in quanto ogni singola carta deve essere elaborata, e tale funzionalità non è ovvia per gli utenti dei mazzi condivisi. Utilizza invece la tecnica del "Trova e sostituisci".
 
-Another option for importing large amounts of media at once is to use
-the [media import add-on](https://ankiweb.net/shared/info/1531997860).
-This add-on will automatically create notes for all files in a folder
-you select, with the filenames on the front (minus the file extension,
-so if you have a file named apple.jpg, the front would say 'apple') and
-the images or audio on the back. If you would like a different
-arrangement of media and filenames, you can [change the note type](../browsing.md) of the created cards afterwards.
+## Importazione in massa di file multimediali
 
-## Adding Tags
+Un'altra opzione per importare grandi quantità di file multimediali in una volta sola è quella di usare l'[add-on per l'importazione dei file multimediali](https://ankiweb.net/shared/info/1531997860). Questo add-on crea automaticamente delle note per tutti i file presenti in una cartella selezionata, con i nomi dei file sul fronte (senza l'estensione del file, per cui se hai un file chiamato "mela.jpg", il fronte riporterà la dicitura "mela") e le immagini o l'audio sul retro. Se desideri una disposizione diversa dei file multimediali e dei nomi dei file, puoi successivamente [cambiare il tipo di nota](../browsing.md) delle carte create.
 
-If you want to add 'tag1' and 'tag2' to every line you’re importing, add
-the following to the top of the text file:
+## Aggiunta di etichette
 
-    tags:tag1 tag2
+Se vuoi aggiungere le etichette "etichetta1" ed "etichetta2" a ogni riga che importi, inserisci quanto segue all'inizio del file testuale:
 
-## Duplicates and Updating
+    tags:etichetta1 etichetta2
 
-When importing text files, Anki uses the first field to determine if a
-note is unique. By default, if the file you are importing has a first
-field that matches one of the existing notes in your collection and that
-existing note is the same type as the type you’re importing, the
-existing note’s other fields will be updated based on content of the
-imported file. A drop-down box in the import screen allows you to change
-this behaviour, to either ignore duplicates completely, or import them
-as new notes instead of updating existing ones.
+## Duplicati e aggiornamento
 
-The 'match scope' setting controls how duplicates are identified. When
-'notetype' is selected, Anki will identify a duplicate if another note
-with the same notetype has the same first field. When set to 'notetype and deck',
-a duplicate will only be flagged if the existing note also happens to be
-in the deck you are importing into.
+Durante l'importazione di file di testo, Anki utilizza il primo campo per determinare
+se una nota è unica. Per impostazione predefinita, se il file da importare contiene un primo campo
+che corrisponde a una delle note già presenti nella tua collezione e la nota esistente
+è dello stesso tipo di quella che stai importando, tutti gli altri campi della nota esistente
+vengono aggiornati in base al contenuto del file importato. Un menù a tendina
+nella schermata di importazione ti consente di modificare questo comportamento, dandoti la possibilità di
+ignorare completamente i duplicati o di importarli come nuove note
+invece di aggiornare quelle esistenti.
 
-If you have updating turned on and older versions of the notes you’re
-importing are already in your collection, they will be updated in place
-(in their current decks) rather than being moved to the deck you have
-set in the import dialog. If notes are updated in place, the existing
-scheduling information on all their cards will be preserved.
+L'opzione "Ambito di corrispondenza" determina come vengono identificati i duplicati. Quando è impostata al valore "Tipo di nota", Anki identifica un duplicato se un'altra nota dello stesso tipo ha lo stesso primo campo. Quando invece è impostata al valore "Tipo di nota e mazzo", un duplicato viene segnalato soltanto se la nota esistente si trova anche nel mazzo in cui la stai importando.
 
-For info on how duplicates are handled in .apkg files, please see the
-[Deck Packages](../exporting.md#packaged-decks) section.
+Se hai abilitato l'aggiornamento e nella collezione sono già presenti versioni precedenti delle note che stai importando, queste vengono aggiornate nella loro posizione originale (nei loro mazzi attuali) anziché essere spostate nel mazzo impostato nella finestra di dialogo di importazione. Qualora le note vengano aggiornate in loco, le informazioni di pianificazione relative a tutte le loro carte vengono preservate.
 
-## File Headers
+Per informazioni su come vengono gestiti i duplicati nei file .apkg, consulta la sezione [Pacchetti di mazzi](../exporting.md#packaged-decks).
 
-Anki 2.1.54+ supports certain headers that can be included in the text file to
-make importing more powerful or convenient. They consist of `#key:value` pairs
-and must be listed in separate lines at the top of the file, though the [tags line](#adding-tags)
-may precede them. Since header lines start with the comment character `#`, earlier
-Anki clients will just ignore them.
+## Intestazione dei file
 
-You must enable the new importing option in the preferences screen to use this on
-2.1.54. On 2.1.55, the new importing path is the default.
+Anki 2.1.54 e versioni successive supportano alcune intestazioni che possono essere incluse nel file di testo per
+rendere l'importazione più potente o conveniente. Queste intestazioni consistono in coppie `#chiave:valore`
+e devono essere elencate in righe separate in cima al file, sebbene la [riga delle etichette](#aggiunta-di-etichette) possa precederle. Poiché le righe di intestazione iniziano con il carattere di commento `#`, i client Anki precedenti le ignorano.
 
-| Key               | Allowed Values                                                                             | Behaviour                                                                                                       |
+Per poter utilizzare questa funzionalità nella versione 2.1.54, è necessario abilitare la nuova opzione di importazione nella schermata delle preferenze. Nella versione 2.1.55, il nuovo percorso di importazione è quello predefinito.
+
+| Chiave            | Valori consentiti                                                                           | Comportamento                                                                                                   |
 | ----------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
-| `separator`       | `Comma`, `Semicolon`, `Tab`, `Space`, `Pipe`, `Colon`, or the according literal characters | Determines the field separator.                                                                                 |
-| `html`            | `true`, `false`                                                                            | Determines whether the file is treated as HTML.                                                                 |
-| `tags`            | List of tags, separated by spaces                                                          | Same as [the old syntax](#adding-tags).                                                                         |
-| `columns`         | List of names, separated by the previously set separator                                   | Determines the number of columns and shows their given names when importing.                                    |
-| `notetype`        | Notetype name or id                                                                        | Presets the notetype, if it exists.                                                                             |
-| `deck`            | Deck name or id                                                                            | Presets the deck, if it exists.                                                                                 |
-| `notetype column` | `1`, `2`, `3`, ...                                                                         | Determines which column contains the notetype name or id of each note, see [Notetype Column](#notetype-column). |
-| `deck column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the deck name or id of each note, see [Deck Column](#deck-column).             |
-| `tags column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the tags of each note.                                                         |
-| `guid column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the GUID of each note, see [GUID Column](#guid-column).                        |
+| `separator`       | `Comma`, `Semicolon`, `Tab`, `Space`, `Pipe`, `Colon`, o i rispettivi caratteri letterali  | Determina il separatore di campo.                                                                               |
+| `html`            | `true`, `false`                                                                            | Determina se il file è trattato come HTML.                                                                      |
+| `tags`            | Elenco di etichette, separata da spazi                                                      | Identico alla [vecchia sintassi](#aggiunta-di-etichette).                                                                 |
+| `columns`         | Elenco di nomi, separati dal separatore precedentemente impostato                           | Determina il numero di colonne e mostra i nomi a loro assegnati durante l'importazione.                         |
+| `notetype`        | Nome o id del tipo di nota                                                                  | Preimposta il tipo di nota, se esiste.                                                                          |
+| `deck`            | Nome o id del mazzo                                                                         | Preimposta il mazzo, se esiste.                                                                                 |
+| `notetype column` | `1`, `2`, `3`, ...                                                                         | Determina quale colonna contiene il nome o l'id del tipo di nota di ciascuna nota, vedi [Colonna del tipo di nota](#colonna-del-tipo-di-nota).                                                                                 |
+| `deck column`     | `1`, `2`, `3`, ...                                                                         | Determina quale colonna contiene il nome o l'id del mazzo di ciascuna nota, vedi [Colonna del mazzo](#colonna-del-mazzo).                                                                                                       |
+| `tags column`     | `1`, `2`, `3`, ...                                                                         | Determina quale colonna contiene le etichette di ciascuna nota.                                                 |
+| `guid column`     | `1`, `2`, `3`, ...                                                                         | Determina quale colonna contiene il GUID di ciascuna nota, vedi [Colonna del GUID](#colonna-del-guid).          |
 
-Some headers have further implications.
+**N.B.**: Ad eccezione dei valori di _tags_, _columns_, _notetype_ e _deck_, tutte le altre coppie chiave:valore devono essere in inglese.
 
-### Notetype Column
+Alcune intestazioni hanno ulteriori implicazioni.
 
-Usually, all notes from a file will be mapped to a single notetype, and you may
-choose which column should be mapped to which field of that notetype.
+### Colonna del tipo di nota
 
-That changes, if there is a column with notetype names or ids. This allows to
-import notes with different notetypes, and their fields will be mapped implicitly:
-The first regular column is used for the first field of any note regardless of
-its notetype, the second regular column for the second field, and so on.
-A 'regular column' here being a column that does not contain special information
-like decks, tags, notetypes or GUIDs.
+Solitamente, tutte le note provenienti da un file vengono mappate a un singolo tipo di nota, ed è possibile scegliere quale colonna viene mappata a un campo specifico di quel tipo di nota.
 
-### Deck Column
+La situazione cambia se è presente una colonna con i nomi o gli id dei tipi di nota. In tal caso, è possibile importare note con tipi di nota diversi, i cui campi saranno mappati implicitamente: la prima colonna normale viene utilizzata per il primo campo di qualsiasi nota, indipendentemente dal suo tipo di nota, la seconda colonna normale per il secondo campo, e così via. Una "colonna normale" è una colonna che non contiene informazioni speciali come mazzi, etichette, tipi di nota o GUID.
 
-Usually, any new cards created as a result of importing a text file will be placed
-in a single deck of your choice. If the file contains a deck column, however, new
-cards of a note will be placed in its specified deck instead. If the deck does not
-exist, a deck with the given name will be created.
+### Colonna del mazzo
 
-### GUID Column
+In genere, tutte le nuove carte create a seguito dell'importazione di un file testuale vengono inserite in un singolo mazzo a propria scelta ma, se il file contiene una colonna dedicata al mazzo, le nuove carte di una nota vengono inserite nel mazzo specificato. Se il mazzo non esiste, viene creato un nuovo mazzo con il nome specificato.
 
-GUID stands for _Globally Unique Identifier_. When you create notes in Anki, Anki
-assigns each note a unique ID, which can be used for duplicate checking. If you
-export your notes with the GUID included, you can make changes to the notes, and
-as long as you do not modify the GUID field, you'll be able to import the notes back
-in to update the existing notes.
+### Colonna del GUID
 
-Please note that the GUID is intended to be created by Anki. If you are creating
-your own IDs, such as MYNOTE0001, then it's recommended that you place the IDs
-in the first field, instead of assigning them to Anki's internal GUID. When importing,
-Anki is able to use the first field for duplicate checking as well, so you do not
-need to make IDs a GUID in order to be able to update your notes.
+GUID, acronimo di _Globally Unique Identifier_ (Identificatore Univoco Globale), è un ID univoco che Anki assegna a ciascuna nota creata. Questo ID può essere utilizzato per la verifica dei duplicati. Se esporti le tue note includendo il GUID, puoi modificarle e, purché non modifichi il campo GUID, puoi reimportarle per aggiornare le note esistenti.
+
+Sebbene Anki sia progettato per creare il GUID automaticamente, se preferisci creare ID personalizzati, come per esempio MIANOTA0001, è consigliato inserirli nel primo campo, anziché assegnarli al GUID interno. In fase di importazione, Anki può utilizzare sia il primo campo che il GUID per la verifica dei duplicati, quindi non è necessario che gli ID siano dei GUID per poter aggiornare le note. Va inoltre sottolineato che l'opzione "duplica" non funziona per le righe contenenti un GUID non vuoto. Se viene fornito un GUID e questo esiste già nella collezione, non viene creato alcun duplicato.
