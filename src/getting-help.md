@@ -1,67 +1,66 @@
-# Getting help
+# Ricevere supporto
 
-## Asking good questions
+## Porre domande efficaci
 
-With the exception of AnkiMobile, Anki and its support is provided free of
-charge, by people who generously volunteer their time. Please bear this in mind
-when posting - if you are rude and demanding, or have made no effort to solve
-the problem on your own, people are less likely to want to help you.
+Ad eccezione di AnkiMobile, Anki e il relativo supporto sono forniti gratuitamente
+da volontari che dedicano generosamente il loro tempo. Tienilo a mente
+quando richiedi aiuto - se sei scortese ed esigente, o non hai fatto alcuno sforzo
+per risolvere autonomamente il problema, è meno probabile
+che le persone siano disponibili ad aiutarti.
 
-Please start by trying to resolve the issue on your own:
+Prova innanzitutto a risolvere il problema autonomamente:
 
-- Read the [getting started](./getting-started.md) section
-  of the manual, and check out the intro videos.
-- If you've encountered a bug, please follow [these steps](./troubleshooting.md).
-- Use the search button on this page to search frequently asked questions.
-- Use the search button in the manual.
-- Use the search button on the forums.
-- Google the issue.
+- Leggi la sezione [per iniziare](./getting-started.md) del manuale e guarda i video introduttivi.
+- Se hai riscontrato un bug, segui [questi passaggi](./troubleshooting.md).
+- Utilizza il tasto di ricerca in questa pagina per cercare le domande frequenti.
+- Utilizza il tasto di ricerca nel manuale.
+- Utilizza il tasto di ricerca nel forum.
+- Cerca il problema su Google.
 
-If you have tried the above and are still stuck, it's time to ask for help.
-When writing a post, please explain the problem you are having clearly, and in detail.
+Se hai provato quanto sopra e stai ancora incontrando difficoltà, è il momento di chiedere aiuto.
+Quando scrivi un post, spiega il problema che stai riscontrando in maniera chiara e dettagliata.
 
-Please avoid vague questions like:
+Per favore, evita di porre domande vaghe come:
 
-> "My Anki doesn't work, what should I do?"
+> "Anki non funziona, cosa devo fare?".
 
-Instead, please provide as much detail as you can. For example:
+Fornisci invece il maggior numero di dettagli possibile. Per esempio:
 
-> "When I double-click on the Anki icon, an error message pops up. I tried
-> searching for the error on Google, but couldn't find anything useful. I have
-> copied and pasted the error message to the bottom of my post. I followed the
-> steps on the 'When problems occur' page, but the error message does not go
-> away. What should I do?"
+> "Quando faccio doppio clic sull'icona di Anki, appare un messaggio di errore.
+> Ho cercato l'errore su Google, ma non ho trovato alcuna soluzione utile. Ho copiato
+> e incollato il messaggio di errore in fondo al mio post. Ho seguito i passaggi
+> descritti nella pagina "Quando si verificano problemi", ma il messaggio di errore persiste.
+> Cosa devo fare?"
 
-This is a much better question. It tells us:
+Questa è una domanda decisamente migliore, poiché ci fornisce informazioni su:
 
-- What you have tried.
-- What steps you are taking when the problem happens.
-- What problems/errors you are getting when things go wrong.
+- Tentativi che hai fatto.
+- Passati seguiti quando si verifica il problema.
+- Problemi o errori che si verificano.
 
-Knowing these things makes it much easier to answer your question.
+Conoscere questi dettagli rende molto più facile rispondere alla tua domanda.
 
-The user forums use a different login to AnkiWeb, so please create an
-account there if it's your first time.
+I forum utilizzano credenziali di accesso differenti da quelli utilizzati per AnkiWeb,
+quindi ti invitiamo a crearne uno nuovo se è la prima volta che usi il forum.
 
-## Anki Desktop (the computer version) and AnkiWeb
+## Anki Desktop (versione per computer) e AnkiWeb
 
-After reading the above section, please post on the
-[user forums](https://forums.ankiweb.net) for assistance.
+Dopo aver letto la sezione precedente, ti invitiamo a postare sul
+[forum](https://forums.ankiweb.net) (inglese) per ricevere supporto.
 
-The user forums use a different login to AnkiWeb, so please create an
-account there if it's your first time.
+I forum utilizzano credenziali di accesso differenti da quelli utilizzati per AnkiWeb,
+quindi ti invitiamo a crearne uno nuovo se è la prima volta che usi il forum.
 
-## AnkiDroid (Android devices)
+## AnkiDroid (dispositivi Android)
 
-Please see [AnkiDroid's support page](https://docs.ankidroid.org/help.html).
+Consulta la [pagina di supporto di AnkiDroid](https://docs.ankidroid.org/help.html) (inglese).
 
-## AnkiMobile (iPhone/iPad)
+## AnkiMobile (dispositivi iPhone/iPad)
 
-Please see [AnkiMobile's support page](https://docs.ankimobile.net/support.html).
+Consulta la [pagina di supporto di AnkiMobile](https://docs.ankimobile.net/support.html) (inglese).
 
-## Private questions
+## Segnalazioni e domande private
 
-For security reports and business enquiries, you can post a private ticket
-[here](https://anki.tenderapp.com/discussions/private). If you have a question
-about Anki, AnkiWeb or AnkiDroid, please use the [user forums](https://forums.ankiweb.net)
-instead.
+Per segnalazioni di sicurezza e richieste di informazioni commerciali,
+puoi inviare un ticket privato [qui] (https://anki.tenderapp.com/discussions/private) (inglese).
+Se hai domande su Anki, AnkiWeb o AnkiDroid, utilizza invece i [forum](https://forums.ankiweb.net) (inglese).
