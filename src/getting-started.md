@@ -1,334 +1,358 @@
-# Getting Started
+# Per iniziare
 
 <!-- toc -->
 
-## Installing & Upgrading
+## Installazione e aggiornamento
 
-Please see the instructions for your computer:
+Consulta le istruzioni per il tuo computer:
 
 - [Windows](./platform/windows/installing.md)
 - [Mac](./platform/mac/installing.md)
 - [Linux](./platform/linux/installing.md)
 
-## Videos
+## Video
 
-For a quick way to dive into Anki, please have a look at these intro
-videos. Some were made with a previous Anki version, but the concepts
-are the same.
+Per una rapida immersione in Anki, dai un'occhiata ai seguenti
+video introduttivi. Alcuni sono stati realizzati per versioni precedenti
+di Anki, ma i concetti restano gli stessi.
 
-- [Shared Decks and Review Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
+- [Mazzi condivisi e nozioni di basi sulla revisione (inglese)](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 
-- [Syncing](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
+- [Sincronizzazione (inglese)](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
 
-- [Switching Card Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+- [Modificare l'ordine delle carte (inglese)](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
-- [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
+- [Personalizzare lo stile delle carte (inglese)](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 
-- [Typing in the Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+- [Digitare una risposta (inglese)](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
-If YouTube is unavailable in your country, you can [download the videos](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)
-instead.
+Se YouTube non è disponibile, puoi invece scaricare i video [qui](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/).
 
-## Key Concepts
+## Concetti chiave
 
-### Cards
+### Carte
 
-A question and answer pair is called a 'card'. This is based on a paper
-flashcard with a question on one side and the answer on the back. In
-Anki a card doesn’t actually look like a physical card, and when you
-show the answer the question remains visible by default. For example, if
-you’re studying basic chemistry, you might see a question like:
+Una coppia di domanda e risposta è chiamata "carta" e si basa sul concetto
+di una carta fisica con la domanda su un lato e la risposta sull'altro.
+In Anki, però, le carte non sono come le carte fisiche e,
+quando ti viene mostrato il lato della risposta, la domanda rimane visibile
+per impostazione predefinita. Ad esempio, se stai studiando le basi
+della chimica, potresti avere una domanda come:
 
-    Q: Chemical symbol for oxygen?
+    D: Simbolo chimico dell'ossigeno?
 
-After thinking about it, and deciding the answer is O, you click the
-show answer button, and Anki shows you:
+Dopo averci pensato e aver deciso che la risposta è O, puoi decidere
+di cliccare sul pulsante di risposta. A quel punto ti verrà mostrato:
 
-    Q: Chemical symbol for oxygen?
-    A: O
+    D: Simbolo chimico dell'ossigeno?
+    R: O
 
-After confirming that you are correct, you can tell Anki how well you
-remembered, and Anki will choose a next time to show you again.
+Dopo aver confermato la correttezza della tua risposta, puoi indicare
+ad Anki quanto bene ricordi la risposta, e Anki sceglierà il momento
+in cui mostrartela nuovamente.
 
-#### Types of Cards
+#### Tipologie di carta
 
-- **New:** A new card is one that you have downloaded or entered in, but have never studied before.
+- **Nuova:** Carta che hai scaricato o creato, ma che non hai ancora
+studiato.
 
-- **Learning:** Cards that were seen for the first time recently, and are still being learnt.
+- **In apprendimento:** Carta vista per la prima volta di recente e ancora
+in fase di apprendimento.
 
-- **Review:** Cards that were previously learnt, and now need to be reviewed so you don’t forget them.
-  There are two types of review cards:
-    - **Young:** A young card is one that has an interval of less than 21 days, but is
-   not in learning.
-    - **Mature:** A mature card is one that has an interval of 21 days or greater.
+- **Di ripasso:** Carta che ha superato la fase di apprendimento
+e che necessita di essere ripassata per non essere dimenticata.
+Questa tipologia si distingue in:
+    - **Giovane:** Carta con un intervallo inferiore a 21 giorni,
+    ma non in fase di apprendimento.
+    - **Matura:** Carta con un intervallo di 21 giorni o superiore.
 
-- **Relearn:** A relearning card is a card that you have failed in review mode, thus
-  returning it to learning mode to be relearned.
+- **Riapprendimento:** Carta che hai sbagliato in modalità di ripetizione,
+tornando quindi in modalità di riapprendimento per essere riappresa.
 
-### Decks
+### Mazzi
 
-A 'deck' is a group of cards. You can place cards in different decks to
-study parts of your card collection instead of studying everything at
-once. Each deck can have different settings, such as how many new cards
-to show each day, or how long to wait until cards are shown again.
+Un "mazzo" è un gruppo di carte. Puoi organizzare le carte in diversi mazzi
+per studiarne una parte anziché tutte insieme. Ciascun mazzo può avere
+impostazioni diverse, come ad esempio il numero di carte nuove da mostrare
+ogni giorno o l'intervallo di tempo da attendere
+prima di ripresentare le carte.
 
-Decks can contain other decks, which allows you to organize decks into a
-tree. Anki uses “::” to show different levels. A deck called
-“Chinese::Hanzi” refers to a “Hanzi” deck, which is part of a “Chinese”
-deck. If you select “Hanzi” then only the Hanzi cards will be shown; if
-you select “Chinese” then all Chinese cards, including Hanzi cards, will
-be shown.
+Un mazzo può contenere altri mazzi, permettendoti di organizzarli
+in una struttura ad albero. Anki utilizza "::" per separare
+i diversi livelli. Ad esempio, un mazzo chiamato "Cinese::Hanzi"
+si riferisce a un mazzo "Hanzi" contenuto all'interno del mazzo "Cinese".
+Se selezioni "Hanzi", vedrai solo le carte Hanzi; se selezioni "Cinese",
+vedrai tutte le carte cinesi, incluse quelle Hanzi.
 
-To place decks into a tree, you can either name them with “::” between
-each level, or drag and drop them from the deck list. Decks that have
-been nested under another deck (that is, that have at least one “::” in
-their names) are often called 'subdecks', and top-level decks are
-sometimes called 'superdecks' or 'parent decks'.
+Per inserire un mazzo all'interno di un altro, puoi utilizzare "::"
+nel suo nome oppure trascinarlo e rilasciarlo dall'elenco dei mazzi.
+Il mazzo nidificato sotto un altro (quindi quello che ha almeno un "::"
+nel nome) è spesso chiamato "sottomazzo", mentre il mazzo
+di livello superiore a volte è definito "mazzo principale" o "mazzo padre".
 
-Anki starts with a deck called “default”; any cards which have somehow
-become separated from other decks will go here. Anki will hide the
-default deck if it contains no cards and you have added other decks.
-Alternatively, you may rename this deck and use it for other cards.
+Anki include un mazzo iniziale chiamato "Predefinito"; qualsiasi carta
+che per qualche motivo si è separata dagli altri mazzi finirà qui.
+Se tale mazzo non contiene carte e hai aggiunto altri mazzi, Anki
+lo nasconderà. In alternativa, puoi rinominare questo mazzo
+e utilizzarlo per altre carte.
 
-Decks are displayed in the deck list alphabetically. This can result in
-a surprising order if your decks contain numbers - for example, "My Deck 10"
-will come before "My Deck 9", as 1 comes before 9. If you wish to number your
-decks, you can add a "0" in front of single-digit numbers, e.g. "Deck 01",
-"Deck 02" .. "Deck 10".
+I mazzi sono visualizzati nell'elenco dei mazzi in ordine alfabetico.
+Questo può risultare in un ordine inaspettato se i mazzi
+contengono numeri: ad esempio, "Mazzo 10" verrà prima di "Mazzo 9",
+poiché 1 precede 9. Se desideri numerare i tuoi mazzi,
+puoi aggiungere uno "0" davanti ai numeri a cifra singola,
+ottenendo "Mazzo 01", "Mazzo 02" ... "Mazzo 10".
 
-Decks are best used to hold broad categories of cards, rather than
-specific topics such as “food verbs” or “lesson 1”. For more info on
-this, please see the [using decks appropriately](editing.md#using-decks-appropriately) section.
+I mazzi sono più adatti a contenere categorie ampie di carte, piuttosto che
+argomenti specifici come "verbi della cucina" o "lezione 1".
+Se vuoi approfondire, consulta la sezione
+[utilizzo appropriato dei mazzi]( editing.md#using-decks-appropriately).
 
-For information on how decks affect the order cards are displayed in,
-please see the [display order](studying.md#display-order) section.
+Per informazioni su come i mazzi influiscono sull'ordine
+di visualizzazione delle carte, consulta
+la sezione [ordine di presentazione](studying.md#ordine-di-presentazione).
 
-### Notes & Fields
+### Note e campi
 
-When making flashcards, it’s often desirable to make more than one card
-that relates to some information. For example, if you’re learning
-French, and you learn that the word “bonjour” means “hello”, you may
-wish to create one card that shows you “bonjour” and asks you to
-remember “hello”, and another card that shows you “hello” and asks you
-to remember “bonjour”. One card is testing your ability to recognize the
-foreign word, and the other card is testing your ability to produce it.
+Quando crei una carta, spesso è desiderabile crearne più di una
+per la stessa informazione.
+Ad esempio, se stai studiando il francese e scopri che la parola "bonjour"
+significa "ciao", potresti voler creare una carta che mostra "bonjour"
+e ti chiede di ricordare "ciao", e un'altra carta che mostra "ciao"
+e ti chiede di ricordare "bonjour". La prima carta testa la tua capacità
+nel riconoscere la parola straniera, mentre la seconda testa
+la tua capacità nel produrla.
 
-When using paper flashcards, your only option in this case is to write
-out the information twice, once for each card. Some computer flashcard
-programs make life easier by providing a feature to flip the front and
-back sides. This is an improvement over the paper situation, but there
-are two major downsides:
+Con le carte fisiche, l'unica opzione è scrivere le informazioni due volte
+su ogni carta. Alcuni programmi di carte per computer semplificano la vita
+permettendoti di capovolgere il lato anteriore e posteriore.
+Questo è un miglioramento rispetto alla situazione su carta,
+ma tale sistema presenta due svantaggi principali:
 
-- Because such programs don’t track your performance of recognition
-  and production separately, cards will tend not to be shown to you at
-  the optimum time, meaning you forget more than you’d like, or you
-  study more than is necessary.
+- Poiché tali programmi non tracciano separatamente le tue
+prestazioni di riconoscimento e produzione, le carte tenderanno
+a non esserti mostrate nel momento ottimale, portandoti a dimenticare
+più di quanto vorresti o a studiare più del necessario.
 
-- Reversing the question and answer only works when you want exactly
-  the same content on each side. This means it’s not possible to
-  display extra info on the back of each card for example.
+- Invertire la domanda e la risposta funziona solo quando il contenuto
+è lo stesso su entrambi i lati. Ciò significa che non è possibile mostrare
+informazioni aggiuntive sul retro.
 
-Anki solves these problems by allowing you to split the content of your
-cards up into separate pieces of information. You can then tell Anki
-which pieces of information you want on each card, and Anki will take
-care of creating the cards for you and updating them if you make any
-edits in the future.
+Anki risolve questi problemi consentendoti di dividere il contenuto
+delle carte in parti diverse. Puoi specificare quali informazioni
+vuoi avere su ciascuna carta e Anki si occuperà di creare le carte
+e aggiornarle se apporterai modifiche in futuro.
 
-Imagine we want to study French vocabulary, and we want to include the
-page number on the back of each card. We want our cards to look like
-this:
+Supponiamo di voler studiare il lessico francese e includere
+il numero della pagina sul retro di ciascuna carta. Vogliamo che
+le nostre carte siano simili a questa:
 
-    Q: Bonjour
-    A: Hello
-       Page #12
+    D: Bonjour
+    R: Buongiorno
+       Pagina #12
 
-And:
+E:
 
-    Q: Hello
-    A: Bonjour
-       Page #12
+    D: Buongiorno
+    R: Bonjour
+       Pagina #12
 
-In this example, we have three pieces of related information: a French
-word, an English meaning, and a page number. If we put them together,
-they’d look like this:
+In questo esempio, abbiamo tre informazioni correlate: il termine francese,
+il significato in italiano e il numero della pagina.
+Se le mettessimo insieme, si presenterebbero come segue:
 
-    French: Bonjour
-    English: Hello
-    Page: 12
+    Francese: Bonjour
+    Italiano: Buongiorno
+    Pagina: 12
 
-In Anki, this related information is called a 'note', and each piece of
-information is called a 'field'. So we can say that this type of note
-has three fields: French, English, and Page.
+In Anki, queste informazioni correlate vengono chiamate "nota",
+e ciascuna informazione è chiamata "campo".
+In questo caso, il tipo di nota ha tre campi: Francese, Italiano e Pagina.
 
-To add and edit fields, click the “Fields…​” button while adding or
-editing notes. For more information on fields, please see the
-[Customizing Fields](editing.md#customizing-fields) section.
+Per aggiungere e modificare i campi, clicca sul pulsante "Campi..."
+durante l'aggiunta o la modifica delle note.
+Per ulteriori informazioni sui campi,
+consulta la sezione [Personalizzazione dei campi](editing.md#customizing-fields).
 
-### Card Types
+### Tipi di carta
 
-In order for Anki to create cards based on our notes, we need to give it
-a blueprint that says which fields should be displayed on the front or
-back of each card. This blueprint is called a 'card type'. Each type of
-note can have one or more card types; when you add a note, Anki will
-create one card for each card type.
+Per far sì che Anki crei delle carte basate sulle nostre note,
+è necessario fornirgli un modello che indichi quali campi devono
+essere mostrati sul lato anteriore e posteriore di ciascuna carta.
+Questo modello è conosciuto come "tipo di carta".
+Ciascun tipo di nota può avere uno o più tipi di carta;
+quando aggiungi una nota, Anki creerà una carta per ogni
+tipo di carta associato.
 
-Each card type has two 'templates', one for the question and one for the
-answer. In the above French example, we wanted the recognition card to
-look like this:
+Ciascun tipo di carta ha due "modelli", uno per la domanda e uno per
+la risposta. Nell'esempio francese di cui sopra, volevamo che la carta
+di riconoscimento apparisse così:
 
-    Q: Bonjour
-    A: Hello
-       Page #12
+    D: Bonjour
+    R: Buongiorno
+       Pagina #12
 
-To do this, we can set the question and answer templates to:
+Per ottenere questo risultato, possiamo configurare i modelli per
+la domanda e la risposta come segue:
 
-    Q: {{French}}
-    A: {{English}}<br>
-       Page #{{Page}}
+    D: {{Francese}}
+    R: {{Italiano}}<br>
+       Pagina #{{Pagina}}
 
-By surrounding a field name in double curly brackets, we tell Anki to
-replace that section with the actual information in the field. Anything
-not surrounded by curly brackets remains the same on each card. (For
-instance, we don’t have to type “Page \#” into the Page field when
-adding material – it’s added automatically to every card.) &lt;br&gt; is
-a special code that tells Anki to move to the next line; more details
-are available in the [templates](templates/intro.md) section.
+Racchiudendo il nome di un campo tra doppie parentesi graffe,
+diciamo ad Anki di sostituirlo con il valore effettivo del campo.
+Tutto ciò che non è racchiuso tra parentesi graffe rimane invariato.
+Non è necessario digitare "Pagina #" nel campo Pagina
+quando si aggiunge del materiale, in quanto viene aggiunto automaticamente
+a ogni carta. "<br>" è un codice speciale che dice ad Anki
+di andare a capo; per approfondire consulta la sezione [modelli](templates/intro.md).
 
-The production card templates work in a similar way:
+I modelli per le carte di produzione funzionano in maniera analoga:
 
-    Q: {{English}}
-    A: {{French}}<br>
-       Page #{{Page}}
+    D: {{Inglese}}
+    R: {{Francese}}<br>
+       Pagina #{{Pagina}}
 
-Once a card type has been created, every time you add a new note, a card
-will be created based on that card type. Card types make it easy to keep
-the formatting of your cards consistent and can greatly reduce the
-amount of effort involved in adding information. They also mean Anki can
-ensure related cards don’t appear too close to each other, and they
-allow you to fix a typing mistake or factual error once and have all the
-related cards updated at once.
+Una volta creato un tipo di carta, quando aggiungi una nuova nota,
+verrà creata una carta basata su quel tipo di carta. I tipi di carta
+consentono di mantenere una formattazione coerente delle carte
+e possono ridurre notevolmente lo sforzo necessario
+per aggiungere informazioni.
+Inoltre, permettono ad Anki di evitare che le carte correlate
+appaiano troppo vicine tra loro e ti permettono di correggere un errore
+di battitura o un errore fattuale una sola volta e di aggiornare
+tutte le carte correlate contemporaneamente.
 
-To add and edit card types, click the “Cards…​” button while adding or
-editing notes. For more information on card types, please see the [Cards and Templates](templates/intro.md) section.
+Per aggiungere e modificare i tipi di carta, clicca sul pulsante "Carte..."
+durante l'aggiunta o la modifica delle note. Per ulteriori informazioni
+sui tipi di carta, consulta la sezione [Carte e modelli](templates/intro.md).
 
-### Note Types
+### Tipi di nota
 
-Anki allows you to create different types of notes for different
-material. Each type of note has its own set of fields and card types.
-It’s a good idea to create a separate note type for each broad topic
-you’re studying. In the above French example, we might create a note
-type called “French” for that. If we wanted to learn capital cities, we
-could create a separate note type for that as well, with fields such as
-“Country” and “Capital City”.
+Anki consente di creare diversi tipi di note per diversi tipi di materiale.
+Ogni tipo di nota ha il proprio set di campi e tipi di carta.
+È consigliabile creare un tipo di nota separato per ciascun argomento
+generale che stai studiando. Nell'esempio francese precedente,
+potremmo creare un tipo di nota chiamato "Francese" e,
+se volessimo imparare le capitali, potremmo creare un tipo di nota separato
+con campi come "Paese" e "Capitale".
 
-When Anki checks for duplicates, it only compares other notes of the
-same type. Thus if you add a capital city called “Orange” using the
-capital city note type, you won’t see a duplicate message when it comes
-time to learn how to say “orange” in French.
+Quando Anki controlla i duplicati, confronta solo le altre note
+dello stesso tipo. Pertanto, se aggiungi una capitale chiamata "Arancione"
+utilizzando il tipo di nota "Capitale", non vedrai un messaggio di duplicato
+quando verrà il momento di imparare a dire "Arancione" in francese.
 
-When you create a new collection, Anki automatically adds some standard
-note types to it. These note types are provided to make Anki easier for
-new users, but in the long run it’s recommended you define your own note
-types for the content you are learning. The standard note types are as
-follows:
+Quando crei una nuova collezione, Anki aggiunge automaticamente alcuni tipi
+di nota standard. Questi tipi di nota sono forniti
+per facilitarel'utilizzo di Anki per i nuovi utenti, ma nel lungo termine
+è consigliato creare i propri tipi di nota per il contenuto
+che stai imparando. I tipi di nota standard sono:
 
-- **Basic**\
-  Has Front and Back fields, and will create one card. Text you enter in
-  Front will appear on the front of the card, and text you enter in Back
-  will appear on the back of the card.
+- **Basilare**\
+  Contiene i campi Fronte e Retro e crea una carta. Il testo inserito
+  in Fronte apparirà sul lato fronte della carta e il testo inserito
+  in Retro apparirà sul retro della carta.
 
-- **Basic (and reversed card)**\
-  Like Basic, but creates two cards for the text you enter: one from
-  front→back and one from back→front.
+- **Basilare (e carta inversa)**\
+  Come Basilare, ma crea due carte per lo stesso testo: una fronte→retro
+  e una retro→fronte.
 
-- **Basic (optional reversed card)**\
-  This is a front→back card, and optionally a back→front card. To do this,
-  it has a third field called “Add Reverse.” If you enter any text into
-  that field, a reverse card will be created. More information about this
-  is available in the [Cards and Templates](templates/intro.md) section.
+- **Basilare (carta inversa opzionale)**\
+  Si tratta di una carta fronte→retro e, facoltativamente,
+  di una carta retro→fronte. Presenta un terzo campo
+  chiamato "Aggiungi inversa". Se inserisci del testo in quel campo,
+  verrà creata una carta inversa. Maggiori informazioni sono disponibili
+  nella sezione [Carte e modelli](templates/intro.md).
 
-- **Basic (type in the answer)**\
-  This is essentially Basic, with an extra text box on the front where you
-  can type your answer in, after flipping to the back your input would be
-  checked and compared with the answer. More information is available in the
-  [Checking Your Answer](templates/fields.md#checking-your-answer) section.
+- **Basilare (digita la risposta)**\
+  Simile a Basilare, ma con una casella di testo aggiuntiva sul lato fronte
+  in cui puoi digitare la risposta. Quando mostri il retro della carta,
+  il tuo input verrà controllato e confrontato con la risposta.
+  Maggiori informazioni sono disponibili
+  nella sezione [Controlla la risposta](templates/fields.md#checking-your-answer).
 
 - **Cloze**\
-  A note type which makes it easy to select text and turn it into a cloze
-  deletion (e.g., “Man landed on the moon in \[…​\]” → “Man landed on the
-  moon in 1969”). More information is available in the [cloze deletion](editing.md#cloze-deletion) section.
+  Permette di selezionare una parte del testo e trasformarla in una
+  cancellazione Cloze (esempio: "L'uomo è sbarcato sulla luna
+  nel \[…​\]" → "L'uomo è sbarcato sulla luna nel 1969").
+  Maggiori informazioni sono disponibili nella sezione [Cancellazione cloze](editing.md#cloze-deletion).
 
-- **Image Occlusion**\
-  Like the cloze notetype, but it works with images instead of text,
-  which is especially useful when studying material that heavily relies on images,
-  such as anatomy, geography, and more. For details, please see the [Image Occlusion](editing.md#image-occlusion)
-  section of the manual. 
+- **Occludi Immagine**\
+  Simile al tipo di nota Cloze, ma usa le immagini invece del testo,
+  particolarmente utile quando si studia materiale basato su immagini,
+  come anatomia, geografia e altro. Per approfondire,
+  consulta la sezione [Occlusione immagine](editing.md#image-occlusion). 
 
-To add your own note types and modify existing ones, you can use Tools →
-Manage Note Types from the main Anki window.
+Per aggiungere nuovi tipi di nota e modificare quelli esistenti,
+vai su Strumenti → Gestisci i tipi di nota dalla schermata principale
+di Anki.
 
-Notes and note types are common to your whole collection rather than
-limited to an individual deck. This means you can use many different
-types of notes in a particular deck, or have different cards generated
-from a particular note in different decks. When you add notes using the
-Add window, you can select what note type to use and what deck to use,
-and these choices are completely independent of each other. You can also
-change the note type of some notes [after you’ve already created them](browsing.md).
+Note e tipi di nota sono comuni a tutta la tua collezione e non limitati
+a un singolo mazzo. Ciò significa che puoi utilizzare diversi tipi di nota
+in un particolare mazzo o avere diverse carte generate
+da una particolare nota in mazzi diversi. Quando aggiungi una nota
+attraverso la schermata Aggiungi, puoi scegliere
+quale tipo di nota utilizzare e in quale mazzo inserire la nota,
+e queste scelte sono completamente indipendenti l'una dall'altra.
+Puoi anche modificare il tipo di nota di alcune note [dopo averle create](browsing.md).
 
-### Collection
+### Collezione
 
-Your 'collection' is all the material stored in Anki – your cards,
-notes, decks, note types, deck options, and so on.
+Una "collezione" è l'insieme del materiale archiviato in Anki: carte,
+note, mazzi, tipi di nota, opzioni del mazzo e così via.
 
-## Shared Decks
+## Mazzi condivisi
 
-You can watch [a video about Shared Decks and Review
-Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) on YouTube.
+Su Youtube puoi trovare
+[un video sul concetto di mazzi condivisi e basi sulla ripetizione](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) (inglese).
 
-The easiest way to get started with Anki is to download a deck of cards
-someone has shared:
+Il modo più semplice per iniziare con Anki è quello di scaricare
+un mazzo di carte condiviso da qualcuno:
 
-1. Click the “Get Shared” button at the bottom of the deck list.
+1. Clicca sul pulsante "Ottieni mazzi condivisi" in fondo
+alla lista dei mazzi.
 
-2. When you’ve found a deck you’re interested in, click the “Download”
-   button to download a deck package.
+2. Trova un mazzo che ti interessa, quindi clicca sul pulsante "Download"
+per scaricare il pacchetto del mazzo.
 
-3. Double-click on the downloaded package to load it into Anki, or
-   File→Import it.
+3. Fai doppio clic sul pacchetto scaricato per caricarlo in Anki, oppure
+vai su File→Importa per importarlo.
 
-Please note that it’s not currently possible to add shared decks
-directly to your AnkiWeb account. You need to import them with the
-desktop program, then synchronize to upload them to AnkiWeb.
+Tieni presente che al momento non è possibile aggiungere mazzi condivisi
+direttamente su AnkiWeb. Devi prima importarli usando la versione di Anki
+per computer, quindi sincronizzare per caricarli su AnkiWeb.
 
-Creating your own deck is the most effective way to learn a complex
-subject. Subjects like languages and the sciences can’t be understood
-simply by memorizing facts — they require explanation and context to
-learn effectively. Furthermore, inputting the information yourself
-forces you to decide what the key points are, leading to a better
-understanding.
+Creare il proprio mazzo è il modo più efficace per imparare
+una materia complessa. Materie come le lingue e le scienze non possono
+essere comprese semplicemente memorizzando dei fatti,
+ma richiedono spiegazioni e contesto per apprenderle in maniera efficace.
+Inoltre, creare carte tu stesso ti costringe a decidere quali sono
+i punti chiave, favorendo così una migliore comprensione.
 
-If you are a language learner, you may be tempted to download a long
-list of words and their translations, but this won’t teach you a
-language any more than memorizing scientific equations will teach you
-astrophysics. To learn properly, you need textbooks, teachers, or
-exposure to real-world sentences.
+Se sei uno studente di lingue, potresti essere tentato di scaricare
+una lunga lista di parole e delle loro traduzioni corrispondenti,
+ma questo non ti insegnerà la lingua tanto quanto memorizzare
+equazioni scientifiche ti insegnerà l'astrofisica.
+Per imparare correttamente, hai bisogno di libri, insegnanti
+o dell'esposizione a frasi del mondo reale.
 
-    Do not learn if you do not understand.
+    Do not learn if you do not understand (non imparare se non capisci).
     --SuperMemo
 
-Most shared decks are created by people who are learning material
-outside of Anki – from textbooks, classes, TV, etc. They select the
-interesting points from what they learn and put them into Anki. They
-make no effort to add background information or explanations to the
-cards, because they already understand the material. So when someone
-else downloads their deck and tries to use it, they’ll find it very
-difficult as the background information and explanations are missing.
+La maggior parte dei mazzi condivisi sono creati da persone
+che apprendono il materiale al di fuori di Anki – da libri, lezioni, TV, ecc.
+Selezionano gli aspetti interessanti di ciò che imparano e li aggiungono
+ad Anki. Non si sforzano di aggiungere il contesto o spiegazioni alle carte,
+perché già comprendono l'argomento. Di conseguenza, quando qualcun altro
+scarica il loro mazzo e cerca di usarlo, lo troverà molto difficile a causa
+della mancanza di contesto e spiegazioni.
 
-That is not to say shared decks are useless – simply that for complex
-subjects, they should be used as a 'supplement' to external material,
-not as a 'replacement' for it. If you’re studying textbook ABC and
-someone has shared a deck of ideas from ABC, that’s a great way to save
-some time. And for simple subjects that are basically a list of facts,
-such as capital city names or pub quiz trivia, you probably don’t need
-external material. But if you attempt to study complex subjects without
-external material, you will probably meet with disappointing results.
+Questo non significa che i mazzi condivisi siano inutili, ma semplicemente
+che per materie complesse dovrebbero essere utilizzati come "integrazione"
+al materiale esterno, non come "sostituto". Se stai studiando il libro ABC
+e qualcuno ha condiviso un mazzo di idee di idee provenienti da tale libro,
+questo è un ottimo modo per risparmiare tempo. Per materie semplici
+che sono fondamentalmente una lista di fatti, come i nomi delle capitali
+o i quiz di cultura generale, probabilmente non hai bisogno
+di materiale esterno. Se però provi a studiare argomenti complessi
+senza materiale esterno, otterrai probabilmente risultati deludenti.
