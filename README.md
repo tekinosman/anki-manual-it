@@ -1,4 +1,4 @@
-Visualizzato al meglio su: https://docs.ankiweb.net
+Visualizzato al meglio su: https://tekinosman.github.io/anki-manual-it/
 
 Questo manuale è rilasciato sotto licenza CC BY-SA 4:
 
