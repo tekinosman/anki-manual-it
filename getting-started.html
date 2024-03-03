@@ -1,0 +1,556 @@
+<!DOCTYPE HTML>
+<html lang="it" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Getting Started - Manuale di Anki</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="css/misc.css">
+        <link rel="stylesheet" href="css/kbd.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="intro.html">Introduction</a></li><li class="chapter-item "><a href="background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item "><a href="platform/intro.html"><strong aria-hidden="true">2.</strong> Platform Notes</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/windows/installing.html"><strong aria-hidden="true">2.1.</strong> Windows</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/windows/installing.html"><strong aria-hidden="true">2.1.1.</strong> Install & Upgrade</a></li><li class="chapter-item "><a href="platform/windows/installation-issues.html"><strong aria-hidden="true">2.1.2.</strong> Installation Issues</a></li><li class="chapter-item "><a href="platform/windows/startup-issues.html"><strong aria-hidden="true">2.1.3.</strong> Startup Issues</a></li><li class="chapter-item "><a href="platform/windows/display-issues.html"><strong aria-hidden="true">2.1.4.</strong> Display Issues</a></li><li class="chapter-item "><a href="platform/windows/copy-and-paste.html"><strong aria-hidden="true">2.1.5.</strong> Copy and Paste Issues</a></li><li class="chapter-item "><a href="platform/windows/text-size.html"><strong aria-hidden="true">2.1.6.</strong> Text Size</a></li><li class="chapter-item "><a href="platform/windows/permission-problems.html"><strong aria-hidden="true">2.1.7.</strong> Permission Problems</a></li></ol></li><li class="chapter-item "><a href="platform/mac/installing.html"><strong aria-hidden="true">2.2.</strong> macOS</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/mac/installing.html"><strong aria-hidden="true">2.2.1.</strong> Install & Upgrade</a></li><li class="chapter-item "><a href="platform/mac/display-issues.html"><strong aria-hidden="true">2.2.2.</strong> Display Issues</a></li></ol></li><li class="chapter-item "><a href="platform/linux/installing.html"><strong aria-hidden="true">2.3.</strong> Linux</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/linux/installing.html"><strong aria-hidden="true">2.3.1.</strong> Install & Upgrade</a></li><li class="chapter-item "><a href="platform/linux/missing-libraries.html"><strong aria-hidden="true">2.3.2.</strong> Missing Libraries</a></li><li class="chapter-item "><a href="platform/linux/display-issues.html"><strong aria-hidden="true">2.3.3.</strong> Display Issues</a></li><li class="chapter-item "><a href="platform/linux/blank-window.html"><strong aria-hidden="true">2.3.4.</strong> Blank Main Window</a></li><li class="chapter-item "><a href="platform/linux/distro-packages.html"><strong aria-hidden="true">2.3.5.</strong> Linux Distro Packages</a></li><li class="chapter-item "><a href="platform/linux/gtk-theme.html"><strong aria-hidden="true">2.3.6.</strong> Incorrect GTK Theme</a></li><li class="chapter-item "><a href="platform/linux/wayland.html"><strong aria-hidden="true">2.3.7.</strong> Wayland</a></li><li class="chapter-item "><a href="platform/linux/input-methods.html"><strong aria-hidden="true">2.3.8.</strong> Input Methods</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="getting-started.html" class="active"><strong aria-hidden="true">3.</strong> Getting Started</a></li><li class="chapter-item "><a href="getting-help.html"><strong aria-hidden="true">4.</strong> Getting Help</a></li><li class="chapter-item "><a href="studying.html"><strong aria-hidden="true">5.</strong> Studying</a></li><li class="chapter-item "><a href="editing.html"><strong aria-hidden="true">6.</strong> Adding/Editing</a></li><li class="chapter-item "><a href="templates/intro.html"><strong aria-hidden="true">7.</strong> Card Templates</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="templates/fields.html"><strong aria-hidden="true">7.1.</strong> Field Replacements</a></li><li class="chapter-item "><a href="templates/generation.html"><strong aria-hidden="true">7.2.</strong> Card Generation</a></li><li class="chapter-item "><a href="templates/styling.html"><strong aria-hidden="true">7.3.</strong> Styling & HTML</a></li><li class="chapter-item "><a href="templates/errors.html"><strong aria-hidden="true">7.4.</strong> Checks and Errors</a></li></ol></li><li class="chapter-item "><a href="preferences.html"><strong aria-hidden="true">8.</strong> Preferences</a></li><li class="chapter-item "><a href="deck-options.html"><strong aria-hidden="true">9.</strong> Deck Options</a></li><li class="chapter-item "><a href="syncing.html"><strong aria-hidden="true">10.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item "><a href="profiles.html"><strong aria-hidden="true">11.</strong> Profiles</a></li><li class="chapter-item "><a href="browsing.html"><strong aria-hidden="true">12.</strong> Browsing</a></li><li class="chapter-item "><a href="filtered-decks.html"><strong aria-hidden="true">13.</strong> Filtered Decks</a></li><li class="chapter-item "><a href="searching.html"><strong aria-hidden="true">14.</strong> Searching</a></li><li class="chapter-item "><a href="importing/intro.html"><strong aria-hidden="true">15.</strong> Importing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="importing/text-files.html"><strong aria-hidden="true">15.1.</strong> Text Files</a></li><li class="chapter-item "><a href="importing/packaged-decks.html"><strong aria-hidden="true">15.2.</strong> Packaged Decks</a></li></ol></li><li class="chapter-item "><a href="exporting.html"><strong aria-hidden="true">16.</strong> Exporting</a></li><li class="chapter-item "><a href="backups.html"><strong aria-hidden="true">17.</strong> Backups</a></li><li class="chapter-item "><a href="files.html"><strong aria-hidden="true">18.</strong> Managing Files</a></li><li class="chapter-item "><a href="stats.html"><strong aria-hidden="true">19.</strong> Statistics</a></li><li class="chapter-item "><a href="media.html"><strong aria-hidden="true">20.</strong> Media</a></li><li class="chapter-item "><a href="math.html"><strong aria-hidden="true">21.</strong> Math & Symbols</a></li><li class="chapter-item "><a href="leeches.html"><strong aria-hidden="true">22.</strong> Leeches</a></li><li class="chapter-item "><a href="addons.html"><strong aria-hidden="true">23.</strong> Add-ons</a></li><li class="chapter-item "><a href="troubleshooting.html"><strong aria-hidden="true">24.</strong> Troubleshooting</a></li><li class="chapter-item "><a href="sync-server.html"><strong aria-hidden="true">25.</strong> Sync Server</a></li><li class="chapter-item "><a href="misc.html"><strong aria-hidden="true">26.</strong> Miscellaneous</a></li><li class="chapter-item affix "><a href="contrib.html">Contributing</a></li><li class="chapter-item affix "><a href="faqs.html">FAQs</a></li><li class="chapter-item affix "><a href="resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Manuale di Anki</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/tekinosman/anki-manual-it" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="primi-passi"><a class="header" href="#primi-passi">Primi passi</a></h1>
+<ul>
+<li><a href="#installazione-e-aggiornamento">Installazione e aggiornamento</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#concetti-chiave">Concetti chiave</a>
+<ul>
+<li><a href="#carte">Carte</a>
+<ul>
+<li><a href="#tipi-di-carte">Tipi di carte</a></li>
+</ul>
+</li>
+<li><a href="#mazzi">Mazzi</a></li>
+<li><a href="#note-e-campi">Note e campi</a></li>
+<li><a href="#tipi-di-carta">Tipi di carta</a></li>
+<li><a href="#tipi-di-nota">Tipi di nota</a></li>
+<li><a href="#collezione">Collezione</a></li>
+</ul>
+</li>
+<li><a href="#mazzi-condivisi">Mazzi condivisi</a></li>
+</ul>
+<h2 id="installazione-e-aggiornamento"><a class="header" href="#installazione-e-aggiornamento">Installazione e aggiornamento</a></h2>
+<p>Consulta le istruzioni per il tuo computer:</p>
+<ul>
+<li><a href="./platform/windows/installing.html">Windows</a></li>
+<li><a href="./platform/mac/installing.html">Mac</a></li>
+<li><a href="./platform/linux/installing.html">Linux</a></li>
+</ul>
+<h2 id="video"><a class="header" href="#video">Video</a></h2>
+<p>Per una rapida immersione in Anki, dai un'occhiata ai seguenti
+video introduttivi. Alcuni sono stati realizzati per versioni precedenti
+di Anki, ma i concetti restano gli stessi.</p>
+<ul>
+<li>
+<p><a href="http://www.youtube.com/watch?v=QS2G-k2hQyg&amp;yt:cc=on">Mazzi condivisi e nozioni di basi sulla revisione (inglese)</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=YkiM4DPzSVc&amp;list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&amp;yt:cc=on">Sincronizzazione (inglese)</a></p>
+</li>
+<li>
+<p><a href="http://www.youtube.com/watch?v=DnbKwHEQ1mA&amp;yt:cc=on">Modificare l'ordine delle carte (inglese)</a></p>
+</li>
+<li>
+<p><a href="http://www.youtube.com/watch?v=F1j1Zx0mXME&amp;yt:cc=on">Personalizzare lo stile delle carte (inglese)</a></p>
+</li>
+<li>
+<p><a href="http://www.youtube.com/watch?v=5tYObQ3ocrw&amp;yt:cc=on">Digitare una risposta (inglese)</a></p>
+</li>
+</ul>
+<p>Se YouTube non è disponibile, puoi invece scaricare i video <a href="https://apps.ankiweb.net/downloads/archive/screencasts/2.0/">qui</a>.</p>
+<h2 id="concetti-chiave"><a class="header" href="#concetti-chiave">Concetti chiave</a></h2>
+<h3 id="carte"><a class="header" href="#carte">Carte</a></h3>
+<p>Una coppia di domanda e risposta è chiamata &quot;carta&quot; e si basa sul concetto
+di una carta fisica con la domanda su un lato e la risposta sull'altro.
+In Anki, però, le carte non sono come le carte fisiche e,
+quando ti viene mostrato il lato della risposta, la domanda rimane visibile
+per impostazione predefinita. Ad esempio, se stai studiando le basi
+della chimica, potresti avere una domanda come:</p>
+<pre><code>D: Simbolo chimico dell'ossigeno?
+</code></pre>
+<p>Dopo averci pensato e aver deciso che la risposta è O, puoi decidere
+di cliccare sul pulsante di risposta. A quel punto ti verrà mostrato:</p>
+<pre><code>D: Simbolo chimico dell'ossigeno?
+R: O
+</code></pre>
+<p>Dopo aver confermato la correttezza della tua risposta, puoi indicare
+ad Anki quanto bene ricordi la risposta, e Anki sceglierà il momento
+in cui mostrartela nuovamente.</p>
+<h4 id="tipi-di-carte"><a class="header" href="#tipi-di-carte">Tipi di carte</a></h4>
+<ul>
+<li>
+<p><strong>Nuova:</strong> Carta che hai scaricato o creato, ma che non hai ancora
+studiato.</p>
+</li>
+<li>
+<p><strong>In apprendimento:</strong> Carta vista per la prima volta di recente e ancora
+in fase di apprendimento.</p>
+</li>
+<li>
+<p><strong>Ripetizione:</strong> Carta che ha superato la fase di apprendimento
+e che necessita di essere ripassata per non essere dimenticata.
+Questa tipologia si distingue in:</p>
+<ul>
+<li><strong>Giovane:</strong> Carta con un intervallo inferiore a 21 giorni,
+ma non in fase di apprendimento.</li>
+<li><strong>Matura:</strong> Carta con un intervallo di 21 giorni o superiore.</li>
+</ul>
+</li>
+<li>
+<p><strong>Riapprendimento:</strong> Carta che hai sbagliato in modalità di ripetizione,
+tornando quindi in modalità di riapprendimento per essere riappresa.</p>
+</li>
+</ul>
+<h3 id="mazzi"><a class="header" href="#mazzi">Mazzi</a></h3>
+<p>Un &quot;mazzo&quot; è un gruppo di carte. Puoi organizzare le carte in diversi mazzi
+per studiarne una parte anziché tutte insieme. Ciascun mazzo può avere
+impostazioni diverse, come ad esempio il numero di carte nuove da mostrare
+ogni giorno o l'intervallo di tempo da attendere
+prima di ripresentare le carte.</p>
+<p>Un mazzo può contenere altri mazzi, permettendoti di organizzarli
+in una struttura ad albero. Anki utilizza &quot;::&quot; per separare
+i diversi livelli. Ad esempio, un mazzo chiamato &quot;Cinese::Hanzi&quot;
+si riferisce a un mazzo &quot;Hanzi&quot; contenuto all'interno del mazzo &quot;Cinese&quot;.
+Se selezioni &quot;Hanzi&quot;, vedrai solo le carte Hanzi; se selezioni &quot;Cinese&quot;,
+vedrai tutte le carte cinesi, incluse quelle Hanzi.</p>
+<p>Per inserire un mazzo all'interno di un altro, puoi utilizzare &quot;::&quot;
+nel suo nome oppure trascinarlo e rilasciarlo dall'elenco dei mazzi.
+Il mazzo nidificato sotto un altro (quindi quello che ha almeno un &quot;::&quot;
+nel nome) è spesso chiamato &quot;sottomazzo&quot;, mentre il mazzo
+di livello superiore a volte è definito &quot;mazzo principale&quot; o &quot;mazzo padre&quot;.</p>
+<p>Anki include un mazzo iniziale chiamato &quot;Predefinito&quot;; qualsiasi carta
+che per qualche motivo si è separata dagli altri mazzi finirà qui.
+Se tale mazzo non contiene carte e hai aggiunto altri mazzi, Anki
+lo nasconderà. In alternativa, puoi rinominare questo mazzo
+e utilizzarlo per altre carte.</p>
+<p>I mazzi sono visualizzati nell'elenco dei mazzi in ordine alfabetico.
+Questo può risultare in un ordine inaspettato se i mazzi
+contengono numeri: ad esempio, &quot;Mazzo 10&quot; verrà prima di &quot;Mazzo 9&quot;,
+poiché 1 precede 9. Se desideri numerare i tuoi mazzi,
+puoi aggiungere uno &quot;0&quot; davanti ai numeri a cifra singola,
+ottenendo &quot;Mazzo 01&quot;, &quot;Mazzo 02&quot; ... &quot;Mazzo 10&quot;.</p>
+<p>I mazzi sono più adatti a contenere categorie ampie di carte, piuttosto che
+argomenti specifici come &quot;verbi della cucina&quot; o &quot;lezione 1&quot;.
+Se vuoi approfondire, consulta la sezione
+<a href="editing.html#using-decks-appropriately">utilizzo appropriato dei mazzi</a>.</p>
+<p>Per informazioni su come i mazzi influiscono sull'ordine
+di visualizzazione delle carte, consulta
+la sezione <a href="studying.html#display-order">ordine di presentazione</a>.</p>
+<h3 id="note-e-campi"><a class="header" href="#note-e-campi">Note e campi</a></h3>
+<p>Quando crei una carta, spesso è desiderabile crearne più di una
+per la stessa informazione.
+Ad esempio, se stai studiando il francese e scopri che la parola &quot;bonjour&quot;
+significa &quot;ciao&quot;, potresti voler creare una carta che mostra &quot;bonjour&quot;
+e ti chiede di ricordare &quot;ciao&quot;, e un'altra carta che mostra &quot;ciao&quot;
+e ti chiede di ricordare &quot;bonjour&quot;. La prima carta testa la tua capacità
+nel riconoscere la parola straniera, mentre la seconda testa
+la tua capacità nel produrla.</p>
+<p>Con le carte fisiche, l'unica opzione è scrivere le informazioni due volte
+su ogni carta. Alcuni programmi di carte per computer semplificano la vita
+permettendoti di capovolgere il lato anteriore e posteriore.
+Questo è un miglioramento rispetto alla situazione su carta,
+ma tale sistema presenta due svantaggi principali:</p>
+<ul>
+<li>
+<p>Poiché tali programmi non tracciano separatamente le tue
+prestazioni di riconoscimento e produzione, le carte tenderanno
+a non esserti mostrate nel momento ottimale, portandoti a dimenticare
+più di quanto vorresti o a studiare più del necessario.</p>
+</li>
+<li>
+<p>Invertire la domanda e la risposta funziona solo quando il contenuto
+è lo stesso su entrambi i lati. Ciò significa che non è possibile mostrare
+informazioni aggiuntive sul retro.</p>
+</li>
+</ul>
+<p>Anki risolve questi problemi consentendoti di dividere il contenuto
+delle carte in parti diverse. Puoi specificare quali informazioni
+vuoi avere su ciascuna carta e Anki si occuperà di creare le carte
+e aggiornarle se apporterai modifiche in futuro.</p>
+<p>Supponiamo di voler studiare il lessico francese e includere
+il numero della pagina sul retro di ciascuna carta. Vogliamo che
+le nostre carte siano simili a questa:</p>
+<pre><code>D: Bonjour
+R: Buongiorno
+   Pagina #12
+</code></pre>
+<p>E:</p>
+<pre><code>D: Buongiorno
+R: Bonjour
+   Pagina #12
+</code></pre>
+<p>In questo esempio, abbiamo tre informazioni correlate: il termine francese,
+il significato in italiano e il numero della pagina.
+Se le mettessimo insieme, si presenterebbero come segue:</p>
+<pre><code>Francese: Bonjour
+Italiano: Buongiorno
+Pagina: 12
+</code></pre>
+<p>In Anki, queste informazioni correlate vengono chiamate &quot;nota&quot;,
+e ciascuna informazione è chiamata &quot;campo&quot;.
+In questo caso, il tipo di nota ha tre campi: Francese, Italiano e Pagina.</p>
+<p>Per aggiungere e modificare i campi, clicca sul pulsante &quot;Campi...&quot;
+durante l'aggiunta o la modifica delle note.
+Per ulteriori informazioni sui campi,
+consulta la sezione <a href="editing.html#customizing-fields">Personalizzazione dei campi</a>.</p>
+<h3 id="tipi-di-carta"><a class="header" href="#tipi-di-carta">Tipi di carta</a></h3>
+<p>Per far sì che Anki crei delle carte basate sulle nostre note,
+è necessario fornirgli un modello che indichi quali campi devono
+essere mostrati sul lato anteriore e posteriore di ciascuna carta.
+Questo modello è conosciuto come &quot;tipo di carta&quot;.
+Ciascun tipo di nota può avere uno o più tipi di carta;
+quando aggiungi una nota, Anki creerà una carta per ogni
+tipo di carta associato.</p>
+<p>Ciascun tipo di carta ha due &quot;modelli&quot;, uno per la domanda e uno per
+la risposta. Nell'esempio francese di cui sopra, volevamo che la carta
+di riconoscimento apparisse così:</p>
+<pre><code>D: Bonjour
+R: Buongiorno
+   Pagina #12
+</code></pre>
+<p>Per ottenere questo risultato, possiamo configurare i modelli per
+la domanda e la risposta come segue:</p>
+<pre><code>D: {{Francese}}
+R: {{Italiano}}&lt;br&gt;
+   Pagina #{{Pagina}}
+</code></pre>
+<p>Racchiudendo il nome di un campo tra doppie parentesi graffe,
+diciamo ad Anki di sostituirlo con il valore effettivo del campo.
+Tutto ciò che non è racchiuso tra parentesi graffe rimane invariato.
+Non è necessario digitare &quot;Pagina #&quot; nel campo Pagina
+quando si aggiunge del materiale, in quanto viene aggiunto automaticamente
+a ogni carta. &quot;<br>&quot; è un codice speciale che dice ad Anki
+di andare a capo; per approfondire consulta la sezione <a href="templates/intro.html">modelli</a>.</p>
+<p>I modelli per le carte di produzione funzionano in maniera analoga:</p>
+<pre><code>D: {{Inglese}}
+R: {{Francese}}&lt;br&gt;
+   Pagina #{{Pagina}}
+</code></pre>
+<p>Una volta creato un tipo di carta, quando aggiungi una nuova nota,
+verrà creata una carta basata su quel tipo di carta. I tipi di carta
+consentono di mantenere una formattazione coerente delle carte
+e possono ridurre notevolmente lo sforzo necessario
+per aggiungere informazioni.
+Inoltre, permettono ad Anki di evitare che le carte correlate
+appaiano troppo vicine tra loro e ti permettono di correggere un errore
+di battitura o un errore fattuale una sola volta e di aggiornare
+tutte le carte correlate contemporaneamente.</p>
+<p>Per aggiungere e modificare i tipi di carta, clicca sul pulsante &quot;Carte...&quot;
+durante l'aggiunta o la modifica delle note. Per ulteriori informazioni
+sui tipi di carta, consulta la sezione <a href="templates/intro.html">Carte e modelli</a>.</p>
+<h3 id="tipi-di-nota"><a class="header" href="#tipi-di-nota">Tipi di nota</a></h3>
+<p>Anki consente di creare diversi tipi di note per diversi tipi di materiale.
+Ogni tipo di nota ha il proprio set di campi e tipi di carta.
+È consigliabile creare un tipo di nota separato per ciascun argomento
+generale che stai studiando. Nell'esempio francese precedente,
+potremmo creare un tipo di nota chiamato &quot;Francese&quot; e,
+se volessimo imparare le capitali, potremmo creare un tipo di nota separato
+con campi come &quot;Paese&quot; e &quot;Capitale&quot;.</p>
+<p>Quando Anki controlla i duplicati, confronta solo le altre note
+dello stesso tipo. Pertanto, se aggiungi una capitale chiamata &quot;Arancione&quot;
+utilizzando il tipo di nota &quot;Capitale&quot;, non vedrai un messaggio di duplicato
+quando verrà il momento di imparare a dire &quot;Arancione&quot; in francese.</p>
+<p>Quando crei una nuova collezione, Anki aggiunge automaticamente alcuni tipi
+di nota standard. Questi tipi di nota sono forniti
+per facilitarel'utilizzo di Anki per i nuovi utenti, ma nel lungo termine
+è consigliato creare i propri tipi di nota per il contenuto
+che stai imparando. I tipi di nota standard sono:</p>
+<ul>
+<li>
+<p><strong>Basilare</strong><br />
+Contiene i campi Fronte e Retro e crea una carta. Il testo inserito
+in Fronte apparirà sul lato fronte della carta e il testo inserito
+in Retro apparirà sul retro della carta.</p>
+</li>
+<li>
+<p><strong>Basilare (e carta inversa)</strong><br />
+Come Basilare, ma crea due carte per lo stesso testo: una fronte→retro
+e una retro→fronte.</p>
+</li>
+<li>
+<p><strong>Basilare (carta inversa opzionale)</strong><br />
+Si tratta di una carta fronte→retro e, facoltativamente,
+di una carta retro→fronte. Presenta un terzo campo
+chiamato &quot;Aggiungi inversa&quot;. Se inserisci del testo in quel campo,
+verrà creata una carta inversa. Maggiori informazioni sono disponibili
+nella sezione <a href="templates/intro.html">Carte e modelli</a>.</p>
+</li>
+<li>
+<p><strong>Basilare (digita la risposta)</strong><br />
+Simile a Basilare, ma con una casella di testo aggiuntiva sul lato fronte
+in cui puoi digitare la risposta. Quando mostri il retro della carta,
+il tuo input verrà controllato e confrontato con la risposta.
+Maggiori informazioni sono disponibili
+nella sezione <a href="templates/fields.html#checking-your-answer">Controlla la risposta</a>.</p>
+</li>
+<li>
+<p><strong>Cloze</strong><br />
+Permette di selezionare una parte del testo e trasformarla in una
+cancellazione Cloze (esempio: &quot;L'uomo è sbarcato sulla luna
+nel […​]&quot; → &quot;L'uomo è sbarcato sulla luna nel 1969&quot;).
+Maggiori informazioni sono disponibili nella sezione <a href="editing.html#cloze-deletion">Cancellazione cloze</a>.</p>
+</li>
+<li>
+<p><strong>Occludi Immagine</strong><br />
+Simile al tipo di nota Cloze, ma usa le immagini invece del testo,
+particolarmente utile quando si studia materiale basato su immagini,
+come anatomia, geografia e altro. Per approfondire,
+consulta la sezione <a href="editing.html#image-occlusion">Occlusione immagine</a>. </p>
+</li>
+</ul>
+<p>Per aggiungere nuovi tipi di nota e modificare quelli esistenti,
+vai su Strumenti → Gestisci i tipi di nota dalla schermata principale
+di Anki.</p>
+<p>Note e tipi di nota sono comuni a tutta la tua collezione e non limitati
+a un singolo mazzo. Ciò significa che puoi utilizzare diversi tipi di nota
+in un particolare mazzo o avere diverse carte generate
+da una particolare nota in mazzi diversi. Quando aggiungi una nota
+attraverso la schermata Aggiungi, puoi scegliere
+quale tipo di nota utilizzare e in quale mazzo inserire la nota,
+e queste scelte sono completamente indipendenti l'una dall'altra.
+Puoi anche modificare il tipo di nota di alcune note <a href="browsing.html">dopo averle create</a>.</p>
+<h3 id="collezione"><a class="header" href="#collezione">Collezione</a></h3>
+<p>Una &quot;collezione&quot; è l'insieme del materiale archiviato in Anki: carte,
+note, mazzi, tipi di nota, opzioni del mazzo e così via.</p>
+<h2 id="mazzi-condivisi"><a class="header" href="#mazzi-condivisi">Mazzi condivisi</a></h2>
+<p>Su Youtube puoi trovare
+<a href="http://www.youtube.com/watch?v=QS2G-k2hQyg&amp;yt:cc=on">un video sul concetto di mazzi condivisi e basi sulla ripetizione</a> (inglese).</p>
+<p>Il modo più semplice per iniziare con Anki è quello di scaricare
+un mazzo di carte condiviso da qualcuno:</p>
+<ol>
+<li>
+<p>Clicca sul pulsante &quot;Ottieni mazzi condivisi&quot; in fondo
+alla lista dei mazzi.</p>
+</li>
+<li>
+<p>Trova un mazzo che ti interessa, quindi clicca sul pulsante &quot;Download&quot;
+per scaricare il pacchetto del mazzo.</p>
+</li>
+<li>
+<p>Fai doppio clic sul pacchetto scaricato per caricarlo in Anki, oppure
+vai su File→Importa per importarlo.</p>
+</li>
+</ol>
+<p>Tieni presente che al momento non è possibile aggiungere mazzi condivisi
+direttamente su AnkiWeb. Devi prima importarli usando la versione di Anki
+per computer, quindi sincronizzare per caricarli su AnkiWeb.</p>
+<p>Creare il proprio mazzo è il modo più efficace per imparare
+una materia complessa. Materie come le lingue e le scienze non possono
+essere comprese semplicemente memorizzando dei fatti,
+ma richiedono spiegazioni e contesto per apprenderle in maniera efficace.
+Inoltre, creare carte tu stesso ti costringe a decidere quali sono
+i punti chiave, favorendo così una migliore comprensione.</p>
+<p>Se sei uno studente di lingue, potresti essere tentato di scaricare
+una lunga lista di parole e delle loro traduzioni corrispondenti,
+ma questo non ti insegnerà la lingua tanto quanto memorizzare
+equazioni scientifiche ti insegnerà l'astrofisica.
+Per imparare correttamente, hai bisogno di libri, insegnanti
+o dell'esposizione a frasi del mondo reale.</p>
+<pre><code>Do not learn if you do not understand (non imparare se non capisci).
+--SuperMemo
+</code></pre>
+<p>La maggior parte dei mazzi condivisi sono creati da persone
+che apprendono il materiale al di fuori di Anki – da libri, lezioni, TV, ecc.
+Selezionano gli aspetti interessanti di ciò che imparano e li aggiungono
+ad Anki. Non si sforzano di aggiungere il contesto o spiegazioni alle carte,
+perché già comprendono l'argomento. Di conseguenza, quando qualcun altro
+scarica il loro mazzo e cerca di usarlo, lo troverà molto difficile a causa
+della mancanza di contesto e spiegazioni.</p>
+<p>Questo non significa che i mazzi condivisi siano inutili, ma semplicemente
+che per materie complesse dovrebbero essere utilizzati come &quot;integrazione&quot;
+al materiale esterno, non come &quot;sostituto&quot;. Se stai studiando il libro ABC
+e qualcuno ha condiviso un mazzo di idee di idee provenienti da tale libro,
+questo è un ottimo modo per risparmiare tempo. Per materie semplici
+che sono fondamentalmente una lista di fatti, come i nomi delle capitali
+o i quiz di cultura generale, probabilmente non hai bisogno
+di materiale esterno. Se però provi a studiare argomenti complessi
+senza materiale esterno, otterrai probabilmente risultati deludenti.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="platform/linux/input-methods.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="getting-help.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="platform/linux/input-methods.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="getting-help.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

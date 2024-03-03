@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html lang="it" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Text Files - Manuale di Anki</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../css/misc.css">
+        <link rel="stylesheet" href="../css/kbd.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../intro.html">Introduction</a></li><li class="chapter-item "><a href="../background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item "><a href="../platform/intro.html"><strong aria-hidden="true">2.</strong> Platform Notes</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../platform/windows/installing.html"><strong aria-hidden="true">2.1.</strong> Windows</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../platform/windows/installing.html"><strong aria-hidden="true">2.1.1.</strong> Install & Upgrade</a></li><li class="chapter-item "><a href="../platform/windows/installation-issues.html"><strong aria-hidden="true">2.1.2.</strong> Installation Issues</a></li><li class="chapter-item "><a href="../platform/windows/startup-issues.html"><strong aria-hidden="true">2.1.3.</strong> Startup Issues</a></li><li class="chapter-item "><a href="../platform/windows/display-issues.html"><strong aria-hidden="true">2.1.4.</strong> Display Issues</a></li><li class="chapter-item "><a href="../platform/windows/copy-and-paste.html"><strong aria-hidden="true">2.1.5.</strong> Copy and Paste Issues</a></li><li class="chapter-item "><a href="../platform/windows/text-size.html"><strong aria-hidden="true">2.1.6.</strong> Text Size</a></li><li class="chapter-item "><a href="../platform/windows/permission-problems.html"><strong aria-hidden="true">2.1.7.</strong> Permission Problems</a></li></ol></li><li class="chapter-item "><a href="../platform/mac/installing.html"><strong aria-hidden="true">2.2.</strong> macOS</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../platform/mac/installing.html"><strong aria-hidden="true">2.2.1.</strong> Install & Upgrade</a></li><li class="chapter-item "><a href="../platform/mac/display-issues.html"><strong aria-hidden="true">2.2.2.</strong> Display Issues</a></li></ol></li><li class="chapter-item "><a href="../platform/linux/installing.html"><strong aria-hidden="true">2.3.</strong> Linux</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../platform/linux/installing.html"><strong aria-hidden="true">2.3.1.</strong> Install & Upgrade</a></li><li class="chapter-item "><a href="../platform/linux/missing-libraries.html"><strong aria-hidden="true">2.3.2.</strong> Missing Libraries</a></li><li class="chapter-item "><a href="../platform/linux/display-issues.html"><strong aria-hidden="true">2.3.3.</strong> Display Issues</a></li><li class="chapter-item "><a href="../platform/linux/blank-window.html"><strong aria-hidden="true">2.3.4.</strong> Blank Main Window</a></li><li class="chapter-item "><a href="../platform/linux/distro-packages.html"><strong aria-hidden="true">2.3.5.</strong> Linux Distro Packages</a></li><li class="chapter-item "><a href="../platform/linux/gtk-theme.html"><strong aria-hidden="true">2.3.6.</strong> Incorrect GTK Theme</a></li><li class="chapter-item "><a href="../platform/linux/wayland.html"><strong aria-hidden="true">2.3.7.</strong> Wayland</a></li><li class="chapter-item "><a href="../platform/linux/input-methods.html"><strong aria-hidden="true">2.3.8.</strong> Input Methods</a></li></ol></li></ol></li><li class="chapter-item "><a href="../getting-started.html"><strong aria-hidden="true">3.</strong> Getting Started</a></li><li class="chapter-item "><a href="../getting-help.html"><strong aria-hidden="true">4.</strong> Getting Help</a></li><li class="chapter-item "><a href="../studying.html"><strong aria-hidden="true">5.</strong> Studying</a></li><li class="chapter-item "><a href="../editing.html"><strong aria-hidden="true">6.</strong> Adding/Editing</a></li><li class="chapter-item "><a href="../templates/intro.html"><strong aria-hidden="true">7.</strong> Card Templates</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../templates/fields.html"><strong aria-hidden="true">7.1.</strong> Field Replacements</a></li><li class="chapter-item "><a href="../templates/generation.html"><strong aria-hidden="true">7.2.</strong> Card Generation</a></li><li class="chapter-item "><a href="../templates/styling.html"><strong aria-hidden="true">7.3.</strong> Styling & HTML</a></li><li class="chapter-item "><a href="../templates/errors.html"><strong aria-hidden="true">7.4.</strong> Checks and Errors</a></li></ol></li><li class="chapter-item "><a href="../preferences.html"><strong aria-hidden="true">8.</strong> Preferences</a></li><li class="chapter-item "><a href="../deck-options.html"><strong aria-hidden="true">9.</strong> Deck Options</a></li><li class="chapter-item "><a href="../syncing.html"><strong aria-hidden="true">10.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item "><a href="../profiles.html"><strong aria-hidden="true">11.</strong> Profiles</a></li><li class="chapter-item "><a href="../browsing.html"><strong aria-hidden="true">12.</strong> Browsing</a></li><li class="chapter-item "><a href="../filtered-decks.html"><strong aria-hidden="true">13.</strong> Filtered Decks</a></li><li class="chapter-item "><a href="../searching.html"><strong aria-hidden="true">14.</strong> Searching</a></li><li class="chapter-item expanded "><a href="../importing/intro.html"><strong aria-hidden="true">15.</strong> Importing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../importing/text-files.html" class="active"><strong aria-hidden="true">15.1.</strong> Text Files</a></li><li class="chapter-item "><a href="../importing/packaged-decks.html"><strong aria-hidden="true">15.2.</strong> Packaged Decks</a></li></ol></li><li class="chapter-item "><a href="../exporting.html"><strong aria-hidden="true">16.</strong> Exporting</a></li><li class="chapter-item "><a href="../backups.html"><strong aria-hidden="true">17.</strong> Backups</a></li><li class="chapter-item "><a href="../files.html"><strong aria-hidden="true">18.</strong> Managing Files</a></li><li class="chapter-item "><a href="../stats.html"><strong aria-hidden="true">19.</strong> Statistics</a></li><li class="chapter-item "><a href="../media.html"><strong aria-hidden="true">20.</strong> Media</a></li><li class="chapter-item "><a href="../math.html"><strong aria-hidden="true">21.</strong> Math & Symbols</a></li><li class="chapter-item "><a href="../leeches.html"><strong aria-hidden="true">22.</strong> Leeches</a></li><li class="chapter-item "><a href="../addons.html"><strong aria-hidden="true">23.</strong> Add-ons</a></li><li class="chapter-item "><a href="../troubleshooting.html"><strong aria-hidden="true">24.</strong> Troubleshooting</a></li><li class="chapter-item "><a href="../sync-server.html"><strong aria-hidden="true">25.</strong> Sync Server</a></li><li class="chapter-item "><a href="../misc.html"><strong aria-hidden="true">26.</strong> Miscellaneous</a></li><li class="chapter-item affix "><a href="../contrib.html">Contributing</a></li><li class="chapter-item affix "><a href="../faqs.html">FAQs</a></li><li class="chapter-item affix "><a href="../resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Manuale di Anki</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/tekinosman/anki-manual-it" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="file-di-testo"><a class="header" href="#file-di-testo">File di testo</a></h1>
+<ul>
+<li><a href="#fogli-di-calcolo-e-utf-8">Fogli di calcolo e UTF-8</a></li>
+<li><a href="#html">HTML</a></li>
+<li><a href="#importazione-di-file-multimediali">Importazione di file multimediali</a></li>
+<li><a href="#importazione-in-massa-di-file-multimediali">Importazione in massa di file multimediali</a></li>
+<li><a href="#aggiunta-di-etichette">Aggiunta di etichette</a></li>
+<li><a href="#duplicati-e-aggiornamento">Duplicati e aggiornamento</a></li>
+<li><a href="#intestazione-dei-file">Intestazione dei file</a>
+<ul>
+<li><a href="#colonna-del-tipo-di-nota">Colonna del tipo di nota</a></li>
+<li><a href="#colonna-del-mazzo">Colonna del mazzo</a></li>
+<li><a href="#colonna-del-guid">Colonna del GUID</a></li>
+</ul>
+</li>
+</ul>
+<p>Anki può importare qualsiasi file di <strong>testo semplice</strong> contenente campi separati da virgole, punti e virgola o tabulazioni, purché siano soddisfatte alcune condizioni.</p>
+<ul>
+<li>
+<p>I file devono essere puramente testuali (miofile.txt). Altri formati come
+miofile.xls, miofile.rtf, miofile.doc devono essere prima salvati prima come
+file di testo semplice. </p>
+</li>
+<li>
+<p>I file devono essere codificati nel formato UTF-8 (vedi sotto).</p>
+</li>
+<li>
+<p>La prima riga definisce anche il carattere di separazione: se Anki trova
+un punto e virgola (;) nella prima riga userà quello, se trova una virgola (,)
+userà quella, ecc.</p>
+</li>
+<li>
+<p>Anki determina il numero di campi nel file analizzando la prima riga <em>non commentata</em>.
+Se alcune delle righe successive contengono un numero inferiore di campi, Anki considera quelli mancanti come vuoti. Se alcune righe contengono campi aggiuntivi, il contenuto extra non viene importato.</p>
+</li>
+</ul>
+<p>I campi del file di testo possono essere mappati a qualsiasi campo delle tue note, incluso il campo delle etichette. Durante l'importazione è possibile scegliere quale campo del file di testo corrisponde ad uno specifico campo della nota.</p>
+<p>Quando importi un file di testo, puoi scegliere in quale mazzo inserire le carte. Tieni presente, però, che se hai abilitato l'opzione di sovrascrittura del mazzo per uno o più dei tuoi modelli, le carte verranno inserite in quel mazzo specifico anziché in quello selezionato durante l'importazione.</p>
+<p>Questo è un esempio di un file valido avente tre campi:</p>
+<pre><code>mela;banana;uva
+del testo;altro testo;ancora più testo
+</code></pre>
+<p>Ci sono due modi per includere righe a capo o il separatore di campo stesso, all'interno dei campi.</p>
+<p><strong>Delimitare il contenuto del campo con le virgolette</strong>:</p>
+<pre><code>ciao;&quot;questa è
+una risposta su due righe&quot;
+due;questo è un campo su una riga
+&quot;questo include ; (punto e virgola)&quot;;un altro campo
+</code></pre>
+<p>Poiché le virgolette delimitano l'inizio e la fine di un campo, se desideri inserirle all'interno del campo stesso, devi sostituire ogni singola virgoletta con due virgolette per &quot;escluderle&quot; dall'interpretazione predefinita, come mostrato nel seguente esempio:</p>
+<pre><code>campo uno;&quot;campo due con &quot;&quot;virgolette doppie&quot;&quot; al suo interno&quot;
+</code></pre>
+<p>Quando utilizzi un programma di fogli di calcolo come LibreOffice per creare il file CSV, questo si occupa automaticamente di codificare correttamente le virgolette.</p>
+<p><strong>Utilizzare il tag HTML &lt;br&gt;</strong>:</p>
+<pre><code>ciao; questa è&lt;br&gt;una risposta su due righe
+due; questa è una riga unica
+</code></pre>
+<p>Per abilitare le interruzioni di riga HTML, devi spuntare la casella &quot;Consenti l'HTML nei campi&quot; nella finestra di dialogo di importazione.</p>
+<p>Le righe multiple correttamente codificate non funzionano correttamente se utilizzi eliminazioni cloze
+su più righe. In questo caso, è necessario usare le interruzioni di riga HTML.</p>
+<p>Puoi anche includere le etichette in un altro campo e selezionarli come campo delle etichette nel dialogo di importazione:</p>
+<pre><code>primo campo;secondo campo;etichette
+</code></pre>
+<p>Questo è un esempio di un file valido, in cui la prima riga è ignorata (#):</p>
+<pre><code># questo è un commento ed è ignorato
+pippo pluto;pluto paperino;paperino quaquo
+campo1;campo2;campo3
+</code></pre>
+<h2 id="fogli-di-calcolo-e-utf-8"><a class="header" href="#fogli-di-calcolo-e-utf-8">Fogli di calcolo e UTF-8</a></h2>
+<p>Se il tuo file contiene caratteri non latini (come gli accenti, il giapponese ecc.), Anki si aspetta che sia salvato con la codifica &quot;UTF-8&quot;. Il modo più semplice per farlo è quello di utilizzare il programma gratuito LibreOffice Calc al posto di Excel per modificare il file, poiché supporta facilmente UTF-8 e, a differenza di Excel, esporta correttamente i contenuti multi-riga. Se invece preferisci continuare a utilizzare Excel, consulta <a href="https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing">questo post del forum</a> (inglese) per maggiori informazioni.</p>
+<p>Per salvare il tuo foglio di calcolo in un file che Anki possa leggere, usando LibreOffice, vai su File&gt; Salva con nome e quindi seleziona CSV come tipo di file. Dopo aver accettato le opzioni predefinite, LibreOffice salverà il file e potrai quindi importarlo in Anki.</p>
+<h2 id="html"><a class="header" href="#html">HTML</a></h2>
+<p>Anki può interpretare il testo importato da file testuali come HTML (il linguaggio usato per le pagine web). Ciò significa che il testo in grassetto, corsivo e altre formattazioni può essere esportato in un file di testo e successivamente reimportato. Se desideri includere la formattazione HTML, puoi spuntare la casella &quot;Consenti HTML nei campi&quot; durante l'importazione. È però consigliato disattivare questa opzione se stai cercando di importare carte che contengono parentesi uncinate (&lt;&gt;) o altra sintassi HTML.</p>
+<p>If you wish to use HTML for formatting your file but also wish to
+include angle brackets or ampersands, you may use the following replacements:</p>
+<p>Se vuoi utilizzare l'HTML per formattare il tuo file, ma devi anche includere le parentesi uncinate, puoi usare le seguenti sostituzioni:</p>
+<div class="table-wrapper"><table><thead><tr><th>Carattere</th><th>Sostituzione</th></tr></thead><tbody>
+<tr><td>&lt;</td><td><code>&amp;lt;</code></td></tr>
+<tr><td>&gt;</td><td><code>&amp;gt;</code></td></tr>
+<tr><td>&amp;</td><td><code>&amp;amp;</code></td></tr>
+</tbody></table>
+</div>
+<h2 id="importazione-di-file-multimediali"><a class="header" href="#importazione-di-file-multimediali">Importazione di file multimediali</a></h2>
+<p>Se vuoi includere audio e immagini durante l'importazione da un file di testo, devi copiare i file nella <a href="../files.html">cartella collection.media</a>. <strong>Non creare sottocartelle all'interno della cartella &quot;media&quot;, poiché potrebbe causare malfunzionamenti.</strong></p>
+<p>Dopo aver copiato i file, modifica uno dei campi nel tuo file di testo come segue:</p>
+<pre><code>&lt;img src=&quot;miaimmagine.jpg&quot;&gt;
+</code></pre>
+<p>oppure</p>
+<pre><code>[sound:mioaudio.mp3]
+</code></pre>
+<p>Alternativamente, puoi utilizzare la funzionalità <a href="../browsing.html">Trova e sostituisci</a> nella schermata &quot;Sfoglia&quot; per aggiornare tutti i campi contemporaneamente. Se ciascun campo contiene testo come &quot;mioaudio&quot; e vuoi che riproduca un suono, puoi cercare (.*) e sostituirlo con &quot;[sound:\1.mp3]&quot;, avendo l'accortezza di abilitare l'opzione 'Considera l'immissione come espressione regolare'.</p>
+<p>When importing a text file with these references, you must make sure to
+enable the &quot;Allow HTML&quot; option.</p>
+<p>Quando importi un file testuale con tali riferimenti, assicurati di abilitare l'opzione &quot;Consenti HTML&quot;.</p>
+<p>You might be tempted to do this in a template, like:</p>
+<p>Potresti essere tentato di fare ciò in un modello, come per esempio:</p>
+<pre><code>&lt;img src=&quot;{{nome del campo}}&quot;&gt;
+</code></pre>
+<p>Tuttavia Anki non lo supporta per due motivi: la ricerca dei media è dispendiosa, in quanto ogni singola carta deve essere elaborata, e tale funzionalità non è ovvia per gli utenti dei mazzi condivisi. Utilizza invece la tecnica del &quot;Trova e sostituisci&quot;.</p>
+<h2 id="importazione-in-massa-di-file-multimediali"><a class="header" href="#importazione-in-massa-di-file-multimediali">Importazione in massa di file multimediali</a></h2>
+<p>Un'altra opzione per importare grandi quantità di file multimediali in una volta sola è quella di usare l'<a href="https://ankiweb.net/shared/info/1531997860">add-on per l'importazione dei file multimediali</a>. Questo add-on crea automaticamente delle note per tutti i file presenti in una cartella selezionata, con i nomi dei file sul fronte (senza l'estensione del file, per cui se hai un file chiamato &quot;mela.jpg&quot;, il fronte riporterà la dicitura &quot;mela&quot;) e le immagini o l'audio sul retro. Se desideri una disposizione diversa dei file multimediali e dei nomi dei file, puoi successivamente <a href="../browsing.html">cambiare il tipo di nota</a> delle carte create.</p>
+<h2 id="aggiunta-di-etichette"><a class="header" href="#aggiunta-di-etichette">Aggiunta di etichette</a></h2>
+<p>Se vuoi aggiungere le etichette &quot;etichetta1&quot; ed &quot;etichetta2&quot; a ogni riga che importi, inserisci quanto segue all'inizio del file testuale:</p>
+<pre><code>tags:etichetta1 etichetta2
+</code></pre>
+<h2 id="duplicati-e-aggiornamento"><a class="header" href="#duplicati-e-aggiornamento">Duplicati e aggiornamento</a></h2>
+<p>Durante l'importazione di file di testo, Anki utilizza il primo campo per determinare
+se una nota è unica. Per impostazione predefinita, se il file da importare contiene un primo campo
+che corrisponde a una delle note già presenti nella tua collezione e la nota esistente
+è dello stesso tipo di quella che stai importando, tutti gli altri campi della nota esistente
+vengono aggiornati in base al contenuto del file importato. Un menù a tendina
+nella schermata di importazione ti consente di modificare questo comportamento, dandoti la possibilità di
+ignorare completamente i duplicati o di importarli come nuove note
+invece di aggiornare quelle esistenti.</p>
+<p>L'opzione &quot;Ambito di corrispondenza&quot; determina come vengono identificati i duplicati. Quando è impostata al valore &quot;Tipo di nota&quot;, Anki identifica un duplicato se un'altra nota dello stesso tipo ha lo stesso primo campo. Quando invece è impostata al valore &quot;Tipo di nota e mazzo&quot;, un duplicato viene segnalato soltanto se la nota esistente si trova anche nel mazzo in cui la stai importando.</p>
+<p>Se hai abilitato l'aggiornamento e nella collezione sono già presenti versioni precedenti delle note che stai importando, queste vengono aggiornate nella loro posizione originale (nei loro mazzi attuali) anziché essere spostate nel mazzo impostato nella finestra di dialogo di importazione. Qualora le note vengano aggiornate in loco, le informazioni di pianificazione relative a tutte le loro carte vengono preservate.</p>
+<p>Per informazioni su come vengono gestiti i duplicati nei file .apkg, consulta la sezione <a href="../exporting.html#packaged-decks">Pacchetti di mazzi</a>.</p>
+<h2 id="intestazione-dei-file"><a class="header" href="#intestazione-dei-file">Intestazione dei file</a></h2>
+<p>Anki 2.1.54 e versioni successive supportano alcune intestazioni che possono essere incluse nel file di testo per
+rendere l'importazione più potente o conveniente. Queste intestazioni consistono in coppie <code>#chiave:valore</code>
+e devono essere elencate in righe separate in cima al file, sebbene la <a href="#aggiunta-di-etichette">riga delle etichette</a> possa precederle. Poiché le righe di intestazione iniziano con il carattere di commento <code>#</code>, i client Anki precedenti le ignorano.</p>
+<p>Per poter utilizzare questa funzionalità nella versione 2.1.54, è necessario abilitare la nuova opzione di importazione nella schermata delle preferenze. Nella versione 2.1.55, il nuovo percorso di importazione è quello predefinito.</p>
+<div class="table-wrapper"><table><thead><tr><th>Chiave</th><th>Valori consentiti</th><th>Comportamento</th></tr></thead><tbody>
+<tr><td><code>separator</code></td><td><code>Comma</code>, <code>Semicolon</code>, <code>Tab</code>, <code>Space</code>, <code>Pipe</code>, <code>Colon</code>, o i rispettivi caratteri letterali</td><td>Determina il separatore di campo.</td></tr>
+<tr><td><code>html</code></td><td><code>true</code>, <code>false</code></td><td>Determina se il file è trattato come HTML.</td></tr>
+<tr><td><code>tags</code></td><td>Elenco di etichette, separata da spazi</td><td>Identico alla <a href="#aggiunta-di-etichette">vecchia sintassi</a>.</td></tr>
+<tr><td><code>columns</code></td><td>Elenco di nomi, separati dal separatore precedentemente impostato</td><td>Determina il numero di colonne e mostra i nomi a loro assegnati durante l'importazione.</td></tr>
+<tr><td><code>notetype</code></td><td>Nome o id del tipo di nota</td><td>Preimposta il tipo di nota, se esiste.</td></tr>
+<tr><td><code>deck</code></td><td>Nome o id del mazzo</td><td>Preimposta il mazzo, se esiste.</td></tr>
+<tr><td><code>notetype column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, ...</td><td>Determina quale colonna contiene il nome o l'id del tipo di nota di ciascuna nota, vedi <a href="#colonna-del-tipo-di-nota">Colonna del tipo di nota</a>.</td></tr>
+<tr><td><code>deck column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, ...</td><td>Determina quale colonna contiene il nome o l'id del mazzo di ciascuna nota, vedi <a href="#colonna-del-mazzo">Colonna del mazzo</a>.</td></tr>
+<tr><td><code>tags column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, ...</td><td>Determina quale colonna contiene le etichette di ciascuna nota.</td></tr>
+<tr><td><code>guid column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, ...</td><td>Determina quale colonna contiene il GUID di ciascuna nota, vedi <a href="#colonna-del-guid">Colonna del GUID</a>.</td></tr>
+</tbody></table>
+</div>
+<p><strong>N.B.</strong>: Ad eccezione dei valori di <em>tags</em>, <em>columns</em>, <em>notetype</em> e <em>deck</em>, tutte le altre coppie chiave:valore devono essere in inglese.</p>
+<p>Alcune intestazioni hanno ulteriori implicazioni.</p>
+<h3 id="colonna-del-tipo-di-nota"><a class="header" href="#colonna-del-tipo-di-nota">Colonna del tipo di nota</a></h3>
+<p>Solitamente, tutte le note provenienti da un file vengono mappate a un singolo tipo di nota, ed è possibile scegliere quale colonna viene mappata a un campo specifico di quel tipo di nota.</p>
+<p>La situazione cambia se è presente una colonna con i nomi o gli id dei tipi di nota. In tal caso, è possibile importare note con tipi di nota diversi, i cui campi saranno mappati implicitamente: la prima colonna normale viene utilizzata per il primo campo di qualsiasi nota, indipendentemente dal suo tipo di nota, la seconda colonna normale per il secondo campo, e così via. Una &quot;colonna normale&quot; è una colonna che non contiene informazioni speciali come mazzi, etichette, tipi di nota o GUID.</p>
+<h3 id="colonna-del-mazzo"><a class="header" href="#colonna-del-mazzo">Colonna del mazzo</a></h3>
+<p>In genere, tutte le nuove carte create a seguito dell'importazione di un file testuale vengono inserite in un singolo mazzo a propria scelta ma, se il file contiene una colonna dedicata al mazzo, le nuove carte di una nota vengono inserite nel mazzo specificato. Se il mazzo non esiste, viene creato un nuovo mazzo con il nome specificato.</p>
+<h3 id="colonna-del-guid"><a class="header" href="#colonna-del-guid">Colonna del GUID</a></h3>
+<p>GUID sta per <em>Globally Unique Identifier</em> (Identificatore Univoco Globale). Quando crei delle note in Anki, il programma assegna a ciascuna nota un ID univoco, che può essere utilizzato per la verifica dei duplicati. Se esporti le tue note includendo il GUID, puoi apportare modifiche alle note e, purché non modifichi il campo GUID, puoi reimportarle per aggiornare le note esistenti.</p>
+<p>Tieni presente che il GUID è destinato ad essere creato da Anki. Se stai creando ID personalizzati, come MIANOTA0001, è consigliato inserirli nel primo campo, anziché assegnarli al GUID interno di Anki. Durante l'importazione, Anki può utilizzare anche il primo campo per la verifica dei duplicati, quindi non è necessario che gli ID siano dei GUID per poter aggiornare le tue note.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../importing/intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../importing/packaged-decks.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../importing/intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../importing/packaged-decks.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
