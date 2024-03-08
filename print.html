@@ -739,165 +739,133 @@ remove that file.</p>
 <p>If you experience blank screens when using an external graphics card on a Mac, you can ctrl+click on the Anki app, click &quot;Get Info&quot;, and enable the &quot;prefer eGPU&quot; option.</p>
 <h2 id="monitors-with-different-resolutions"><a class="header" href="#monitors-with-different-resolutions">Monitors with different resolutions</a></h2>
 <p>Please see <a href="https://forums.ankiweb.net/t/mac-known-issues-wording-suggestion/7331">this forum post</a>.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="installing--upgrading-anki-on-linux"><a class="header" href="#installing--upgrading-anki-on-linux">Installing &amp; Upgrading Anki on Linux</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="installazione-e-aggiornamento-di-anki-su-linux"><a class="header" href="#installazione-e-aggiornamento-di-anki-su-linux">Installazione e aggiornamento di Anki su Linux</a></h1>
 <ul>
-<li><a href="platform/linux/installing.html#requirements">Requirements</a></li>
-<li><a href="platform/linux/installing.html#installing">Installing</a></li>
+<li><a href="platform/linux/installing.html#requisiti">Requisiti</a></li>
+<li><a href="platform/linux/installing.html#installazione">Installazione</a></li>
 <li><a href="platform/linux/installing.html#qt5-vs-qt6">Qt5 vs. Qt6</a></li>
-<li><a href="platform/linux/installing.html#upgrading">Upgrading</a></li>
-<li><a href="platform/linux/installing.html#add-on-compatibility">Add-on Compatibility</a></li>
-<li><a href="platform/linux/installing.html#problems">Problems</a></li>
+<li><a href="platform/linux/installing.html#aggiornamento">Aggiornamento</a></li>
+<li><a href="platform/linux/installing.html#compatibilit%C3%A0-degli-add-on">Compatibilità degli add-on</a></li>
+<li><a href="platform/linux/installing.html#problemi">Problemi</a></li>
 </ul>
-<h2 id="requirements-2"><a class="header" href="#requirements-2">Requirements</a></h2>
-<p>The packaged version requires a recent 64 bit Intel/AMD Linux with glibc, and common
-libraries like libwayland-client and systemd. If you are on a different
-architecture (e.g ARM/AArch64), or a barebones Linux distro, you will not be able to use the
-packaged version, but you may be able to use the <a href="https://betas.ankiweb.net/#via-pypipip">Python wheels</a>
-instead.</p>
-<p>Debian and derivatives, such as Ubuntu and <a href="https://support.google.com/chromebook/answer/9145439?">Chromebooks with Linux enabled</a>, please use the following before
-installing:</p>
+<h2 id="requisiti-2"><a class="header" href="#requisiti-2">Requisiti</a></h2>
+<p>Il pacchetto di Anki richiede un sistema Linux a 64 bit recente con processore Intel/AMD, glibc e librerie comuni come libwayland-client e systemd. Se utilizzi un'architettura diversa (ad esempio ARM/AArch64) o una distribuzione Linux minimale, non potrai utilizzare il pacchetto, ma potresti provare con i <a href="https://betas.ankiweb.net/#via-pypipip">wheel di Python</a>.</p>
+<p>Se utilizzi Debian o una distribuzione derivata, come Ubuntu e <a href="https://support.google.com/chromebook/answer/9145439?hl=it">Chromebook con Linux abilitato</a>, esegui il seguente comando prima dell'installazione:</p>
 <pre><code class="language-shell">sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3
 </code></pre>
-<p>If Anki fails to start after installing, you may be <a href="platform/linux/./missing-libraries.html">missing other libraries</a>.</p>
-<p>If you're on Ubuntu 24.04, please see <a href="https://forums.ankiweb.net/t/issues-running-on-ubuntu-24-04/40974">this thread</a>.</p>
-<p>Anki's build system only supports glibc, so musl-based distros are not currently supported.</p>
-<h2 id="installing-2"><a class="header" href="#installing-2">Installing</a></h2>
-<p>To install Anki:</p>
+<p>Nel caso in cui Anki non si avvii dopo l'installazione, potrebbero esserci delle <a href="platform/linux/./missing-libraries.html">librerie mancanti</a>.</p>
+<p>Se utilizzi la versione 24.04 di Ubuntu, vedi <a href="https://forums.ankiweb.net/t/issues-running-on-ubuntu-24-04/40974">questa discussione</a> (inglese).</p>
+<p>Il sistema di build di Anki supporta solo glibc, pertanto le distribuzioni basate su musl non sono attualmente supportate.</p>
+<h2 id="installazione-2"><a class="header" href="#installazione-2">Installazione</a></h2>
+<p>Per installare Anki:</p>
 <ol>
-<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a> to your Downloads folder. See the next section
-for how to choose between -qt5 and -qt6.</li>
-<li>If zstd is not already installed on your system, you'll need to install it (e.g <code>sudo apt install zstd</code>).</li>
-<li>Open a terminal and run the following commands, replacing the filename as appropriate.</li>
+<li>Scarica il file di installazione da <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a> e salvalo nella cartella Download. La sezione successiva spiega come scegliere tra le versioni -qt5 e -qt6.</li>
+<li>Verifica se zstd è installato sul tuo sistema, altrimenti provvedi alla sua installazione (ad esempio con <code>sudo apt install zstd</code>).</li>
+<li>Apri il terminale ed esegui i seguenti comandi, sostituendo il nome del file con quello della versione scaricata.</li>
 </ol>
 <pre><code class="language-shell">tar xaf Downloads/anki-2XXX-linux-qt6.tar.zst
 cd anki-2XXX-linux-qt6
 sudo ./install.sh
 </code></pre>
-<p>On some Linux systems, you may need to use <code>tar xaf --use-compress-program=unzstd</code>.</p>
+<p>Su alcuni sistemi Linux potrebbe essere necessario utilizzare il comando <code>tar xaf --use-compress-program=unzstd</code>.</p>
 <ol start="4">
-<li>You can then start Anki by typing 'anki' and hitting enter. If you encounter
-any issues, please see the links on the left.</li>
+<li>Al termine dell'installazione, avvia Anki digitando &quot;anki&quot; a premendo invio. Se dovessi riscontrare problemi, consulta i link a sinistra.</li>
 </ol>
 <h2 id="qt5-vs-qt6-4"><a class="header" href="#qt5-vs-qt6-4">Qt5 vs. Qt6</a></h2>
-<p>Recent Anki versions come in separate Qt5 and Qt6 variants. The Qt6 version
-is recommended for most users.</p>
-<p>Advantages of the Qt6 version:</p>
+<p>Le versioni recenti di Anki sono disponibili in due varianti separate: Qt5 e Qt6.
+La versione Qt6 è quella consigliata per la maggior parte degli utenti.</p>
+<p>Vantaggi della versione Qt6:</p>
 <ul>
-<li>Compatibility with recent glibc versions (fixes <a href="platform/linux/./blank-window.html">blank screens on recent distros</a>).</li>
-<li>Better HiDPI support.</li>
-<li>Better Wayland support.</li>
-<li>Various bugfixes, including things like better support for less common languages.</li>
-<li>Security updates. Support for the Qt5 library was discontinued in Nov 2020,
-meaning that any security flaws discovered since then will remain unfixed.</li>
+<li>Correzione di diversi bug, incluso un miglior supporto per le lingue meno diffuse.</li>
+<li>Compatibilità con le versioni recenti di glibc (risolve il <a href="platform/linux/./blank-window.html">problema della schermata bianca sulle distribuzioni più recenti</a>).</li>
+<li>Miglior supporto per l'HiDPI.</li>
+<li>Aggiornamenti di sicurezza. Il supporto per la libreria Qt5 è stato interrotto a novembre del 2020, il che significa che eventuali falle di sicurezza scoperte da allora non saranno risolte.</li>
+<li>Miglior supporto per Wayland.</li>
 </ul>
-<p>Disadvantages of the Qt6 version include:</p>
+<p>Svantaggi della versione Qt6:</p>
 <ul>
-<li>Some add-ons currently only work with the Qt5 version.</li>
+<li>Alcuni add-on al momento funzionano solo con la versione Qt5.</li>
 </ul>
-<h2 id="upgrading-2"><a class="header" href="#upgrading-2">Upgrading</a></h2>
-<p>If you were running Anki from a .deb/.rpm/etc in the past, please make
-sure to remove the system version before installing the package
-provided here.</p>
-<p>If you're upgrading from a previous package, simply repeat the
-installation steps to upgrade to the latest version. Your user data
-will be preserved.</p>
-<p>If you wish to downgrade to a previous version, please make sure you
-<a href="http://changes.ankiweb.net">downgrade first</a>.</p>
-<h2 id="add-on-compatibility-2"><a class="header" href="#add-on-compatibility-2">Add-on Compatibility</a></h2>
-<p>Some add-ons may not always work with the latest Anki release. If you upgrade to
-the latest Anki version and find an add-on you cannot live without stops working,
-you can download older Anki versions from the <a href="https://github.com/ankitects/anki/releases">releases page</a>.</p>
-<h2 id="problems-2"><a class="header" href="#problems-2">Problems</a></h2>
-<p>If you encounter any issues when installing or starting Anki, please see the
-following pages:</p>
+<h2 id="aggiornamento-2"><a class="header" href="#aggiornamento-2">Aggiornamento</a></h2>
+<p>Se in precedenza utilizzavi una versione di Anki installata tramite un pacchetto .deb/.rpm/ecc., assicurati di rimuovere la versione di sistema prima di procedere con l'installazione del pacchetto fornito qui.</p>
+<p>Se invece stai effettuando l'aggiornamento da un pacchetto installato in precedenza, ripeti semplicemente i passaggi di installazione per ottenere la versione più recente. I tuoi dati utente verranno preservati.</p>
+<p>Qualora tu desideri effettuare il downgrade ad una versione precedente, assicurati prima di <a href="http://changes.ankiweb.net">effettuare il downgrade</a></p>
+<h2 id="compatibilità-degli-add-on-2"><a class="header" href="#compatibilità-degli-add-on-2">Compatibilità degli add-on</a></h2>
+<p>Alcuni add-on potrebbero non funzionare con la versione più recente di Anki. Se hai effettuato l'aggiornamento all'ultima versione di Anki e scopri che un componente aggiuntivo indispensabile non funziona più, puoi scaricare una delle versioni precedenti di Anki dalla <a href="https://github.com/ankitects/anki/releases">pagina delle release</a>.</p>
+<h2 id="problemi-2"><a class="header" href="#problemi-2">Problemi</a></h2>
+<p>Se riscontri problemi durante l'installazione o l'avvio di Anki, consulta le seguenti pagine:</p>
 <ul>
-<li><a href="https://docs.ankiweb.net/platform/linux/missing-libraries.html">Missing Libraries</a></li>
-<li><a href="https://docs.ankiweb.net/platform/linux/display-issues.html">Display Issues</a></li>
-<li><a href="https://docs.ankiweb.net/platform/linux/blank-window.html">Blank Main Window</a></li>
-<li><a href="https://docs.ankiweb.net/platform/linux/distro-packages.html">Linux Distro Packages</a></li>
-<li><a href="https://docs.ankiweb.net/platform/linux/gtk-theme.html">Incorrect GTK Theme</a></li>
+<li><a href="https://docs.ankiweb.net/platform/linux/missing-libraries.html">Librerie mancanti</a></li>
+<li><a href="https://docs.ankiweb.net/platform/linux/display-issues.html">Problemi grafici</a></li>
+<li><a href="https://docs.ankiweb.net/platform/linux/blank-window.html">Finestra principale bianca</a></li>
+<li><a href="https://docs.ankiweb.net/platform/linux/distro-packages.html">Pacchetti per distribuzioni Linux</a></li>
+<li><a href="https://docs.ankiweb.net/platform/linux/gtk-theme.html">Tema GTK errato</a></li>
 <li><a href="https://docs.ankiweb.net/platform/linux/wayland.html">Wayland</a></li>
-<li><a href="https://docs.ankiweb.net/platform/linux/input-methods.html">Input Methods</a></li>
+<li><a href="https://docs.ankiweb.net/platform/linux/input-methods.html">Metodi di input</a></li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="installing--upgrading-anki-on-linux-1"><a class="header" href="#installing--upgrading-anki-on-linux-1">Installing &amp; Upgrading Anki on Linux</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="installazione-e-aggiornamento-di-anki-su-linux-1"><a class="header" href="#installazione-e-aggiornamento-di-anki-su-linux-1">Installazione e aggiornamento di Anki su Linux</a></h1>
 <ul>
-<li><a href="platform/linux/installing.html#requirements">Requirements</a></li>
-<li><a href="platform/linux/installing.html#installing">Installing</a></li>
+<li><a href="platform/linux/installing.html#requisiti">Requisiti</a></li>
+<li><a href="platform/linux/installing.html#installazione">Installazione</a></li>
 <li><a href="platform/linux/installing.html#qt5-vs-qt6">Qt5 vs. Qt6</a></li>
-<li><a href="platform/linux/installing.html#upgrading">Upgrading</a></li>
-<li><a href="platform/linux/installing.html#add-on-compatibility">Add-on Compatibility</a></li>
-<li><a href="platform/linux/installing.html#problems">Problems</a></li>
+<li><a href="platform/linux/installing.html#aggiornamento">Aggiornamento</a></li>
+<li><a href="platform/linux/installing.html#compatibilit%C3%A0-degli-add-on">Compatibilità degli add-on</a></li>
+<li><a href="platform/linux/installing.html#problemi">Problemi</a></li>
 </ul>
-<h2 id="requirements-3"><a class="header" href="#requirements-3">Requirements</a></h2>
-<p>The packaged version requires a recent 64 bit Intel/AMD Linux with glibc, and common
-libraries like libwayland-client and systemd. If you are on a different
-architecture (e.g ARM/AArch64), or a barebones Linux distro, you will not be able to use the
-packaged version, but you may be able to use the <a href="https://betas.ankiweb.net/#via-pypipip">Python wheels</a>
-instead.</p>
-<p>Debian and derivatives, such as Ubuntu and <a href="https://support.google.com/chromebook/answer/9145439?">Chromebooks with Linux enabled</a>, please use the following before
-installing:</p>
+<h2 id="requisiti-3"><a class="header" href="#requisiti-3">Requisiti</a></h2>
+<p>Il pacchetto di Anki richiede un sistema Linux a 64 bit recente con processore Intel/AMD, glibc e librerie comuni come libwayland-client e systemd. Se utilizzi un'architettura diversa (ad esempio ARM/AArch64) o una distribuzione Linux minimale, non potrai utilizzare il pacchetto, ma potresti provare con i <a href="https://betas.ankiweb.net/#via-pypipip">wheel di Python</a>.</p>
+<p>Se utilizzi Debian o una distribuzione derivata, come Ubuntu e <a href="https://support.google.com/chromebook/answer/9145439?hl=it">Chromebook con Linux abilitato</a>, esegui il seguente comando prima dell'installazione:</p>
 <pre><code class="language-shell">sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3
 </code></pre>
-<p>If Anki fails to start after installing, you may be <a href="platform/linux/./missing-libraries.html">missing other libraries</a>.</p>
-<p>If you're on Ubuntu 24.04, please see <a href="https://forums.ankiweb.net/t/issues-running-on-ubuntu-24-04/40974">this thread</a>.</p>
-<p>Anki's build system only supports glibc, so musl-based distros are not currently supported.</p>
-<h2 id="installing-3"><a class="header" href="#installing-3">Installing</a></h2>
-<p>To install Anki:</p>
+<p>Nel caso in cui Anki non si avvii dopo l'installazione, potrebbero esserci delle <a href="platform/linux/./missing-libraries.html">librerie mancanti</a>.</p>
+<p>Se utilizzi la versione 24.04 di Ubuntu, vedi <a href="https://forums.ankiweb.net/t/issues-running-on-ubuntu-24-04/40974">questa discussione</a> (inglese).</p>
+<p>Il sistema di build di Anki supporta solo glibc, pertanto le distribuzioni basate su musl non sono attualmente supportate.</p>
+<h2 id="installazione-3"><a class="header" href="#installazione-3">Installazione</a></h2>
+<p>Per installare Anki:</p>
 <ol>
-<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a> to your Downloads folder. See the next section
-for how to choose between -qt5 and -qt6.</li>
-<li>If zstd is not already installed on your system, you'll need to install it (e.g <code>sudo apt install zstd</code>).</li>
-<li>Open a terminal and run the following commands, replacing the filename as appropriate.</li>
+<li>Scarica il file di installazione da <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a> e salvalo nella cartella Download. La sezione successiva spiega come scegliere tra le versioni -qt5 e -qt6.</li>
+<li>Verifica se zstd è installato sul tuo sistema, altrimenti provvedi alla sua installazione (ad esempio con <code>sudo apt install zstd</code>).</li>
+<li>Apri il terminale ed esegui i seguenti comandi, sostituendo il nome del file con quello della versione scaricata.</li>
 </ol>
 <pre><code class="language-shell">tar xaf Downloads/anki-2XXX-linux-qt6.tar.zst
 cd anki-2XXX-linux-qt6
 sudo ./install.sh
 </code></pre>
-<p>On some Linux systems, you may need to use <code>tar xaf --use-compress-program=unzstd</code>.</p>
+<p>Su alcuni sistemi Linux potrebbe essere necessario utilizzare il comando <code>tar xaf --use-compress-program=unzstd</code>.</p>
 <ol start="4">
-<li>You can then start Anki by typing 'anki' and hitting enter. If you encounter
-any issues, please see the links on the left.</li>
+<li>Al termine dell'installazione, avvia Anki digitando &quot;anki&quot; a premendo invio. Se dovessi riscontrare problemi, consulta i link a sinistra.</li>
 </ol>
 <h2 id="qt5-vs-qt6-5"><a class="header" href="#qt5-vs-qt6-5">Qt5 vs. Qt6</a></h2>
-<p>Recent Anki versions come in separate Qt5 and Qt6 variants. The Qt6 version
-is recommended for most users.</p>
-<p>Advantages of the Qt6 version:</p>
+<p>Le versioni recenti di Anki sono disponibili in due varianti separate: Qt5 e Qt6.
+La versione Qt6 è quella consigliata per la maggior parte degli utenti.</p>
+<p>Vantaggi della versione Qt6:</p>
 <ul>
-<li>Compatibility with recent glibc versions (fixes <a href="platform/linux/./blank-window.html">blank screens on recent distros</a>).</li>
-<li>Better HiDPI support.</li>
-<li>Better Wayland support.</li>
-<li>Various bugfixes, including things like better support for less common languages.</li>
-<li>Security updates. Support for the Qt5 library was discontinued in Nov 2020,
-meaning that any security flaws discovered since then will remain unfixed.</li>
+<li>Correzione di diversi bug, incluso un miglior supporto per le lingue meno diffuse.</li>
+<li>Compatibilità con le versioni recenti di glibc (risolve il <a href="platform/linux/./blank-window.html">problema della schermata bianca sulle distribuzioni più recenti</a>).</li>
+<li>Miglior supporto per l'HiDPI.</li>
+<li>Aggiornamenti di sicurezza. Il supporto per la libreria Qt5 è stato interrotto a novembre del 2020, il che significa che eventuali falle di sicurezza scoperte da allora non saranno risolte.</li>
+<li>Miglior supporto per Wayland.</li>
 </ul>
-<p>Disadvantages of the Qt6 version include:</p>
+<p>Svantaggi della versione Qt6:</p>
 <ul>
-<li>Some add-ons currently only work with the Qt5 version.</li>
+<li>Alcuni add-on al momento funzionano solo con la versione Qt5.</li>
 </ul>
-<h2 id="upgrading-3"><a class="header" href="#upgrading-3">Upgrading</a></h2>
-<p>If you were running Anki from a .deb/.rpm/etc in the past, please make
-sure to remove the system version before installing the package
-provided here.</p>
-<p>If you're upgrading from a previous package, simply repeat the
-installation steps to upgrade to the latest version. Your user data
-will be preserved.</p>
-<p>If you wish to downgrade to a previous version, please make sure you
-<a href="http://changes.ankiweb.net">downgrade first</a>.</p>
-<h2 id="add-on-compatibility-3"><a class="header" href="#add-on-compatibility-3">Add-on Compatibility</a></h2>
-<p>Some add-ons may not always work with the latest Anki release. If you upgrade to
-the latest Anki version and find an add-on you cannot live without stops working,
-you can download older Anki versions from the <a href="https://github.com/ankitects/anki/releases">releases page</a>.</p>
-<h2 id="problems-3"><a class="header" href="#problems-3">Problems</a></h2>
-<p>If you encounter any issues when installing or starting Anki, please see the
-following pages:</p>
+<h2 id="aggiornamento-3"><a class="header" href="#aggiornamento-3">Aggiornamento</a></h2>
+<p>Se in precedenza utilizzavi una versione di Anki installata tramite un pacchetto .deb/.rpm/ecc., assicurati di rimuovere la versione di sistema prima di procedere con l'installazione del pacchetto fornito qui.</p>
+<p>Se invece stai effettuando l'aggiornamento da un pacchetto installato in precedenza, ripeti semplicemente i passaggi di installazione per ottenere la versione più recente. I tuoi dati utente verranno preservati.</p>
+<p>Qualora tu desideri effettuare il downgrade ad una versione precedente, assicurati prima di <a href="http://changes.ankiweb.net">effettuare il downgrade</a></p>
+<h2 id="compatibilità-degli-add-on-3"><a class="header" href="#compatibilità-degli-add-on-3">Compatibilità degli add-on</a></h2>
+<p>Alcuni add-on potrebbero non funzionare con la versione più recente di Anki. Se hai effettuato l'aggiornamento all'ultima versione di Anki e scopri che un componente aggiuntivo indispensabile non funziona più, puoi scaricare una delle versioni precedenti di Anki dalla <a href="https://github.com/ankitects/anki/releases">pagina delle release</a>.</p>
+<h2 id="problemi-3"><a class="header" href="#problemi-3">Problemi</a></h2>
+<p>Se riscontri problemi durante l'installazione o l'avvio di Anki, consulta le seguenti pagine:</p>
 <ul>
-<li><a href="https://docs.ankiweb.net/platform/linux/missing-libraries.html">Missing Libraries</a></li>
-<li><a href="https://docs.ankiweb.net/platform/linux/display-issues.html">Display Issues</a></li>
-<li><a href="https://docs.ankiweb.net/platform/linux/blank-window.html">Blank Main Window</a></li>
-<li><a href="https://docs.ankiweb.net/platform/linux/distro-packages.html">Linux Distro Packages</a></li>
-<li><a href="https://docs.ankiweb.net/platform/linux/gtk-theme.html">Incorrect GTK Theme</a></li>
+<li><a href="https://docs.ankiweb.net/platform/linux/missing-libraries.html">Librerie mancanti</a></li>
+<li><a href="https://docs.ankiweb.net/platform/linux/display-issues.html">Problemi grafici</a></li>
+<li><a href="https://docs.ankiweb.net/platform/linux/blank-window.html">Finestra principale bianca</a></li>
+<li><a href="https://docs.ankiweb.net/platform/linux/distro-packages.html">Pacchetti per distribuzioni Linux</a></li>
+<li><a href="https://docs.ankiweb.net/platform/linux/gtk-theme.html">Tema GTK errato</a></li>
 <li><a href="https://docs.ankiweb.net/platform/linux/wayland.html">Wayland</a></li>
-<li><a href="https://docs.ankiweb.net/platform/linux/input-methods.html">Input Methods</a></li>
+<li><a href="https://docs.ankiweb.net/platform/linux/input-methods.html">Metodi di input</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="missing-libraries"><a class="header" href="#missing-libraries">Missing Libraries</a></h1>
 <p>If Anki fails to start, please run it from a terminal with <code>anki</code>. If it says a
@@ -4006,7 +3974,7 @@ showing a longer time than <code>Good</code>.</p>
 shows that repeating a card multiple times in a single day after you've
 remembered it does not significantly help with memory, so your time is
 better spent on other cards or a shorter study session</p>
-<h4 id="add-on-compatibility-4"><a class="header" href="#add-on-compatibility-4">Add-On Compatibility</a></h4>
+<h4 id="add-on-compatibility-2"><a class="header" href="#add-on-compatibility-2">Add-On Compatibility</a></h4>
 <p>Some add-ons can cause conflicts with FSRS. As a general rule of thumb,
 if an add-on affects a card's intervals, it shouldn't be used with FSRS.
 A list of commonly used add-ons and their FSRS compatibility can be found in <a href="https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility">Add-on Compatibility</a>.</p>
@@ -5338,7 +5306,7 @@ e devono essere elencate in righe separate in cima al file, sebbene la <a href="
 <h2 id="pianificazione"><a class="header" href="#pianificazione">Pianificazione</a></h2>
 <p>I pacchetti Anki possono contenere anche informazioni sulla pianificazione, utili se desideri trasferire mazzi tra dispositivi o profili. Tuttavia, quando importi un mazzo condiviso da qualcun altro, non è generalmente desiderabile utilizzare i loro intervalli di ripasso o la cronologia delle ripetizioni.</p>
 <p>Se le carte importate hanno intervalli inaspettatamente grandi, l'autore del mazzo potrebbe aver accidentalmente incluso le sue informazioni di pianificazione. È possibile utilizzare la funzione <a href="importing/../browsing.html#cards">Imposta Data di Scadenza</a> per reimpostare le carte importate. Da Anki 23.10 in poi, è possibile rimuovere le informazioni di pianificazione durante il processo di importazione.</p>
-<h2 id="aggiornamento-2"><a class="header" href="#aggiornamento-2">Aggiornamento</a></h2>
+<h2 id="aggiornamento-4"><a class="header" href="#aggiornamento-4">Aggiornamento</a></h2>
 <p>Quando importi un file .apkg, Anki identifica tutte le note in esso presenti che sono già presenti nella tua collezione per via di un'importazione precedente. Se le note nel file sono più recenti della tua copia locale, verrano aggiornate con il contenuto del file per impostazione predefinita.</p>
 <p>Questo processo di aggiornamento non è generalmente possibile se il tipo di nota viene modificato (ad esempio, se tu o l'autore del mazzo avete aggiunto un campo extra al tipo di nota). Tuttavia, puoi comunque importare tutte le note mancanti dal file, ma le note che hai importato in precedenza non verranno aggiornate se l'autore del mazzo ha apportato delle modifiche.</p>
 <h3 id="anki-2310-e-versioni-successive"><a class="header" href="#anki-2310-e-versioni-successive">Anki 23.10 e versioni successive</a></h3>
