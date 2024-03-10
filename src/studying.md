@@ -1,364 +1,199 @@
-# Studying
+# Studio
 
 <!-- toc -->
 
-When you have found a deck you like or entered some notes in, it’s time
-to start studying.
+Una volta che hai trovato un mazzo di tuo gradimento o che hai aggiunto delle note, è giunto il momento di iniziare a studiare.
 
-## Decks
+## Mazzi
 
-Study in Anki is limited to the currently selected deck as well as any
-subdecks it contains.
+Lo studio su Anki è limitato al mazzo attualmente selezionato, compresi eventuali sottomazzi contenuti al suo interno.
 
-On the decks screen, your decks and subdecks will be displayed in a list. [New, Learn and Due (To Review)](getting-started.md#types-of-cards)
-cards for that day will be also displayed here.
+Nella schermata dei mazzi sono presenti mazzi e sottomazzi organizzati in una lista, e sono visualizzate anche le carte [Nuove, In apprendimento e Di ripasso](getting-started.md#tipologie-di-carta) in un determinato giorno.
 
-![Decks screen](media/decks_screen.png)
+![Schermata dei mazzi](media/decks_screen.png)
 
-When you click on a deck, it will become the 'current deck', and Anki
-will change to the study screen. You can return to the deck list to
-change the currently selected deck at any time by clicking on “Decks” at
-the top of the main window. (You can also use the Study
-Deck action in the menu to select a new deck from the keyboard, or you
-can press the <kbd>s</kbd> key to study the currently selected deck.)
+Facendo clic su un mazzo lo si rende il "mazzo attuale" e Anki passa automaticamente alla schermata di studio. Puoi tornare all'elenco dei mazzi in qualsiasi momento per selezionare un altro mazzo, accedendo a "Mazzi" nella parte superiore della finestra principale o, in alternativa, accedere a "Strumenti -> Studia mazzo" per selezionare un nuovo mazzo dalla tastiera oppure premere il tasto <kbd>s</kbd> per studiare il mazzo attualmente selezionato.
 
-You can click the gears button to the right of a deck to rename or
-delete a deck, change its [options](deck-options.md), or [export](exporting.md) it.
+Facendo clic sull'icona a forma di ingranaggio alla destra di un determinato mazzo, puoi decidere di rinominarlo, eliminarlo, modificarne le [opzioni](deck-options.md) o [esportarlo](exporting.md).
 
-## Study Overview
+## Panoramica dello studio
 
-After clicking on a deck to study, you’ll see a screen that shows you
-how many cards are due today. This is called the 'deck overview' screen:
+Facendo clic su un mazzo per studiarlo apparirà una schermata che mostra quante carte sono da studiare per il giorno attuale. Questa schermata è chiamata "panoramica del mazzo":
 
-![Study overview](media/study_overview.png)
+![Panoramica dello studio](media/study_overview.png)
 
-The cards are split into [three types](getting-started.md#types-of-cards): New, Learning, and To Review.
-If you have [Bury siblings](#siblings-and-burying) activated in your deck options, you
-may see how many cards will be buried in grey:
+Le carte sono suddivise in [tre categorie](getting-started.md#tipologie-di-carta): Nuove, In apprendimento e Di ripasso. Se hai attivato l'opzione "Seppellisci carte sorelle" nelle impostazioni del mazzo, il numero delle eventuali carte sepolte verrà mostrato in grigio:
 
-![Study overview (Buried Cards)](media/study_overview_buried_cards.png)
+![Panoramica dello studio (Carte Sepolte)](media/study_overview_buried_cards.png)
 
-To start a study session, click the **Study Now** button. Anki will
-proceed to show you cards until the cards to be shown for the day have
-run out.
+Per iniziare una sessione di studio, fai clic sul pulsante **Studia adesso** e Anki ti mostrerà le carte da ripetere una alla volta, fino all'esaurimento di quelle previste per oggi.
 
-While studying, you can return to the overview by pressing the <kbd>s</kbd> key
-on your keyboard.
+Durante la sessione di studio, puoi tornare alla panoramica premendo il tasto <kbd>s</kbd>.
 
-## Questions
+## Domande
 
-When a card is shown, only the question is shown at first. After
-thinking about the answer, either click the **Show Answer** button, or
-press the spacebar. The answer will then be shown. It’s okay if it takes
-you a little while to recall the answer, but as a general rule if you
-can’t answer within about 10 seconds, it’s probably better to give up
-and show the answer than keep struggling to remember.
+Quando viene mostrata una carta, inizialmente è visibile soltanto la domanda. Dopo aver riflettuto sulla risposta, puoi fare clic sul pulsante **Mostra risposta** o premere la barra spaziatrice. A questo punto ti verrà mostrata la risposta. Non preoccuparti se ci vuole un po' di tempo per ricordare la risposta, ma come regola generale, se non riesci a rispondere entro circa 10 secondi, è probabilmente meglio mostrare la risposta anziché continuare a sforzarti di ricordarla.
 
-When the answer is shown, you should compare the answer you thought of
-with the answer which is shown and tell Anki how well you remembered. If
-you don’t trust yourself to compare your answer accurately, you can ask
-Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
-just showing it to you.
+Una volta mostrata la risposta, puoi confrontarla con quella a cui avevi pensato e comunicare ad Anki quanto bene l'hai ricordata. Se non sei sicuro di poter fare un confronto accurato, puoi far sì che Anki [ti richieda di digitare la risposta](templates/fields.md#checking-your-answer) anziché mostrartela soltanto.
 
-## Learning/Relearning Cards
+## Carte in apprendimento/riapprendimento
 
-When learning new cards, or when relearning cards that you have
-forgotten, Anki will show you the cards one or more times to help you
-memorize them. Each time is called a 'learning step'. By default there
-are two steps: 1 minute and 10 minutes. You can change the number of
-steps and the delays between them in the [deck options](deck-options.md#new-cards).
+Quando apprendi nuove carte o riapprendi quelle dimenticate, Anki mostra le carte una o più volte per aiutarti a memorizzarle. Ciascuna di queste presentazioni è chiamata "passo di apprendimento" e, per impostazione predefinita, sono presenti due passi di apprendimento: 1 minuto e 10 minuti. Puoi modificare il numero di passi e l'intervallo tra di essi nelle [opzioni del mazzo](deck-options.md#new-cards).
 
-There are four rating buttons when learning:
+Durante una sessione di studio sono presenti quattro pulsanti di valutazione:
 
-- **Again** moves the card back to the first step.
+- **Ripeti** fa tornare la carta al primo passo.
 
-- **Hard** repeats the current step.
-  - If the card is on the first (and the only) step, the delay is 50% larger than the step. But, this delay is at most one day larger than the step.
-  - If the card is on the first step and the you have configured more than one step, the delay will be the average of Again and Good, i.e., the average of the first two steps.
-  - If the card is on any subsequent step, Hard repeats the previous delay.
+- **Difficile** ripete il passo attuale.
+  - Se la carta si trova sul primo (e unico) passo, l'intervallo è incrementato del 50%, ma mai superiore ad un giorno, rispetto al passo.
+  - Se la carta si trova sul primo passo e ne hai configurati più di uno, l'intervallo è la media tra Ripeti e Normale, ovvero la media dei primi due passi.
+  - Se la carta si trova su un qualsiasi passo successivo, Difficile ripete l'intervallo precedente.
+ 
+- **Normale** sposta la carta al [passo successivo](deck-options.md#learning-steps). Se la carta si trovava sul passo finale, viene convertita in una "carta di ripasso" (viene "promossa"). Per impostazione predefinita, dopo aver raggiunto il passo di apprendimento finale, la carta viene mostrata nuovamente il giorno successivo e poi a intervalli sempre più lunghi (vedi la sezione successiva).
 
-- **Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
-  step, the card is converted into a review card (it 'graduates'). By
-  default, once the card has reached the end of the learning steps, the
-  card will be shown again the next day, then at increasingly long delays
-  (see the next section).
+- **Facile** converte immediatamente la carta in una carta di ripasso, anche se non sono stati completati tutti i passi. [Per impostazione predefinita](deck-options.md#easy-interval) la carta viene mostrata nuovamente dopo 4 giorni e poi a intervalli sempre più lunghi. Con il pianificatore v1, il pulsante "Facile" non viene mostrato in modalità di riapprendimento poiché avrebbe lo stesso intervallo di "Normale", mentre con il [pianificatore v2+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) (inglese) incrementa l'intervallo di 1 giorno.
 
-- **Easy** immediately converts the card into a review card, even if there
-  were steps remaining. [By default](deck-options.md#easy-interval), the card will be shown again 4 days
-  later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
-  shown if you are in relearning mode as it would give the same interval
-  as “Good.” With the [v2 scheduler+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-  when cards are in relearning, the "Easy" button boosts the interval by 1 day.
+Quando le carte vengono visualizzate per la prima volta, iniziano dal primo passo. Questo significa che rispondere con **Normale** ad una carta per la prima volta la mostrerà ancora una volta entro 10 minuti, saltando il passo iniziale di 1 minuto. Se invece rispondi con **Ripeti**, la carta si ripresenterà dopo 1 minuto.
 
-When cards are seen for the first time, they start at step one. This
-means answering **Good** on a card for the first time will show it one
-more time in 10 minutes, and the initial 1 minute step will be skipped.
-If you push **Again**, though, the card will come back in 1 minute.
+Puoi usare i tasti <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> e <kbd>4</kbd> sulla tastiera per selezionare un 
+pulsante specifico, dove <kbd>1</kbd> corrisponde a **Ripeti**. Premendo la <kbd>Barra spaziatrice</kbd> o <kbd>Invio</kbd> si seleziona il pulsante **Normale**.
 
-You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
-button, where <kbd>1</kbd> is **Again**. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select
-**Good**.
+Se non ci sono altre carte da mostrare, Anki mostrerà nuovamente le carte da ripetere anche se il loro intervallo non è trascorso del tutto. Se preferisci attendere il completamento dell'intervallo puoi modificare tale comportamento accedendo a [Preferenze>Ripetizioni>Limite di studio anticipato](preferences.md).
 
-If there are no other cards to show you, Anki will show learning cards
-again even if their delay has not elapsed completely. If you’d prefer to
-wait the full learning delay, you can change this behaviour in
-[Preferences>Scheduling>Learn Ahead Limit](preferences.md).
+## Carte di ripasso
 
-## Review Cards
+Quando una carta già appresa è pronta per essere ripassata, sono presenti quattro pulsanti che ti permettono di valutare la tua risposta:
 
-When a card has been previously learnt and is ready to be reviewed
-again, there are four buttons to rate your answer:
+- **Ripeti** indica che la tua risposta è errata e fa sì che in futuro la carta venga mostrata più frequentemente. Questo tipo di carta viene considerata una carta "con errore". Consulta la sezione [errori](deck-options.md#lapses) per maggiori informazioni su come viene gestita tale carta.
 
-- **Again** marks your answer as incorrect and asks Anki to show the card
-  more frequently in the future. The card is said to have 'lapsed'. Please
-  see the [lapses](deck-options.md#lapses) section for more information about how lapsed
-  reviews are handled.
+- **Difficile** per impostazione predefinita mostra la carta con un [intervallo leggermente più lungo](deck-options.md#hard-interval)
+  rispetto alla volta precedente e fa sì che in futuro venga mostrata più frequentemente.
 
-- **Hard** by default, shows the card at a [slightly longer delay](deck-options.md#hard-interval)
-  than last time, and tells Anki to show the card more frequently in the future.
+- **Normale** comunica che l'intervallo precedente era corretto e che la facilità della carta non necessita di modifiche. Con la [facilità iniziale predefinita](deck-options.md#starting-ease) la carta verrà mostrata nuovamente circa 2 volte e mezzo più tardi rispetto alla volta precedente, per cui se in precedenza hai atteso 10 giorni per rivedere la carta, il prossimo intervallo sarà di circa 25 giorni.
 
-- **Good** tells Anki that the last delay was about right, and the card
-  easiness doesn’t need to be adjusted down or up. At the [default starting easiness](deck-options.md#starting-ease), the card will be shown again approximately 2 1/2 times longer
-  than the previous time, so if you had waited 10 days to see the card
-  previously, the next delay would be about 25 days.
+- **Facile** comunica che l'intervallo è troppo breve. La carta verrà pianificata [molto più avanti nel futuro rispetto a "Normale"](deck-options.md#easy-bonus) e mostrata meno frequentemente in futuro. Poiché "Facile" aumenta rapidamente l'intervallo, è consigliabile utilizzarlo solo per le carte più facili; in generale dovresti tendere a rispondere "Normale".
 
-- **Easy** tells Anki you found the delay too short. The card will be
-  scheduled [further into the future than 'Good'](deck-options.md#easy-bonus), and Anki will schedule
-  the card less frequently in the future. Because 'Easy' rapidly increases
-  the delay, it’s best used for only the easiest of cards. Usually you
-  should find yourself answering 'Good' instead.
+Come per le carte in apprendimento, puoi utilizzare i tasti <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> e <kbd>4</kbd> sulla tastiera per selezionare una risposta. Premendo la <kbd>Barra spaziatrice</kbd> o <kbd>Invio</kbd> si seleziona il pulsante **Normale**.
 
-As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
-answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select **Good**.
+Per saperne di più sul funzionamento dell'algoritmo, consulta la sezione [Opzioni del mazzo](deck-options.md) e la [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html) (inglese).
 
-See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
-to learn more about how the algorithm works.
+## Conteggi delle carte programmate
 
-## Due Counts
+Quando viene mostrata solo la domanda, nella parte inferiore della schermata sono presenti tre numeri, come ad esempio 6 + 9 + 59. Questi indicano rispettivamente le carte nuove (blu), quelle in apprendimento (arancione) e quelle di ripasso (verde). Se preferisci non vedere questi numeri, puoi disattivarli nelle [preferenze](preferences.md).
 
-When only the question is shown, Anki shows three numbers like 6 + 9 + 59
-at the bottom of the screen. These represent the new cards (blue), cards in
-learning (orange), and cards to review (green). If you’d prefer not to see the numbers,
-you can turn them off in Anki’s [preferences.](preferences.md)
+![Conteggi delle carte programmate](media/due_counts.png)
 
-![Due Counts](media/due_counts.png)
+Con il pianificatore v1, i numeri indicano le _ripetizioni_ necessarie per completare tutte le carte in quella coda e non il numero di _carte_. Se hai configurato più di un passo per le carte "con errori", il numero aumenta di più di uno quando sbagli una ripetizione, poiché tale carta necessita di essere mostrata più volte.
 
-In the v1 scheduler, the numbers count _reviews_ needed to finish all the
-cards in that queue, not the number of _cards_. If you have multiple
-steps configured for lapsed cards, the number will increase by more than
-one when you fail a card, since that card needs to be shown several times.
+A partire dal [pianificatore v2](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) (inglese), invece, i numeri indicano il conteggio delle _carte_, quindi il numero aumenta sempre di uno indipendentemente dai passi rimanenti.
 
-From the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html), the numbers count _cards_, so the number will always
-increase by one regardless of the steps remaining.
+Quando viene mostrata la risposta, sopra ciascun pulsante appare una stima della prossima data di presentazione della carta. Se preferisci non vedere queste stime, puoi disattivarle nelle [preferenze](preferences.md).
 
-When the answer is shown, Anki shows an estimate of the next time a card
-will be shown above each button. If you’d prefer not to see the
-estimates, you can disable them in Anki’s [preferences](preferences.md).
+## Fattore di sfumatura
 
-## Fuzz Factor
+Selezionando un pulsante di facilità su una carta di ripasso, viene applicata una piccola quantità di "sfumatura" casuale. Lo scopo è evitare che le carte aggiunte contemporaneamente e valutate in maniera simile rimangano aggreggate e vengano mostrate nello stesso giorno. Questa sfumatura è visibile sui pulsanti di valutazione quando è abilitato il [pianificatore v3](https://faqs.ankiweb.net/the-2021-scheduler.html) (inglese), per cui se utilizzi una versione precedente e noti una leggera discrepanza tra la tua selezione e gli intervalli effettivi delle carte, la causa è probabilmente questa.
 
-When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
-to prevent cards that were introduced at the same time and given the same ratings
-from sticking together and always coming up for review on the same day. This fuzz
-will appear on the answer buttons when the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) is enabled, so if
-you are using a previous version and you’re noticing a slight discrepancy between
-what you select and the intervals your cards actually get, this is probably the
-cause.
+Anche alle carte in apprendimento viene applicato un intervallo supplementare fino a 5 minuti per evitare che vengano mostrate nello stesso ordine, ma ciò non è visibile sui pulsanti di valutazione. Non è possibile disattivare questa funzionalità.
 
-Learning cards are also given up to 5 minutes of extra delay so that they
-don’t always appear in the same order, but answer buttons won't reflect that. It
-is not possible to turn this feature off.
+## Modifica e altro
 
-## Editing and More
+In basso a sinistra è presente un pulsante chiamato **Modifica** che ti permette di modificare la nota attuale. Una volta terminata la modifica ritorni alla sessione di studio. La schermata di modifica è molto simile a quella di [aggiunta delle note](editing.md).
 
-You can click the **Edit** button in the bottom left to edit the current
-note. When you finish editing, you’ll be returned to study. The editing
-screen works very similarly to the [add notes](editing.md) screen.
+In basso a destra, invece, è presente un pulsante chiamato **Altro**, che permette di effettuare operazioni aggiuntive sulla carta o nota attuale:
 
-At the bottom right of the review screen is a button labeled **More**.
-This button provides some other operations you can do on the current
-card or note:
+- [**Assegna bandiera alla carta**](editing.md#using-flags): Aggiunge un contrassegno colorato (bandiera) alla carta o lo disattiva. Le bandiere appaiono durante lo studio e le carte contrassegnate con una bandiera possono essere ricercate nella schermata Sfoglia. Questa funzionalità è utile quando vuoi intraprendere una qualche azione sulla carta in un secondo momento, come ad esempio la ricerca di una parola una volta tornato a casa. Se utilizzi Anki 2.1.45 o versioni successive, puoi anche rinominare le bandiere dalla [schermata Sfoglia](browsing.md).
 
-- [**Flag Card**](editing.md#using-flags): Adds a colored marker to the card, or toggles it off. Flags will appear during
-  study, and you can search for flagged cards in the Browse screen. This is useful
-  when you want to take some action on the card at a later date, such as looking
-  up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags
-  from the [browser](browsing.md).
+- **Seppellisci carta / nota**: Nasconde una carta o tutte le carte della nota, escludendole dalla ripetizione fino al giorno successivo (se desideri disseppellire le carte prima di allora, puoi fare clic sul pulsante "Disseppellisci" nella schermata [panoramica del mazzo](studying.md#panoramica-dello-studio)). Questa funzionalità è utile se al momento non riesci a rispondere alla carta o se preferisci tornarci in un altro momento. La sepoltura può anche [avvenire automaticamente](studying.md#carte-sorelle-e-sepoltura) per carte della stessa nota.
+  
+  Con il vecchio pianificatore, se le carte erano in fase di apprendimento quando venivano seppellite, le stesse venivano spostate nuovamente nella coda delle nuove carte o nella coda di ripasso prima di essere sepolte.
 
-- **Bury Card / Note**: Hides a card or all of the note’s cards from review until the next day.
-  (If you want to unbury cards before then, you can click the “unbury”
-  button on the [deck overview](studying.md#study-overview) screen.) This is useful if
-  you cannot answer the card at the moment or you want to come back to it
-  another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
-  cards of the same note.
+  Con la [versione 2.1 del pianificatore](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) (inglese) seppellire le carte non reimposta i passi di apprendimento di una carta.
 
-  With the old scheduler, if cards were in learning when they were buried,
-  they were moved back to the new card queue or review queue prior to being
-  buried.
+- **Dimentica carta**: Sposta la carta attuale alla [fine della coda delle carte nuove](browsing.md#cards).
 
-  With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-  however, burying cards does not reset a card's learning steps.
+  A partire da Anki 2.1.50, l'ordine originale di una nuova carta viene memorizzato quando la si studia per la prima volta con il pianificatore v3. L'opzione "Ripristina posizione originale" ti consente di ripristinare la carta alla sua posizione originale quando la dimentichi.
 
-- **Forget card**: Move current card to [the end of the new queue](browsing.md#cards).
+  L'opzione "Azzera conteggio di ripetizioni ed errori", se abilitata, azzera il conteggio delle ripetizioni ed errori della carta, ma non rimuove la cronologia delle ripetizioni mostrata in basso nella schermata delle informazioni sulla carta.
 
-  From Anki 2.1.50+, Anki will remember the original order of a new card when it is first studied
-  with the v3 scheduler. The "Restore original position" option allows you to reset the card back
-  to its original position when you forget it.
+- **Imposta data di scadenza**: Inserisce le carte nella coda di ripasso e [le programma per essere riviste in una data specifica](browsing.md#cards).
 
-  The "Reset repetition and lapse count" option, if enabled, will set the review and failure counters
-  for the card back to zero. It does not remove the review history that is shown at the bottom of the
-  card info screen.
+- **Sospendi carta / nota**: Nasconde una carta o tutte le carte della nota, escludendole dalla ripetizione fino a quando non le rimuovi manualmente  dalla sospensione (facendo clic sul pulsante "sospendi" nella schermata Sfoglia). Utile se vuoi evitare di ripassare la nota per un po' di tempo ma non vuoi eliminarla.
+Con il vecchio pianificatore, se le carte erano in fase di apprendimento quando venivano sospese, le stesse venivano spostate nuovamente nella coda delle nuove carte o nella coda di ripasso prima di essere sospese.
 
-- **Set Due Date**: Put cards in the review queue, and [make them due on a certain date.](browsing.md#cards)
+  Con la [versione 2.1 del pianificatore](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) (inglese) la sospensione delle carte non reimposta i passi di apprendimento di una carta.
 
-- **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
-  manually unsuspended (by clicking the suspend button in the browser).
-  This is useful if you want to avoid reviewing the note for some time,
-  but don’t want to delete it.
-  With the old scheduler, if cards were in learning when they are
-  suspended, they are moved back to the new card queue or review queue
-  prior to being suspended.
+- **Opzioni**: Modifica le [opzioni](deck-options.md) per il mazzo attuale.
 
-  With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-  however, suspending cards does not reset a card's learning steps.
+- **Info carta**: Mostra le [statistiche](stats.md#card-info) sulla carta.
 
-- **Options**: Edit the [options](deck-options.md) for the current deck.
+- **Info carta precedente**: Mostra le [statistiche](stats.md#card-info) sulla carta precedente.
 
-- **Card Info**: Displays [statistical information](stats.md#card-info) about the card.
+- [**Contrassegna nota**](editing.md#the-marked-tag): Aggiunge l'etichetta "marked" (contrassegnato/a) alla nota attuale, permettendoti di trovarla facilmente nella schermata Sfoglia. Questa funzionalità è simile all'assegnazione di bandiere alle singole carte, ma utilizza un'etichetta, per cui se la nota contiene più carte, una ricerca con l'etichetta in questione mostrerà tutte le carte che la possiedono. Per la maggior parte degli utenti è preferibile utilizzare le bandiere.
 
-- **Previous Card Info**: Displays [statistical information](stats.md#card-info) about the previous card.
+- **Crea copia**: Crea e apre un [duplicato](browsing.md#finding-duplicates) della nota attuale nella schermata di modifica, che può quindi essere modificata per creare variazioni di una determinata carta.
+  Per impostazione predefinita, la carta duplicata, o copia, viene creata nello stesso mazzo della nota originale.
 
-- [**Mark Note**](editing.md#the-marked-tag): Adds a “marked” tag to the current note, so it can be easily found in the
-  browser. This is similar to flagging individual cards, but works with a tag
-  instead, so if the note has multiple cards, all cards will appear in a search
-  for the marked tag. Most users will want to use flags instead.
+- **Elimina nota**: Elimina la nota e tutte le sue carte.
 
-- **Create Copy**: Opens a [duplicate](browsing.md#finding-duplicates) of the current
-  note in the editor, which can be slightly modified to easily obtain variations of your cards.
-  By default, the duplicate card will be created in the same deck as the original.
+- **Ripeti audio**: Se la carta contiene una traccia audio sul lato frontale o sul retro, la riproduce nuovamente.
 
-- **Delete Note**: Deletes the note and all of its cards.
+- **Metti audio in pausa**: Mette in pausa l'audio in riproduzione.
 
-- **Replay Audio**: If the card has audio on the front or back, play it again.
+- **Audio -5s / +5s**: Consente di andare indietro o avanti di 5 secondi nell'audio in riproduzione.
 
-- **Pause Audio**: Pauses the audio if it is playing.
+- **Registra voce**: Registra la tua voce con il microfono al fine di controllare la tua pronuncia. La registrazione è temporanea e viene eliminata quando passi alla carta successiva. Se desideri aggiungere una traccia audio a una carta in modo permanente, puoi farlo nella schermata di modifica.
 
-- **Audio -5s / +5s**: Jump backwards / forward 5 seconds in the currently playing audio.
+- **Riproduci voce**: Riproduce la registrazione precedente della tua voce (presumibilmente dopo aver mostrato la risposta).
 
-- **Record Own Voice**: Record from your microphone for the purposes of checking your
-  pronunciation. This recording is temporary and will go away when you
-  move to the next card. If you want to add audio to a card permanently,
-  you can do that in the edit window.
+## Ordine di presentazione
 
-- **Replay Own Voice**: Replay the previous recording of your voice (presumably after showing
-  the answer).
+Durante lo studio vengono presentate le carte del mazzo selezionato e di eventuali sottomazzi in esso contenuti. Pertanto, se selezioni il mazzo "Francese", ti verranno mostrati anche i sottomazzi "Francese::Vocabolario" e "Francese::Il mio libro di testo::Lezione 1".
 
-## Display Order
+Il modo in cui Anki recupera le carte dai mazzi dipende dal pianificatore utilizzato:
 
-Studying will show cards from the selected deck and any decks it
-contains. Thus, if you select your “French” deck, the subdecks
-“French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
-well.
+- Con il pianificatore v1, quando un mazzo contiene dei sottomazzi, le carte vengono recuperate [a turno da ciascun mazzo](studying.md#ordine-di-presentazione).
 
-The way Anki fetches cards from the decks depends on the algorithm used:
+- Con il [pianificatore v2](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) (inglese),
+  quando un mazzo contiene dei sottomazzi, le carte vengono recuperate da tutti i sottomazzi contemporaneamente.
+  Il limite di ripetizione dei sottomazzi viene ignorato; si applica solo il limite del mazzo che hai selezionato.
 
-- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in turn](studying.md#display-order).
+- Con il [pianificatore v3](https://faqs.ankiweb.net/the-2021-scheduler.html) (inglese)
+  viene applicato anche il limite di ciascun sottomazzo e non è necessario che le carte vengano presentate in ordine di mazzo.
+  Consulta la sezione [opzioni del mazzo](deck-options.md#review-sort-order) per maggiori informazioni.
 
-- With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-  when a deck has subdecks, reviews are taken from all children decks
-  at once. The review limit of the child decks is ignored - only the limit of the
-  deck you clicked on applies.
+Per impostazione predefinita, le carte nuove vengono recuperate dai mazzi in ordine alfabetico. Nell'esempio sopracitato, quindi, verrebbero recuperate prima le carte dal mazzo "Francese", poi dal mazzo "Il mio libro di testo", e infine dal mazzo "Vocabolario". Puoi sfruttare questa peculiarità per controllare l’ordine di presentazione delle carte, posizionando quelle ad alta priorità in mazzi che appaiono più in alto nella lista. Quando i computer ordinano il testo in ordine alfabetico, il carattere "-" precede i caratteri alfabetici, e "\~" li segue. Potresti quindi chiamare il mazzo "-Vocabolario" per far sì che le carte in esso contenute appaiano per prime e chiamare l'altro mazzo "\~ Il mio libro di testo" per forzare le carte in esso contenute ad apparire dopo tutto il resto.
 
-- With the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
-  each child deck's limit is also enforced, and you do not need to see the cards
-  in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual for more information.
+Le carte nuove e di ripasso vengono recuperate separatamente, senza aspettare che entrambe le code siano vuote prima di passare al mazzo successivo, per cui è possibile che ti vengano mostrate carte nuove da un mazzo mentre studi le carte di ripasso da un altro mazzo o viceversa. Se non lo desideri, puoi fare clic direttamente sul mazzo che vuoi studiare invece che su uno dei mazzi genitore.
 
-By default, for new cards, Anki fetches cards from the decks in
-alphabetical order. So in the above example, you would get cards first
-from “French”, then “My Textbook”, and finally “Vocab”. You can use this
-to control the order cards appear in, placing high priority cards in
-decks that appear higher in the list. When computers sort text
-alphabetically, the “-” character comes before alphabetical characters,
-and “\~” comes after them. So you could call the deck “-Vocab” to make
-them appear first, and you could call the other deck “\~My Textbook” to
-force it to appear after everything else.
+Poiché le carte in apprendimento hanno una certa urgenza temporale, vengono recuperate da tutti i mazzi contemporaneamente e presentate nell'ordine in cui sono programmate.
 
-New cards and reviews are fetched separately, and Anki won’t wait until
-both queues are empty before moving on to the next deck, so it’s
-possible you’ll be exposed to new cards from one deck while seeing
-reviews from another deck, or vice versa. If you don’t want this, click
-directly on the deck you want to study instead of one of the parent
-decks.
+Per controllare l'ordine di presentazione delle ripetizioni di un determinato mazzo o per cambiare la presentazione delle carte nuove da ordinata a casuale, consulta le [opzioni del mazzo](deck-options.md). Per un ordinamento più preciso delle carte nuove puoi cambiare l'ordine nella schermata [Sfoglia](browsing.md).
 
-Since cards in learning are somewhat time-critical, they are fetched
-from all decks at once and shown in the order they are due.
+## Carte sorelle e sepoltura
 
-To control the order reviews from a given deck appear in, or change new
-cards from ordered to random order, please see the [deck options](deck-options.md). For more fine-grained ordering of new cards, you
-can change the order in the [browser](browsing.md).
+Come ricorderai dalle [basi](getting-started.md), per ogni informazione che aggiungi può venire creata più di una carta, come per esempio una carta fronte→retro e una retro→fronte, oppure due diverse cancellazioni dallo stesso testo.
+Queste carte correlate vengono chiamate "sorelle".
 
-## Siblings and Burying
+Quando rispondi a una carta che ha delle sorelle, puoi impedire che le sue sorelle vengano mostrate nella stessa sessione di studio "seppellendole" automaticamente. Le carte sepolte restano escluse dalla ripetizione fino all'inizio del giorno successivo oppure fino a quando non le disseppellisci manualmente usando il pulsante "Disseppelisci" presente in fondo alla schermata [Panoramica dello studio](studying.md#panoramica-dello-studio). La sepoltura delle sorelle avviene anche se queste non si trovano nello stesso mazzo (ad esempio, se utilizzi la funzionalità [Sovrascrivi mazzo](templates/intro.md)).
 
-Recall from [the basics](getting-started.md) that Anki can create more than one
-card for each thing you input, such as a front→back card and a
-back→front card, or two different cloze deletions from the same text.
-These related cards are called 'siblings'.
+Puoi attivare la sepoltura dalla schermata [Opzioni del mazzo](deck-options.md); sono presenti impostazioni separate per le carte nuove e per quelle di ripasso.
 
-When you answer a card that has siblings, Anki can prevent the card’s
-siblings from being shown in the same session by automatically 'burying'
-them. Buried cards are hidden from review until the clock rolls over to
-a new day or you manually unbury them using the “Unbury” button that’s
-visible at the bottom of the [deck overview](studying.md#study-overview) screen. Anki
-will bury siblings even if the siblings are not in the same deck (for
-instance, if you use the [deck override](templates/intro.md) feature).
+Soltanto le sorelle che sono carte nuove o di ripasso vengono seppellite, mentre le carte in apprendimento non vengono nascoste, poiché per queste il tempo è un fattore critico. D'altra parte, quando studi una carta in apprendimento, eventuali sorelle nuove o di ripasso vengono sepolte.
 
-You can enable burying from the [deck options](deck-options.md) screen -
-there are separate settings for new cards and reviews.
+N.B.: Una carta non può essere sepolta e sospesa contemporaneamente. Sospendere una carta sepolta la disseppellisce. Da Anki 2.1.49 in poi, non è possibile seppellire una carta sospesa, mentre nelle versioni precedenti viene annullata la sospensione.
 
-Anki will only bury siblings that are new or review cards. It will not
-hide cards in learning, as time is of the essence for those cards. On
-the other hand, when you study a learning card, any new/review siblings
-will be buried.
+## Scorciatoie da tastiera
 
-Note: A card cannot be buried and suspended at the same time. Suspending a
-buried card will unbury it. Burying a suspended card does not work on Anki
-2.1.49+, whereas on earlier versions, it will unsuspend the card.
+La maggior parte delle operazioni comuni in Anki è associata a delle scorciatoie da tastiera, spesso individuabili nell'interfaccia: le voci di menù mostrano le scorciatoie accanto al loro nome e posizionando il cursore del mouse su un pulsante, generalmente mostra la relativa scorciatoia in un riquadro.
 
-## Keyboard Shortcuts
+Durante lo studio, sia il tasto <kbd>Barra spaziatrice</kbd> che <kbd>Invio</kbd> mostrano la risposta. Una volta visualizzata la risposta, puoi utilizzare la <kbd>Barra spaziatrice</kbd> o <kbd>Invio</kbd> per selezionare il pulsante "Normale". I tasti da <kbd>1</kbd> a <kbd>4</kbd> permettono di selezionare un pulsante di valutazione specifico. Molti utenti trovano conveniente rispondere alla maggior parte delle carte con la <kbd>Barra spaziatrice</kbd> e tenere un dito su <kbd>1</kbd> per quando si dimenticano.
 
-Most of the common operations in Anki have keyboard shortcuts. Most of
-them are discoverable in the interface: menu items list their shortcuts
-next to them, and hovering the mouse cursor over a button will generally
-show its shortcut in a tooltip.
+La voce "Studia mazzo" nel menù Strumenti consente di passare rapidamente ad un mazzo utilizzando la tastiera e puoi anche attivarla premendo il tasto "/". Una volta aperta, mostra tutti i tuoi mazzi e un filtro nella parte superiore. Man mano che digiti i caratteri, vengono mostrati soltanto i mazzi che contengono i caratteri digitati. Puoi aggiungere uno spazio per separare più termini di ricerca e verranno mostrati soltanto i mazzi che corrispondono a tutti i termini, per cui sia "gia 1" che "one1 gia" corrisponderebbero ad un mazzo chiamato "Giapponese::Lezione1".
 
-When studying, either <kbd>Space</kbd> or <kbd>Enter</kbd> will show the answer. When the
-answer is shown, you can use <kbd>Space</kbd> or <kbd>Enter</kbd> to select the Good button.
-You can use the <kbd>1</kbd>-<kbd>4</kbd> keys to select a specific ease button. Many people
-find it convenient to answer most cards with <kbd>Space</kbd> and keep one finger
-on <kbd>1</kbd> for when they forget.
+## Restare indietro
 
-The "Study Deck" item in the Tools menu allows you to quickly switch to
-a deck with the keyboard. You can trigger it with the '/' key. When
-opened, it will display all of your decks and show a filter area at the
-top. As you type characters, Anki will display only decks matching the
-characters you type. You can add a space to separate multiple search
-terms, and Anki will show only decks that match all the terms. So “ja 1”
-or “on1 ja” would both match a deck called “Japanese::Lesson1”.
+Se resti indietro nelle ripetizioni, viene data priorità alle carte in attesa da più tempo, mostrandole in ordine casuale fino al raggiungimento del limite giornaliero di ripetizioni. Tale ordinamento assicura che nessuna carta venga trascurata a tempo indeterminato, ma implica che se aggiungi nuove carte queste non verranno visualizzate finché non avrai smaltito l'arretrato.
 
-## Falling Behind
+Per modificare l'ordine delle ripetizioni scadute puoi creare un [mazzo filtrato](filtered-decks.md).
 
-If you fall behind in your reviews, Anki will prioritize cards that have
-been waiting the longest. It does this by taking the cards that have
-been waiting the longest and showing them to you in a random order up
-until your daily review limit. This ordering ensures that no cards will
-be left waiting indefinitely, but it means that if you introduce new
-cards, their reviews won’t appear until you’ve gotten through your
-backlog.
-
-If you wish to change the order of the overdue reviews, you can do so by
-creating a [filtered deck](filtered-decks.md).
-
-When you answer cards that have been waiting for a while, Anki factors
-in that delay when determining the next time a card should be shown.
-Please see the section on Anki’s spaced-repetition
-[algorithm](https://faqs.ankiweb.net/due-times-after-a-break.html) for more information.
+Quando rispondi a carte in attesa da molto tempo, il ritardo viene preso in considerazione per determinare il momento successivo in cui mostrare una carta. Per maggiori informazioni, consulta la sezione sull'[algoritmo](https://faqs.ankiweb.net/due-times-after-a-break.html) di ripetizione dilazionata di Anki.
