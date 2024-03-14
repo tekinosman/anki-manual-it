@@ -153,7 +153,7 @@
 <li><a href="#panoramica-dello-studio">Panoramica dello studio</a></li>
 <li><a href="#domande">Domande</a></li>
 <li><a href="#carte-in-apprendimentoriapprendimento">Carte in apprendimento/riapprendimento</a></li>
-<li><a href="#review-cards">Review Cards</a></li>
+<li><a href="#carte-di-ripasso">Carte di ripasso</a></li>
 <li><a href="#due-counts">Due Counts</a></li>
 <li><a href="#fuzz-factor">Fuzz Factor</a></li>
 <li><a href="#editing-and-more">Editing and More</a></li>
@@ -205,38 +205,25 @@
 <p>Puoi usare i tasti <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> e <kbd>4</kbd> sulla tastiera per selezionare un 
 pulsante specifico, dove <kbd>1</kbd> corrisponde a <strong>Ripeti</strong>. Premendo la <kbd>Barra spaziatrice</kbd> o <kbd>Invio</kbd> si seleziona il pulsante <strong>Normale</strong>.</p>
 <p>Se non ci sono altre carte da mostrare, Anki mostrerà nuovamente le carte da ripetere anche se il loro intervallo non è trascorso del tutto. Se preferisci attendere il completamento dell'intervallo puoi modificare tale comportamento accedendo a <a href="preferences.html">Preferenze&gt;Ripetizioni&gt;Limite di studio anticipato</a>.</p>
-<h2 id="review-cards"><a class="header" href="#review-cards">Review Cards</a></h2>
-<p>When a card has been previously learnt and is ready to be reviewed
-again, there are four buttons to rate your answer:</p>
+<h2 id="carte-di-ripasso"><a class="header" href="#carte-di-ripasso">Carte di ripasso</a></h2>
+<p>Quando una carta già appresa è pronta per essere ripassata, sono presenti quattro pulsanti che ti permettono di valutare la tua risposta:</p>
 <ul>
 <li>
-<p><strong>Again</strong> marks your answer as incorrect and asks Anki to show the card
-more frequently in the future. The card is said to have 'lapsed'. Please
-see the <a href="deck-options.html#lapses">lapses</a> section for more information about how lapsed
-reviews are handled.</p>
+<p><strong>Ripeti</strong> indica che la tua risposta è errata e fa sì che in futuro la carta venga mostrata più frequentemente. Questo tipo di carta viene considerata una carta &quot;con errore&quot;. Consulta la sezione <a href="deck-options.html#lapses">errori</a> per maggiori informazioni su come viene gestita tale carta.</p>
 </li>
 <li>
-<p><strong>Hard</strong> by default, shows the card at a <a href="deck-options.html#hard-interval">slightly longer delay</a>
-than last time, and tells Anki to show the card more frequently in the future.</p>
+<p><strong>Difficile</strong> per impostazione predefinita mostra la carta con un <a href="deck-options.html#hard-interval">intervallo leggermente più lungo</a>
+rispetto alla volta precedente e fa sì che in futuro venga mostrata più frequentemente.</p>
 </li>
 <li>
-<p><strong>Good</strong> tells Anki that the last delay was about right, and the card
-easiness doesn’t need to be adjusted down or up. At the <a href="deck-options.html#starting-ease">default starting easiness</a>, the card will be shown again approximately 2 1/2 times longer
-than the previous time, so if you had waited 10 days to see the card
-previously, the next delay would be about 25 days.</p>
+<p><strong>Normale</strong> comunica che l'intervallo precedente era corretto e che la facilità della carta non necessita di modifiche. Con la <a href="deck-options.html#starting-ease">facilità iniziale predefinita</a> la carta verrà mostrata nuovamente circa 2 volte e mezzo più tardi rispetto alla volta precedente, per cui se in precedenza hai atteso 10 giorni per rivedere la carta, il prossimo intervallo sarà di circa 25 giorni.</p>
 </li>
 <li>
-<p><strong>Easy</strong> tells Anki you found the delay too short. The card will be
-scheduled <a href="deck-options.html#easy-bonus">further into the future than 'Good'</a>, and Anki will schedule
-the card less frequently in the future. Because 'Easy' rapidly increases
-the delay, it’s best used for only the easiest of cards. Usually you
-should find yourself answering 'Good' instead.</p>
+<p><strong>Facile</strong> comunica che l'intervallo è troppo breve. La carta verrà pianificata <a href="deck-options.html#easy-bonus">molto più avanti nel futuro rispetto a &quot;Normale&quot;</a> e mostrata meno frequentemente in futuro. Poiché &quot;Facile&quot; aumenta rapidamente l'intervallo, è consigliabile utilizzarlo solo per le carte più facili; in generale dovresti tendere a rispondere &quot;Normale&quot;.</p>
 </li>
 </ul>
-<p>As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
-answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select <strong>Good</strong>.</p>
-<p>See <a href="deck-options.html">Deck Options</a> and the <a href="https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html">FAQ</a>
-to learn more about how the algorithm works.</p>
+<p>Come per le carte in apprendimento, puoi utilizzare i tasti <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> e <kbd>4</kbd> sulla tastiera per selezionare una risposta. Premendo la <kbd>Barra spaziatrice</kbd> o <kbd>Invio</kbd> si seleziona il pulsante <strong>Normale</strong>.</p>
+<p>Per saperne di più sul funzionamento dell'algoritmo, consulta la sezione <a href="deck-options.html">Opzioni del mazzo</a> e la <a href="https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html">FAQ</a> (inglese).</p>
 <h2 id="due-counts"><a class="header" href="#due-counts">Due Counts</a></h2>
 <p>When only the question is shown, Anki shows three numbers like 6 + 9 + 59
 at the bottom of the screen. These represent the new cards (blue), cards in
