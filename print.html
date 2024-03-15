@@ -1371,7 +1371,7 @@ Se hai domande su Anki, AnkiWeb o AnkiDroid, utilizza invece i <a href="https://
 <li><a href="studying.html#carte-in-apprendimentoriapprendimento">Carte in apprendimento/riapprendimento</a></li>
 <li><a href="studying.html#carte-di-ripasso">Carte di ripasso</a></li>
 <li><a href="studying.html#conteggi-delle-carte-programmate">Conteggi delle carte programmate</a></li>
-<li><a href="studying.html#fuzz-factor">Fuzz Factor</a></li>
+<li><a href="studying.html#fattore-di-sfumatura">Fattore di sfumatura</a></li>
 <li><a href="studying.html#editing-and-more">Editing and More</a></li>
 <li><a href="studying.html#display-order">Display Order</a></li>
 <li><a href="studying.html#siblings-and-burying">Siblings and Burying</a></li>
@@ -1446,17 +1446,9 @@ rispetto alla volta precedente e fa sì che in futuro venga mostrata più freque
 <p>Con il pianificatore v1, i numeri indicano le <em>ripetizioni</em> necessarie per completare tutte le carte in quella coda e non il numero di <em>carte</em>. Se hai configurato più di un passo per le carte &quot;con errori&quot;, il numero aumenta di più di uno quando sbagli una ripetizione, poiché tale carta necessita di essere mostrata più volte.</p>
 <p>A partire dal <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">pianificatore v2</a> (inglese), invece, i numeri indicano il conteggio delle <em>carte</em>, quindi il numero aumenta sempre di uno indipendentemente dai passi rimanenti.</p>
 <p>Quando viene mostrata la risposta, sopra ciascun pulsante appare una stima della prossima data di presentazione della carta. Se preferisci non vedere queste stime, puoi disattivarle nelle <a href="preferences.html">preferenze</a>.</p>
-<h2 id="fuzz-factor"><a class="header" href="#fuzz-factor">Fuzz Factor</a></h2>
-<p>When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
-to prevent cards that were introduced at the same time and given the same ratings
-from sticking together and always coming up for review on the same day. This fuzz
-will appear on the answer buttons when the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a> is enabled, so if
-you are using a previous version and you’re noticing a slight discrepancy between
-what you select and the intervals your cards actually get, this is probably the
-cause.</p>
-<p>Learning cards are also given up to 5 minutes of extra delay so that they
-don’t always appear in the same order, but answer buttons won't reflect that. It
-is not possible to turn this feature off.</p>
+<h2 id="fattore-di-sfumatura"><a class="header" href="#fattore-di-sfumatura">Fattore di sfumatura</a></h2>
+<p>Selezionando un pulsante di facilità su una carta da ripassare, viene applicata una piccola quantità di &quot;sfumatura&quot; casuale. Lo scopo è evitare che le carte aggiunte contemporaneamente e valutate in maniera simile rimangano aggreggate e vengano mostrate nello stesso giorno. Questa sfumatura è visibile sui pulsanti di valutazione quando è abilitato il <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">pianificatore v3</a> (inglese), per cui se utilizzi una versione precedente e noti una leggera discrepanza tra la tua selezione e gli intervalli effettivi delle carte, la causa è probabilmente questa.</p>
+<p>Anche alle carte in apprendimento viene applicato un intervallo supplementare fino a 5 minuti per evitare che vengano mostrate nello stesso ordine, ma ciò non è visibile sui pulsanti di valutazione. Non è possibile disattivare questa funzionalità.</p>
 <h2 id="editing-and-more"><a class="header" href="#editing-and-more">Editing and More</a></h2>
 <p>You can click the <strong>Edit</strong> button in the bottom left to edit the current
 note. When you finish editing, you’ll be returned to study. The editing
