@@ -1370,7 +1370,7 @@ Se hai domande su Anki, AnkiWeb o AnkiDroid, utilizza invece i <a href="https://
 <li><a href="studying.html#domande">Domande</a></li>
 <li><a href="studying.html#carte-in-apprendimentoriapprendimento">Carte in apprendimento/riapprendimento</a></li>
 <li><a href="studying.html#carte-di-ripasso">Carte di ripasso</a></li>
-<li><a href="studying.html#due-counts">Due Counts</a></li>
+<li><a href="studying.html#conteggi-delle-carte-programmate">Conteggi delle carte programmate</a></li>
 <li><a href="studying.html#fuzz-factor">Fuzz Factor</a></li>
 <li><a href="studying.html#editing-and-more">Editing and More</a></li>
 <li><a href="studying.html#display-order">Display Order</a></li>
@@ -1440,21 +1440,12 @@ rispetto alla volta precedente e fa sì che in futuro venga mostrata più freque
 </ul>
 <p>Come per le carte in apprendimento, puoi utilizzare i tasti <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> e <kbd>4</kbd> sulla tastiera per selezionare una risposta. Premendo la <kbd>Barra spaziatrice</kbd> o <kbd>Invio</kbd> si seleziona il pulsante <strong>Normale</strong>.</p>
 <p>Per saperne di più sul funzionamento dell'algoritmo, consulta la sezione <a href="deck-options.html">Opzioni del mazzo</a> e la <a href="https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html">FAQ</a> (inglese).</p>
-<h2 id="due-counts"><a class="header" href="#due-counts">Due Counts</a></h2>
-<p>When only the question is shown, Anki shows three numbers like 6 + 9 + 59
-at the bottom of the screen. These represent the new cards (blue), cards in
-learning (orange), and cards to review (green). If you’d prefer not to see the numbers,
-you can turn them off in Anki’s <a href="preferences.html">preferences.</a></p>
-<p><img src="media/due_counts.png" alt="Due Counts" /></p>
-<p>In the v1 scheduler, the numbers count <em>reviews</em> needed to finish all the
-cards in that queue, not the number of <em>cards</em>. If you have multiple
-steps configured for lapsed cards, the number will increase by more than
-one when you fail a card, since that card needs to be shown several times.</p>
-<p>From the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler</a>, the numbers count <em>cards</em>, so the number will always
-increase by one regardless of the steps remaining.</p>
-<p>When the answer is shown, Anki shows an estimate of the next time a card
-will be shown above each button. If you’d prefer not to see the
-estimates, you can disable them in Anki’s <a href="preferences.html">preferences</a>.</p>
+<h2 id="conteggi-delle-carte-programmate"><a class="header" href="#conteggi-delle-carte-programmate">Conteggi delle carte programmate</a></h2>
+<p>Quando viene mostrata solo la domanda, nella parte inferiore della schermata sono presenti tre numeri, come ad esempio 6 + 9 + 59. Questi indicano rispettivamente le carte nuove (blu), quelle in apprendimento (arancione) e quelle di ripasso (verde). Se preferisci non vedere questi numeri, puoi disattivarli nelle <a href="preferences.html">preferenze</a>.</p>
+<p><img src="media/due_counts.png" alt="Conteggi delle carte programmate" /></p>
+<p>Con il pianificatore v1, i numeri indicano le <em>ripetizioni</em> necessarie per completare tutte le carte in quella coda e non il numero di <em>carte</em>. Se hai configurato più di un passo per le carte &quot;con errori&quot;, il numero aumenta di più di uno quando sbagli una ripetizione, poiché tale carta necessita di essere mostrata più volte.</p>
+<p>A partire dal <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">pianificatore v2</a> (inglese), invece, i numeri indicano il conteggio delle <em>carte</em>, quindi il numero aumenta sempre di uno indipendentemente dai passi rimanenti.</p>
+<p>Quando viene mostrata la risposta, sopra ciascun pulsante appare una stima della prossima data di presentazione della carta. Se preferisci non vedere queste stime, puoi disattivarle nelle <a href="preferences.html">preferenze</a>.</p>
 <h2 id="fuzz-factor"><a class="header" href="#fuzz-factor">Fuzz Factor</a></h2>
 <p>When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
 to prevent cards that were introduced at the same time and given the same ratings
