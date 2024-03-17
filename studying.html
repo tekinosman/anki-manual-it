@@ -156,7 +156,7 @@
 <li><a href="#carte-di-ripasso">Carte di ripasso</a></li>
 <li><a href="#conteggi-delle-carte-programmate">Conteggi delle carte programmate</a></li>
 <li><a href="#fattore-di-sfumatura">Fattore di sfumatura</a></li>
-<li><a href="#editing-and-more">Editing and More</a></li>
+<li><a href="#modifica-e-altro">Modifica e altro</a></li>
 <li><a href="#display-order">Display Order</a></li>
 <li><a href="#siblings-and-burying">Siblings and Burying</a></li>
 <li><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
@@ -233,98 +233,64 @@ rispetto alla volta precedente e fa sì che in futuro venga mostrata più freque
 <h2 id="fattore-di-sfumatura"><a class="header" href="#fattore-di-sfumatura">Fattore di sfumatura</a></h2>
 <p>Selezionando un pulsante di facilità su una carta di ripasso, viene applicata una piccola quantità di &quot;sfumatura&quot; casuale. Lo scopo è evitare che le carte aggiunte contemporaneamente e valutate in maniera simile rimangano aggreggate e vengano mostrate nello stesso giorno. Questa sfumatura è visibile sui pulsanti di valutazione quando è abilitato il <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">pianificatore v3</a> (inglese), per cui se utilizzi una versione precedente e noti una leggera discrepanza tra la tua selezione e gli intervalli effettivi delle carte, la causa è probabilmente questa.</p>
 <p>Anche alle carte in apprendimento viene applicato un intervallo supplementare fino a 5 minuti per evitare che vengano mostrate nello stesso ordine, ma ciò non è visibile sui pulsanti di valutazione. Non è possibile disattivare questa funzionalità.</p>
-<h2 id="editing-and-more"><a class="header" href="#editing-and-more">Editing and More</a></h2>
-<p>You can click the <strong>Edit</strong> button in the bottom left to edit the current
-note. When you finish editing, you’ll be returned to study. The editing
-screen works very similarly to the <a href="editing.html">add notes</a> screen.</p>
-<p>At the bottom right of the review screen is a button labeled <strong>More</strong>.
-This button provides some other operations you can do on the current
-card or note:</p>
+<h2 id="modifica-e-altro"><a class="header" href="#modifica-e-altro">Modifica e altro</a></h2>
+<p>In basso a sinistra è presente un pulsante chiamato <strong>Modifica</strong> che ti permette di modificare la nota attuale. Una volta terminata la modifica ritorni alla sessione di studio. La schermata di modifica è molto simile a quella di <a href="editing.html">aggiunta delle note</a>.</p>
+<p>In basso a destra, invece, è presente un pulsante chiamato <strong>Altro</strong>, che permette di effettuare operazioni aggiuntive sulla carta o nota attuale:</p>
 <ul>
 <li>
-<p><a href="editing.html#using-flags"><strong>Flag Card</strong></a>: Adds a colored marker to the card, or toggles it off. Flags will appear during
-study, and you can search for flagged cards in the Browse screen. This is useful
-when you want to take some action on the card at a later date, such as looking
-up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags
-from the <a href="browsing.html">browser</a>.</p>
+<p><a href="editing.html#using-flags"><strong>Assegna bandiera alla carta</strong></a>: Aggiunge un contrassegno colorato (bandiera) alla carta o lo disattiva. Le bandiere appaiono durante lo studio e le carte contrassegnate con una bandiera possono essere ricercate nella schermata Sfoglia. Questa funzionalità è utile quando vuoi intraprendere una qualche azione sulla carta in un secondo momento, come ad esempio la ricerca di una parola una volta tornato a casa. Se utilizzi Anki 2.1.45 o versioni successive, puoi anche rinominare le bandiere dalla <a href="browsing.html">schermata Sfoglia</a>.</p>
 </li>
 <li>
-<p><strong>Bury Card / Note</strong>: Hides a card or all of the note’s cards from review until the next day.
-(If you want to unbury cards before then, you can click the “unbury”
-button on the <a href="studying.html#panoramica-dello-studio">deck overview</a> screen.) This is useful if
-you cannot answer the card at the moment or you want to come back to it
-another time. Burying can also <a href="studying.html#siblings-and-burying">happen automatically</a> for
-cards of the same note.</p>
-<p>With the old scheduler, if cards were in learning when they were buried,
-they were moved back to the new card queue or review queue prior to being
-buried.</p>
-<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">2.1 scheduler</a>,
-however, burying cards does not reset a card's learning steps.</p>
+<p><strong>Seppellisci carta / nota</strong>: Nasconde una carta o tutte le carte della nota, escludendole dalla ripetizione fino al giorno successivo (se desideri disseppellire le carte prima di allora, puoi fare clic sul pulsante &quot;Disseppellisci&quot; nella schermata <a href="studying.html#panoramica-del-mazzo">panoramica del mazzo</a>). Questa funzionalità è utile se al momento non riesci a rispondere alla carta o se preferisci tornarci in un altro momento. La sepoltura può anche <a href="studying.html#siblings-and-burying">avvenire automaticamente</a> per carte della stessa nota.</p>
+<p>Con il vecchio pianificatore, se le carte erano in fase di apprendimento quando venivano seppellite, le stesse venivano spostate nuovamente nella coda delle nuove carte o nella coda di ripasso prima di essere sepolte.</p>
+<p>Con la <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">versione 2.1 del pianificatore</a> (inglese) seppellire le carte non reimposta i passi di apprendimento di una carta.</p>
 </li>
 <li>
-<p><strong>Forget card</strong>: Move current card to <a href="browsing.html#cards">the end of the new queue</a>.</p>
-<p>From Anki 2.1.50+, Anki will remember the original order of a new card when it is first studied
-with the v3 scheduler. The &quot;Restore original position&quot; option allows you to reset the card back
-to its original position when you forget it.</p>
-<p>The &quot;Reset repetition and lapse count&quot; option, if enabled, will set the review and failure counters
-for the card back to zero. It does not remove the review history that is shown at the bottom of the
-card info screen.</p>
+<p><strong>Dimentica carta</strong>: Sposta la carta attuale alla <a href="browsing.html#cards">fine della coda delle carte nuove</a>.</p>
+<p>A partire da Anki 2.1.50, l'ordine originale di una nuova carta viene memorizzato quando la si studia per la prima volta con il pianificatore v3. L'opzione &quot;Ripristina posizione originale&quot; ti consente di ripristinare la carta alla sua posizione originale quando la dimentichi.</p>
+<p>L'opzione &quot;Azzera conteggio di ripetizioni ed errori&quot;, se abilitata, azzera il conteggio delle ripetizioni ed errori della carta, ma non rimuove la cronologia delle ripetizioni mostrata in basso nella schermata delle informazioni sulla carta.</p>
 </li>
 <li>
-<p><strong>Set Due Date</strong>: Put cards in the review queue, and <a href="browsing.html#cards">make them due on a certain date.</a></p>
+<p><strong>Imposta data di scadenza</strong>: Inserisce le carte nella coda di ripasso e <a href="browsing.html#cards">le programma per essere riviste in una data specifica</a>.</p>
 </li>
 <li>
-<p><strong>Suspend Card / Note</strong>: Hides a card or all of the note’s cards from review until they are
-manually unsuspended (by clicking the suspend button in the browser).
-This is useful if you want to avoid reviewing the note for some time,
-but don’t want to delete it.
-With the old scheduler, if cards were in learning when they are
-suspended, they are moved back to the new card queue or review queue
-prior to being suspended.</p>
-<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">2.1 scheduler</a>,
-however, suspending cards does not reset a card's learning steps.</p>
+<p><strong>Sospendi carta / nota</strong>: Nasconde una carta o tutte le carte della nota, escludendole dalla ripetizione fino a quando non le rimuovi manualmente  dalla sospensione (facendo clic sul pulsante &quot;sospendi&quot; nella schermata Sfoglia). Utile se vuoi evitare di ripassare la nota per un po' di tempo ma non vuoi eliminarla.
+Con il vecchio pianificatore, se le carte erano in fase di apprendimento quando venivano sospese, le stesse venivano spostate nuovamente nella coda delle nuove carte o nella coda di ripasso prima di essere sospese.</p>
+<p>Con la <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">versione 2.1 del pianificatore</a> (inglese) la sospensione delle carte non reimposta i passi di apprendimento di una carta.</p>
 </li>
 <li>
-<p><strong>Options</strong>: Edit the <a href="deck-options.html">options</a> for the current deck.</p>
+<p><strong>Opzioni</strong>: Modifica le <a href="deck-options.html">opzioni</a> per il mazzo attuale.</p>
 </li>
 <li>
-<p><strong>Card Info</strong>: Displays <a href="stats.html#card-info">statistical information</a> about the card.</p>
+<p><strong>Info carta</strong>: Mostra le <a href="stats.html#card-info">statistiche</a> sulla carta.</p>
 </li>
 <li>
-<p><strong>Previous Card Info</strong>: Displays <a href="stats.html#card-info">statistical information</a> about the previous card.</p>
+<p><strong>Info carta precedente</strong>: Mostra le <a href="stats.html#card-info">statistiche</a> sulla carta precedente.</p>
 </li>
 <li>
-<p><a href="editing.html#the-marked-tag"><strong>Mark Note</strong></a>: Adds a “marked” tag to the current note, so it can be easily found in the
-browser. This is similar to flagging individual cards, but works with a tag
-instead, so if the note has multiple cards, all cards will appear in a search
-for the marked tag. Most users will want to use flags instead.</p>
+<p><a href="editing.html#the-marked-tag"><strong>Contrassegna nota</strong></a>: Aggiunge l'etichetta &quot;marked&quot; (contrassegnato/a) alla nota attuale, permettendoti di trovarla facilmente nella schermata Sfoglia. Questa funzionalità è simile all'assegnazione di bandiere alle singole carte, ma utilizza un'etichetta, per cui se la nota contiene più carte, una ricerca con l'etichetta in questione mostrerà tutte le carte che la possiedono. Per la maggior parte degli utenti è preferibile utilizzare le bandiere.</p>
 </li>
 <li>
-<p><strong>Create Copy</strong>: Opens a <a href="browsing.html#finding-duplicates">duplicate</a> of the current
-note in the editor, which can be slightly modified to easily obtain variations of your cards.
-By default, the duplicate card will be created in the same deck as the original.</p>
+<p><strong>Crea copia</strong>: Crea e apre un <a href="browsing.html#finding-duplicates">duplicato</a> della nota attuale nella schermata di modifica, che può quindi essere modificata per creare variazioni di una determinata carta.
+Per impostazione predefinita, la carta duplicata, o copia, viene creata nello stesso mazzo della nota originale.</p>
 </li>
 <li>
-<p><strong>Delete Note</strong>: Deletes the note and all of its cards.</p>
+<p><strong>Elimina nota</strong>: Elimina la nota e tutte le sue carte.</p>
 </li>
 <li>
-<p><strong>Replay Audio</strong>: If the card has audio on the front or back, play it again.</p>
+<p><strong>Ripeti audio</strong>: Se la carta contiene una traccia audio sul lato frontale o sul retro, la riproduce nuovamente.</p>
 </li>
 <li>
-<p><strong>Pause Audio</strong>: Pauses the audio if it is playing.</p>
+<p><strong>Metti audio in pausa</strong>: Mette in pausa l'audio in riproduzione.</p>
 </li>
 <li>
-<p><strong>Audio -5s / +5s</strong>: Jump backwards / forward 5 seconds in the currently playing audio.</p>
+<p><strong>Audio -5s / +5s</strong>: Consente di andare indietro o avanti di 5 secondi nell'audio in riproduzione.</p>
 </li>
 <li>
-<p><strong>Record Own Voice</strong>: Record from your microphone for the purposes of checking your
-pronunciation. This recording is temporary and will go away when you
-move to the next card. If you want to add audio to a card permanently,
-you can do that in the edit window.</p>
+<p><strong>Registra voce</strong>: Registra la tua voce con il microfono al fine di controllare la tua pronuncia. La registrazione è temporanea e viene eliminata quando passi alla carta successiva. Se desideri aggiungere una traccia audio a una carta in modo permanente, puoi farlo nella schermata di modifica.</p>
 </li>
 <li>
-<p><strong>Replay Own Voice</strong>: Replay the previous recording of your voice (presumably after showing
-the answer).</p>
+<p><strong>Riproduci voce</strong>: Riproduce la registrazione precedente della tua voce (presumibilmente dopo aver mostrato la risposta).</p>
 </li>
 </ul>
 <h2 id="display-order"><a class="header" href="#display-order">Display Order</a></h2>
