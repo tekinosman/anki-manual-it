@@ -1374,7 +1374,7 @@ Se hai domande su Anki, AnkiWeb o AnkiDroid, utilizza invece i <a href="https://
 <li><a href="studying.html#fattore-di-sfumatura">Fattore di sfumatura</a></li>
 <li><a href="studying.html#modifica-e-altro">Modifica e altro</a></li>
 <li><a href="studying.html#ordine-di-presentazione">Ordine di presentazione</a></li>
-<li><a href="studying.html#siblings-and-burying">Siblings and Burying</a></li>
+<li><a href="studying.html#carte-sorelle-e-sepoltura">Carte sorelle e sepoltura</a></li>
 <li><a href="studying.html#keyboard-shortcuts">Keyboard Shortcuts</a></li>
 <li><a href="studying.html#falling-behind">Falling Behind</a></li>
 </ul>
@@ -1531,27 +1531,13 @@ Consulta la sezione <a href="deck-options.html#review-sort-order">opzioni del ma
 <p>Le carte nuove e di ripasso vengono recuperate separatamente, senza aspettare che entrambe le code siano vuote prima di passare al mazzo successivo, per cui è possibile che ti vengano mostrate carte nuove da un mazzo mentre studi le carte di ripasso da un altro mazzo o viceversa. Se non lo desideri, puoi fare clic direttamente sul mazzo che vuoi studiare invece che su uno dei mazzi genitore.</p>
 <p>Poiché le carte in apprendimento hanno una certa urgenza temporale, vengono recuperate da tutti i mazzi contemporaneamente e presentate nell'ordine in cui sono programmate.</p>
 <p>Per controllare l'ordine di presentazione delle ripetizioni di un determinato mazzo o per cambiare la presentazione delle carte nuove da ordinata a casuale, consulta le <a href="deck-options.html">opzioni del mazzo</a>. Per un ordinamento più preciso delle carte nuove puoi cambiare l'ordine nella schermata <a href="browsing.html">Sfoglia</a>.</p>
-<h2 id="siblings-and-burying"><a class="header" href="#siblings-and-burying">Siblings and Burying</a></h2>
-<p>Recall from <a href="getting-started.html">the basics</a> that Anki can create more than one
-card for each thing you input, such as a front→back card and a
-back→front card, or two different cloze deletions from the same text.
-These related cards are called 'siblings'.</p>
-<p>When you answer a card that has siblings, Anki can prevent the card’s
-siblings from being shown in the same session by automatically 'burying'
-them. Buried cards are hidden from review until the clock rolls over to
-a new day or you manually unbury them using the “Unbury” button that’s
-visible at the bottom of the <a href="studying.html#panoramica-dello-studio">deck overview</a> screen. Anki
-will bury siblings even if the siblings are not in the same deck (for
-instance, if you use the <a href="templates/intro.html">deck override</a> feature).</p>
-<p>You can enable burying from the <a href="deck-options.html">deck options</a> screen -
-there are separate settings for new cards and reviews.</p>
-<p>Anki will only bury siblings that are new or review cards. It will not
-hide cards in learning, as time is of the essence for those cards. On
-the other hand, when you study a learning card, any new/review siblings
-will be buried.</p>
-<p>Note: A card cannot be buried and suspended at the same time. Suspending a
-buried card will unbury it. Burying a suspended card does not work on Anki
-2.1.49+, whereas on earlier versions, it will unsuspend the card.</p>
+<h2 id="carte-sorelle-e-sepoltura"><a class="header" href="#carte-sorelle-e-sepoltura">Carte sorelle e sepoltura</a></h2>
+<p>Come ricorderai dalle <a href="getting-started.html">basi</a>, per ogni informazione che aggiungi può venire creata più di una carta, come per esempio una carta fronte→retro e una retro→fronte, oppure due diverse cancellazioni dallo stesso testo.
+Queste carte correlate vengono chiamate &quot;sorelle&quot;.</p>
+<p>Quando rispondi a una carta che ha delle sorelle, puoi impedire che le sue sorelle vengano mostrate nella stessa sessione di studio &quot;seppellendole&quot; automaticamente. Le carte sepolte restano escluse dalla ripetizione fino all'inizio del giorno successivo oppure fino a quando non le disseppellisci manualmente usando il pulsante &quot;Disseppelisci&quot; presente in fondo alla schermata <a href="studying.html#panoramica-dello-studio">Panoramica dello studio</a>. La sepoltura delle sorelle avviene anche se queste non si trovano nello stesso mazzo (ad esempio, se utilizzi la funzionalità <a href="templates/intro.html">Sovrascrivi mazzo</a>).</p>
+<p>Puoi attivare la sepoltura dalla schermata <a href="deck-options.html">Opzioni del mazzo</a>; sono presenti impostazioni separate per le carte nuove e per quelle di ripasso.</p>
+<p>Soltanto le sorelle che sono carte nuove o di ripasso vengono seppellite, mentre le carte in apprendimento non vengono nascoste, poiché per queste il tempo è un fattore critico. D'altra parte, quando studi una carta in apprendimento, eventuali sorelle nuove o di ripasso vengono sepolte.</p>
+<p>N.B.: Una carta non può essere sepolta e sospesa contemporaneamente. Sospendere una carta sepolta la disseppellisce. Da Anki 2.1.49 in poi, non è possibile seppellire una carta sospesa, mentre nelle versioni precedenti viene annullata la sospensione.</p>
 <h2 id="keyboard-shortcuts"><a class="header" href="#keyboard-shortcuts">Keyboard Shortcuts</a></h2>
 <p>Most of the common operations in Anki have keyboard shortcuts. Most of
 them are discoverable in the interface: menu items list their shortcuts
