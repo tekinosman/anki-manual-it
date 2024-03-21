@@ -1,4 +1,3 @@
-# Platform Notes
+# Note sulla piattaforma
 
-The way Anki is installed, and the possible problems you may encounter, depend
-on the type of computer you are using.
+La procedura per installare Anki e i possibili problemi che potresti riscontrare dipendono dal tipo di computer che utilizzi.
