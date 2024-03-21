@@ -1,5 +1,5 @@
-# Importing
+# Importazione
 
-Anki can import text files, packaged Anki decks created by the export
-feature, Mnemosyne 2.0 .db files, and SuperMemo .xml files. To import a
-file, click the File menu and then "Import".
+Anki può importare file di testo, mazzi Anki impacchettati creati dalla funzione di esportazione,
+file .db di Mnemosyne 2.0 e file .xml di SuperMemo. Per importare un file,
+fai clic sul menu File e poi su "Importa".
