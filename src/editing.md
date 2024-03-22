@@ -1,46 +1,28 @@
-# Adding/Editing
+# Aggiunta/Modifica
 
 <!-- toc -->
 
-## Adding Cards and Notes
+## Aggiunta di carte e di note
 
-Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click 'Add' in the [main window](studying.md#decks),
-and the Add Notes window will appear.
+Ricorderai dalle [basi](getting-started.md) che in Anki si aggiungono note e non carte, le quali vengono invece generate da Anki. Fai clic sul pulsante "Aggiungi" nella [schermata principale](studying.md#mazzi) e si aprirà la schermata "Aggiungi Note".
 
-![Add Screen](media/add_screen.png)
+![Schermata aggiunta](media/add_screen.png)
 
-The top left of the window shows us the current [note type](getting-started.md#note-types). If it does
-not say "Basic," then you may have added some note types when you
-downloaded a shared deck. The text below assumes that "Basic" is
-selected.
+Nella parte superiore sinistra della schermata viene mostrato il [tipo di nota](getting-started.md#tipi-di-nota) attuale. Se non riporta "Basilare", potresti aver aggiunto dei tipi di nota importando un mazzo condiviso. Il testo che segue presuppone che sia selezionato "Basilare".
 
-The top right of the window shows us the [deck](getting-started.md#decks) cards will be added to. If
-you would like to add cards to a new deck, you can click on the deck name
-button and then click "Add".
+Nella parte superiore destra della schermata viene mostrato il [mazzo](getting-started.md#mazzi) a cui verranno aggiunte le carte. Se desideri aggiungere le carte ad un nuovo mazzo, fai clic sul pulsante del nome del mazzo e quindi su "Aggiungi".
 
-Below the note type, you'll see some buttons, and an area labelled
-"Front" and "Back". Front and Back are called [fields](getting-started.md#notes--fields), and you can add,
-remove, and rename them by clicking the "Fields…​" button above.
+Sotto il tipo di nota sono presenti alcuni pulsanti e due aree chiamate rispettivamente "Fronte" e "Retro". Fronte e Retro sono chiamati [campi](getting-started.md#note-e-campi) e puoi aggiungerli, rimuoverli e rinominarli facendo clic sul pulsante "Campi..." soprastante.
 
-Below the fields is another area labelled "**tags**". Tags are labels that
-you can attach to your notes, to make organizing and finding notes
-easier. You can leave the tags blank if you wish, or add one or more of
-them. Tags are separated by a space. If the tags area says
+Sotto i campi è presente un'altra area chiamata "Etichette". Le etichette sono termini che puoi associare alle note per facilitarne l'organizzazione e la ricerca. Puoi lasciare tale area vuota se lo desideri, oppure aggiungerne una o più, separate da uno spazio. Se l'area contiene
 
-    vocab check_with_tutor
+    vocabolario controlla_con_insegnante
 
-…​then the note you add would have two tags.
+...significa che la nota che aggiungerai avrà due etichette.
 
-When you have entered text into the front and back, you can click the
-"Add" button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
-note to your collection. When you do so, a card will be created as well,
-and placed into the deck you chose. If you would like to edit a card you
-added, you can click the history button to search for a recently added
-card in the [browser](browsing.md).
+Una volta inserito del testo nel fronte e nel retro, puoi fare clic sul pulsante "Aggiungi" o premere <kbd>Ctrl</kbd>+<kbd>Invio</kbd> (<kbd>Comando</kbd>+<kbd>Invio</kbd> su Mac) per aggiungere la nota alla tua collezione. Eseguendo questa operazione verrà creata anche una carta e inserita nel mazzo scelto. Se desideri modificare una carta aggiunta recentemente, fai clic sul pulsante "Cronologia" per cercarla nella [schermata Sfoglia](browsing.md).
 
-For more information on the buttons between the note type and the
-fields, please see the [editor](editing.md) section.
+Per ulteriori informazioni sui pulsanti che si trovano tra il tipo di nota e i campi, consulta la sezione [modifica](editing.md).
 
 ### Duplicate Check
 
