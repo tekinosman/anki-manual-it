@@ -1546,9 +1546,9 @@ Queste carte correlate vengono chiamate &quot;sorelle&quot;.</p>
 <p>Se resti indietro nelle ripetizioni, viene data priorità alle carte in attesa da più tempo, mostrandole in ordine casuale fino al raggiungimento del limite giornaliero di ripetizioni. Tale ordinamento assicura che nessuna carta venga trascurata a tempo indeterminato, ma implica che se aggiungi nuove carte queste non verranno visualizzate finché non avrai smaltito l'arretrato.</p>
 <p>Per modificare l'ordine delle ripetizioni scadute puoi creare un <a href="filtered-decks.html">mazzo filtrato</a>.</p>
 <p>Quando rispondi a carte in attesa da molto tempo, il ritardo viene preso in considerazione per determinare il momento successivo in cui mostrare una carta. Per maggiori informazioni, consulta la sezione sull'<a href="https://faqs.ankiweb.net/due-times-after-a-break.html">algoritmo</a> di ripetizione dilazionata di Anki.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="addingediting"><a class="header" href="#addingediting">Adding/Editing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="aggiuntamodifica"><a class="header" href="#aggiuntamodifica">Aggiunta/Modifica</a></h1>
 <ul>
-<li><a href="editing.html#adding-cards-and-notes">Adding Cards and Notes</a>
+<li><a href="editing.html#aggiunta-di-carte-e-di-note">Aggiunta di carte e di note</a>
 <ul>
 <li><a href="editing.html#duplicate-check">Duplicate Check</a></li>
 <li><a href="editing.html#effective-learning">Effective Learning</a></li>
@@ -1579,36 +1579,18 @@ Queste carte correlate vengono chiamate &quot;sorelle&quot;.</p>
 <li><a href="editing.html#inputting-foreign-characters-and-accents">Inputting Foreign Characters and Accents</a></li>
 <li><a href="editing.html#unicode-normalization">Unicode Normalization</a></li>
 </ul>
-<h2 id="adding-cards-and-notes"><a class="header" href="#adding-cards-and-notes">Adding Cards and Notes</a></h2>
-<p>Recall from the <a href="getting-started.html">basics</a> that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click 'Add' in the <a href="studying.html#mazzi">main window</a>,
-and the Add Notes window will appear.</p>
-<p><img src="media/add_screen.png" alt="Add Screen" /></p>
-<p>The top left of the window shows us the current <a href="getting-started.html#tipi-di-nota">note type</a>. If it does
-not say &quot;Basic,&quot; then you may have added some note types when you
-downloaded a shared deck. The text below assumes that &quot;Basic&quot; is
-selected.</p>
-<p>The top right of the window shows us the <a href="getting-started.html#mazzi">deck</a> cards will be added to. If
-you would like to add cards to a new deck, you can click on the deck name
-button and then click &quot;Add&quot;.</p>
-<p>Below the note type, you'll see some buttons, and an area labelled
-&quot;Front&quot; and &quot;Back&quot;. Front and Back are called <a href="getting-started.html#note-e-campi">fields</a>, and you can add,
-remove, and rename them by clicking the &quot;Fields…​&quot; button above.</p>
-<p>Below the fields is another area labelled &quot;<strong>tags</strong>&quot;. Tags are labels that
-you can attach to your notes, to make organizing and finding notes
-easier. You can leave the tags blank if you wish, or add one or more of
-them. Tags are separated by a space. If the tags area says</p>
-<pre><code>vocab check_with_tutor
+<h2 id="aggiunta-di-carte-e-di-note"><a class="header" href="#aggiunta-di-carte-e-di-note">Aggiunta di carte e di note</a></h2>
+<p>Ricorderai dalle <a href="getting-started.html">basi</a> che in Anki si aggiungono note e non carte, le quali vengono invece generate da Anki. Fai clic sul pulsante &quot;Aggiungi&quot; nella <a href="studying.html#mazzi">schermata principale</a> e si aprirà la schermata &quot;Aggiungi Note&quot;.</p>
+<p><img src="media/add_screen.png" alt="Schermata aggiunta" /></p>
+<p>Nella parte superiore sinistra della schermata viene mostrato il <a href="getting-started.html#tipi-di-nota">tipo di nota</a> attuale. Se non riporta &quot;Basilare&quot;, potresti aver aggiunto dei tipi di nota importando un mazzo condiviso. Il testo che segue presuppone che sia selezionato &quot;Basilare&quot;.</p>
+<p>Nella parte superiore destra della schermata viene mostrato il <a href="getting-started.html#mazzi">mazzo</a> a cui verranno aggiunte le carte. Se desideri aggiungere le carte ad un nuovo mazzo, fai clic sul pulsante del nome del mazzo e quindi su &quot;Aggiungi&quot;.</p>
+<p>Sotto il tipo di nota sono presenti alcuni pulsanti e due aree chiamate rispettivamente &quot;Fronte&quot; e &quot;Retro&quot;. Fronte e Retro sono chiamati <a href="getting-started.html#note-e-campi">campi</a> e puoi aggiungerli, rimuoverli e rinominarli facendo clic sul pulsante &quot;Campi...&quot; soprastante.</p>
+<p>Sotto i campi è presente un'altra area chiamata &quot;Etichette&quot;. Le etichette sono termini che puoi associare alle note per facilitarne l'organizzazione e la ricerca. Puoi lasciare tale area vuota se lo desideri, oppure aggiungerne una o più, separate da uno spazio. Se l'area contiene</p>
+<pre><code>vocabolario controlla_con_insegnante
 </code></pre>
-<p>…​then the note you add would have two tags.</p>
-<p>When you have entered text into the front and back, you can click the
-&quot;Add&quot; button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
-note to your collection. When you do so, a card will be created as well,
-and placed into the deck you chose. If you would like to edit a card you
-added, you can click the history button to search for a recently added
-card in the <a href="browsing.html">browser</a>.</p>
-<p>For more information on the buttons between the note type and the
-fields, please see the <a href="editing.html">editor</a> section.</p>
+<p>...significa che la nota che aggiungerai avrà due etichette.</p>
+<p>Una volta inserito del testo nel fronte e nel retro, puoi fare clic sul pulsante &quot;Aggiungi&quot; o premere <kbd>Ctrl</kbd>+<kbd>Invio</kbd> (<kbd>Comando</kbd>+<kbd>Invio</kbd> su Mac) per aggiungere la nota alla tua collezione. Eseguendo questa operazione verrà creata anche una carta e inserita nel mazzo scelto. Se desideri modificare una carta aggiunta recentemente, fai clic sul pulsante &quot;Cronologia&quot; per cercarla nella <a href="browsing.html">schermata Sfoglia</a>.</p>
+<p>Per ulteriori informazioni sui pulsanti che si trovano tra il tipo di nota e i campi, consulta la sezione <a href="editing.html">editor</a> section.</p>
 <h3 id="duplicate-check"><a class="header" href="#duplicate-check">Duplicate Check</a></h3>
 <p>Anki checks the first field for uniqueness, so it will warn you if you
 enter two cards with a Front field of &quot;apple&quot; (for example). The
