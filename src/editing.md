@@ -24,18 +24,11 @@ Una volta inserito del testo nel fronte e nel retro, puoi fare clic sul pulsante
 
 Per ulteriori informazioni sui pulsanti che si trovano tra il tipo di nota e i campi, consulta la sezione [modifica](editing.md).
 
-### Duplicate Check
+### Controllo dei duplicati
 
-Anki checks the first field for uniqueness, so it will warn you if you
-enter two cards with a Front field of "apple" (for example). The
-uniqueness check is limited to the current note type, so if you're
-studying multiple languages, two cards with the same Front would not be
-listed as duplicates as long as you had a different note type for each
-language.
+Anki verifica l'unicità del primo campo, segnalandoti eventuali duplicati quando aggiungi due o più carte con lo stesso valore nel campo "Fronte", come ad esempio "mela". Questo controllo è limitato al tipo di nota attuale, pertanto se studi diverse lingue, due carte con lo stesso valore per il campo "Fronte" non verranno segnalate come duplicate purché il tipo di nota sia differente.
 
-Anki does not check for duplicates in other fields automatically for
-efficiency reasons, but the browser has a "Find Duplicates" function,
-which you can run periodically.
+Per motivi di efficienza tale controllo non avviene in maniera automatica, ma la schermata Sfoglia dispone di una funzionalità chiamata "Trova duplicati" di cui puoi fare uso periodicamente.
 
 ### Effective Learning
 
