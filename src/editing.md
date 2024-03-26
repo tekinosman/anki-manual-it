@@ -30,24 +30,13 @@ Anki verifica l'unicità del primo campo, segnalandoti eventuali duplicati quand
 
 Per motivi di efficienza tale controllo non avviene in maniera automatica, ma la schermata Sfoglia dispone di una funzionalità chiamata "Trova duplicati" di cui puoi fare uso periodicamente.
 
-### Effective Learning
+### Apprendimento efficace
 
-Different people like to review in different ways, but there are some
-general concepts to keep in mind. An excellent introduction is [this article](https://super-memory.com/articles/20rules.htm) on the SuperMemo
-site. In particular:
+Le modalità di ripasso preferite variano da individuo a individuo, ma esistono alcuni concetti generali da tenere a mente. Un'introduzione eccellente è fornita da [questo articolo](https://super-memory.com/articles/20rules.htm) presente sul sito di SuperMemo. In particolare è consigliato:
 
-- **Keep it simple**: The shorter your cards, the easier they are to
-  review. You may be tempted to include lots of information "just in
-  case," but reviews will quickly become painful.
+- **Privilegiare la semplicità**: Carte più concise risultano più facili da ripassare. Sebbene tu possa essere tentato di includere molte informazioni "per sicurezza", il ripasso rischierebbe di diventare eccessivamente pesante.
 
-- **Don't memorize without understanding**: If you are studying a
-  language, try to avoid large lists of words. The best way to learn
-  languages is in context, which means seeing those words used in a
-  sentence. Likewise, imagine you're studying a computer course. If
-  you attempt to memorize the mountain of acronyms, you'll find it
-  very difficult to make progress. But if you take the time to
-  understand the concepts behind the acronyms, learning the acronyms
-  will become a lot easier.
+- **Evitare di memorizzare senza capire**: Se stai studiando una lingua, cerca di evitare lunghe liste di parole. Il modo migliore per apprendere le lingue è nel contesto, il che significa vedere le parole utilizzate all'interno di una frase. Allo stesso modo, immagina di seguire un corso di informatica: qualora tentassi di memorizzare una montagna di acronimi, troveresti molto difficile fare progressi. Al contrario, dedicare tempo alla comprensione dei concetti sottesi agli acronimi ne facilita l'apprendimento. 
 
 ## Adding a Note Type
 
