@@ -38,37 +38,15 @@ Le modalità di ripasso preferite variano da individuo a individuo, ma esistono 
 
 - **Evitare di memorizzare senza capire**: Se stai studiando una lingua, cerca di evitare lunghe liste di parole. Il modo migliore per apprendere le lingue è nel contesto, il che significa vedere le parole utilizzate all'interno di una frase. Allo stesso modo, immagina di seguire un corso di informatica: qualora tentassi di memorizzare una montagna di acronimi, troveresti molto difficile fare progressi. Al contrario, dedicare tempo alla comprensione dei concetti sottesi agli acronimi ne facilita l'apprendimento. 
 
-## Adding a Note Type
+## Aggiunta di un tipo di nota
 
-While basic note types are sufficient for simple cards with only a word
-or phrase on each side, as soon as you find yourself wanting to include
-more than one piece of information on the front or back, it's better to
-split that information up into more fields.
+Mentre i tipi di nota basilari sono sufficienti per carte semplici che contengono una sola parola o una sola frase per lato, nel momento in cui ritieni di voler includere più di una informazione sul fronte o sul retro, è consigliabile suddividerle in più campi.
 
-You may find yourself thinking "but I only want one card, so why can't I
-just include the audio, a picture, a hint, and the translation in the
-Front field?" If you'd prefer to do that, that's fine. But the
-disadvantage of that approach is that all the information is stuck
-together. If you wanted to sort your cards by the hint, you wouldn't be
-able to do that as it is mixed in with the other content. You also
-wouldn't be able to do things such as moving the audio from the front to the
-back, except by laboriously copying and pasting it for every note. By
-keeping content in separate fields, you make it much easier to adjust
-the layout of your cards in the future.
+Potresti pensare "ma io voglio creare soltanto una carta, perché non posso semplicemente includere la traccia audio, l'immagine, il suggerimento e la traduzione nel campo Fronte?". Se preferisci farlo, nessun problema. Tuttavia lo svantaggio di questo approccio è che tutte le informazioni saranno aggregate. Se volessi ordinare le carte per suggerimento, non saresti in grado di farlo in quanto questi sono mischiati con gli altri contenuti. Inoltre, non saresti in grado di fare cose come spostare la traccia audio da Fronte a Retro, se non copiandola e incollandola manualmente per ogni nota. Separando i contenuti in campi distinti, renderai molto più facile modificare il layout delle tue carte in futuro.
 
-To create a new type of note, choose Tools → Manage Note Types from the
-main Anki window. Then click "Add" to add a new type of note. You will now
-see another screen that gives you a choice of note types to base the new
-type on. "Add" means to base the newly created type on one that comes
-with Anki. "Clone" means to base the newly created type on one that is
-already in your collection. For instance, if you'd created a French
-vocab type already, you might want to clone that when creating a German
-vocab type.
+Per creare un nuovo tipo di nota, seleziona "Strumenti → Gestisci tipi di nota" dalla schermata principale di Anki, quindi fai clic su "Aggiungi" per aggiungere il nuovo tipo di nota. Si aprirà una nuova schermata che ti darà la possibilità di scegliere un tipo di nota su cui basare quello nuovo. "Aggiungi" significa basare il nuovo tipo su uno di quelli predefiniti fornito da Anki. "Clona" significa basarlo su uno già presente nella collezione. Se per esempio hai già creato un tipo di nota per il vocabolario francese, potresti clonarlo durante la creazione di un tipo di nota per il vocabolario tedesco.
 
-After choosing OK, you will be asked to name the new type. The subject
-material that you are studying is a good choice here – things like "Japanese",
-"Trivia", and so on. Once you have chosen a name, close the Note Types
-window, and you will return to the adding window.
+Dopo aver selezionato "OK", ti verrà chiesto di dare un nome al nuovo tipo. In questo caso il nome del materiale che stai studiando è una buona scelta: "Giapponese", "Cultura generale" e così via. Una volta scelto un nome, chiudi la schermata "Tipi di Note" e tornerai alla schermata Aggiungi Note.
 
 ## Customizing Fields
 
