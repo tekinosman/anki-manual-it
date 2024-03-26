@@ -166,9 +166,9 @@ The options are:
 ## New Cards
 
 The settings in this section only affect new cards and cards in initial
-[learning](studying.md#learningrelearning-cards) mode. Once a card
+[learning](studying.md#carte-in-apprendimentoriapprendimento) mode. Once a card
 has graduated (i.e. there are no more learning steps for this card), it becomes a
-[review card](studying.md#review-cards), and the
+[review card](studying.md#carte-di-ripasso), and the
 settings in this section are no longer applicable.
 
 ### Learning Steps
@@ -193,7 +193,7 @@ If there’s nothing else to study, Anki will show cards up to 20 minutes
 early by default. The amount of time to look ahead is configurable in
 the [preferences](preferences.md).
 
-Please see the [learning](studying.md#learningrelearning-cards) section for more info on how
+Please see the [learning](studying.md#carte-in-apprendimentoriapprendimento) section for more info on how
 steps work.
 
 #### Day Boundaries
@@ -280,7 +280,7 @@ the deck of the currently displayed card.
 
 This section is only available when you have [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) enabled.
 
-Some further information about display order is available in the [studying section](studying.md#display-order).
+Some further information about display order is available in the [studying section](studying.md#ordine-di-presentazione).
 
 ### New Card Gather Order
 
@@ -407,7 +407,7 @@ The options are:
 - Bury review siblings: whether other review cards of the same note will be delayed until the next day.
 - Bury interday learning siblings: whether other learning cards of the same note with intervals >= 1 day will be delayed until the next day.
 
-For more info about burying cards, please see [this section](./studying.md#siblings-and-burying) of the manual.
+For more info about burying cards, please see [this section](./studying.md#carte-sorelle-e-sepoltura) of the manual.
 
 ## Audio
 

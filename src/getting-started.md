@@ -172,7 +172,7 @@ In questo caso, il tipo di nota ha tre campi: Francese, Italiano e Pagina.
 Per aggiungere e modificare i campi, clicca sul pulsante "Campi..."
 durante l'aggiunta o la modifica delle note.
 Per ulteriori informazioni sui campi,
-consulta la sezione [Personalizzazione dei campi](editing.md#customizing-fields).
+consulta la sezione [Personalizzazione dei campi](editing.md#personalizzazione-dei-campi).
 
 ### Tipi di carta
 

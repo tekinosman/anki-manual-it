@@ -8,7 +8,7 @@ the affected cards, so Anki won't let you proceed before you have fixed them.
 
 ## Basics
 
-Please see [Key Concepts](../getting-started.md#key-concepts) before reading further.
+Please see [Key Concepts](../getting-started.md#concetti-chiave) before reading further.
 
 Most of the errors below will require you to modify your notetype/card template. To do so:
 

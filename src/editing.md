@@ -82,7 +82,7 @@ Durante l'aggiunta di una nota, puoi cambiare il tipo di nota o il mazzo utilizz
 
 ### Using Decks Appropriately
 
-[Decks](getting-started.md#decks) are designed to divide your content up into
+[Decks](getting-started.md#mazzi) are designed to divide your content up into
 broad categories that you wish to study separately, such as English, Geography,
 and so on. You may be tempted to create lots of little decks to keep your
 content organized, such as "my geography book chapter 1", or "food verbs", but
@@ -116,7 +116,7 @@ Some people prefer using decks and subdecks to keep their cards organized,
 but using tags have a big advantage over decks for that: you can add several
 tags to a single note, but a single card can only belong to one deck, which
 makes tags a more powerful and flexible categorization system than
-decks in most cases. You can also organize tags in trees [in the same way as you can do for decks](getting-started.md#decks).
+decks in most cases. You can also organize tags in trees [in the same way as you can do for decks](getting-started.md#mazzi).
 
 For example, instead of creating a "food verbs" deck, you could add those
 cards to your main language study deck, and tag the cards with "food" and
@@ -126,7 +126,7 @@ food-related vocabulary, or all verbs that are related to food.
 
 You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
 delete, rename, or organize tags there. Please note that
-tags work at [note](getting-started.md#notes--fields) level, which means that when you tag a card that has siblings,
+tags work at [note](getting-started.md#note-e-campi) level, which means that when you tag a card that has siblings,
 all the siblings will be tagged as well. If you need to tag a single card,
 but not its siblings, you should consider using flags instead.
 
@@ -137,7 +137,7 @@ window, showing a colored flag icon on the upper right area of the screen.
 You can also search for flagged cards in the Browse screen, rename flags
 from the browser and create filtered decks from flagged cards, but unlike tags,
 a single card can have only one flag at a time. Another important difference
-is that flags work at [card](getting-started.md#cards) level, so flagging a card that has siblings
+is that flags work at [card](getting-started.md#carte) level, so flagging a card that has siblings
 won't have any effect on the card's siblings.
 
 You can flag / unflag cards directly while in review mode (by pressing
@@ -177,11 +177,11 @@ marks or fields are better.
 
 ## Editing Features
 
-The editor is shown when [adding notes](editing.md), [editing a note](studying.md#editing-and-more) during reviews, or [browsing](browsing.md).
+The editor is shown when [adding notes](editing.md), [editing a note](studying.md#modifica-e-altro) during reviews, or [browsing](browsing.md).
 
 ![Editor icons](media/editor_icons.png)
 
-On the top left are two buttons, which open the [fields](editing.md#customizing-fields) and
+On the top left are two buttons, which open the [fields](editing.md#personalizzazione-dei-campi) and
 [cards](templates/intro.md) windows.
 
 On the right are buttons that control formatting. Bold, italic and

@@ -62,5 +62,5 @@ Consulta la [pagina di supporto di AnkiMobile](https://docs.ankimobile.net/suppo
 ## Segnalazioni e domande private
 
 Per segnalazioni di sicurezza e richieste di informazioni commerciali,
-puoi inviare un ticket privato [qui] (https://anki.tenderapp.com/discussions/private) (inglese).
+puoi inviare un ticket privato [qui](https://anki.tenderapp.com/discussions/private) (inglese).
 Se hai domande su Anki, AnkiWeb o AnkiDroid, utilizza invece i [forum](https://forums.ankiweb.net) (inglese).

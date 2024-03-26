@@ -15,7 +15,7 @@ For a quick introduction to syncing, please check out the
 ## Setup
 
 To start syncing your collection across devices, click the sync button
-(the top right one on the [main screen](studying.md#decks), or press 'y' on your keyboard.
+(the top right one on the [main screen](studying.md#mazzi), or press 'y' on your keyboard.
 You’ll be prompted for your AnkiWeb ID and password, which you created
 in the signup process.
 
