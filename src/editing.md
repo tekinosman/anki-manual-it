@@ -48,62 +48,31 @@ Per creare un nuovo tipo di nota, seleziona "Strumenti → Gestisci tipi di nota
 
 Dopo aver selezionato "OK", ti verrà chiesto di dare un nome al nuovo tipo. In questo caso il nome del materiale che stai studiando è una buona scelta: "Giapponese", "Cultura generale" e così via. Una volta scelto un nome, chiudi la schermata "Tipi di Note" e tornerai alla schermata Aggiungi Note.
 
-## Customizing Fields
+## Personalizzazione dei campi
 
-To customize fields, click the "Fields…​" button when adding or editing
-a note, or while the note type is selected in the Manage Note Types
-window.
+Per personalizzare i campi, fai clic sul pulsante  "Campi..." quando aggiungi o modifichi una nota, oppure quando il tipo di nota è selezionato nella schermata "Gestisci tipi di nota".
 
-![Fields](media/fields.png)
+![Campi](media/fields.png)
 
-You can add, remove, or rename fields by clicking the appropriate
-buttons. To change the order in which the fields appear in this dialog
-and the add notes dialog, you can use the reposition button, which asks
-for the numerical position you want the field to have. So if you want to
-change a field to be the new first field, enter "1".
+Puoi aggiungere, eliminare o rinominare i campi facendo clic sui pulsanti corrispondenti. Per modificare l'ordine in cui appaiono i campi in questa finestra e nella finestra di aggiunta delle note, utilizza il pulsante "Riposiziona". Una volta che hai selezionato tale pulsante, inserisci la posizione numerica desiderata per il campo in questione. Ad esempio, per spostare un campo in prima posizione, immetti "1".
 
-Do not use 'Tags', 'Type', 'Deck', 'Card', or 'FrontSide' as field
-names, as they are [special fields](templates/fields.md#special-fields) and will not work
-properly.
+Sebbene la probabilità che tu crei campi in inglese sia più bassa, è importante sottolineare l'importanza di evitare l'utilizzo di nomi come "Tags", "Type", "Deck", "Card" o "FrontSide" per i campi in quanto si tratta di [campi speciali](templates/fields.md#special-fields) e non funzionerebbero correttamente.
 
-The options at the bottom of the screen allow you to edit various
-properties of the fields to be used when adding and editing the cards.
-This is _not_ where you customize what appears on your cards when
-reviewing; for that, please see [templates](templates/intro.md).
+Le opzioni presenti in fondo alla schermata consentono di modificare diverse proprietà dei campi utilizzati quando aggiungi e modifichi le carte. _Non_ è in questa sezione che personalizzi ciò che appare sulle carte durante la ripetizione; per quello consulta la sezione [modelli](templates/intro.md).
 
-- **Editing Font** allows you to customize the font and size used when
-  editing notes. This is useful if you want to make unimportant
-  information smaller, or increase the size of foreign characters which
-  are hard to read. The changes you make here do not affect how cards
-  appear when reviewing: to do that, please see the
-  [templates](templates/intro.md) section. If you have enabled the "type in the
-  answer" function, however, the text you type will use the font size
-  defined here. (For information about how to change the actual font face
-  when typing the answer, please see the [checking your answer](templates/fields.md#checking-your-answer) section.)
+- **Modifica carattere** ti consente di personalizzare il carattere e la dimensione utilizzati durante la modifica delle note. Questo è utile se vuoi ridurre la dimensione di informazioni di minore importanza o aumentare quella di caratteri stranieri difficili da leggere. Le modifiche apportate qui non influiscono su come le carte appaiono in fase di ripetizione: consulta la sezione [modelli](templates/intro.md) se desideri farlo. Se hai abilitato la funzionalità "scrivi la risposta", il testo digitato utilizzerà la dimensione del carattere definita qui. (Per informazioni su come modificare il carattere effettivo durante la digitazione della risposta, consulta la sezione [verifica della risposta](templates/fields.md#checking-your-answer)).
 
-- **Sort by this field…​** tells Anki to show this field in the Sort Field
-  column of the browser. You can use this to sort cards by that field.
-  Only one field can be the sort field at once.
+- **Ordina in base a questo campo…​** mostra questo campo nella colonna "Campo ordinamento" della schermata Sfoglia. Puoi utilizzarlo per ordinare le carte in base a quel campo, ma soltanto un campo alla volta può essere utilizzato per l'ordinamento.
 
-- **Reverse text direction** is useful if you are studying languages that
-  display text from right to left (RTL), such as Arabic or Hebrew. This
-  setting currently only controls editing; to make sure the text displays
-  correctly during review, you'll need to adjust your
-  [template](templates/styling.md#text-direction).
+- **Inverti direzione testo** è utile se studi lingue che mostrano il testo da destra a sinistra (RTL) come l'arabo o l'ebraico. Attualmente questa impostazione si applica soltanto alla modifica; per assicurarti che il testo venga visualizzato correttamente durante la ripetizione devi modificare il [modello](templates/styling.md#text-direction).
 
-- **Use HTML editor by default** is useful if you prefer to edit the fields
-  directly in HTML.
+- **Utilizza di default l'editor HTML** è utile se preferisci modificare i campi in HTML.
 
-- **Collapse by default**. Fields can be collapsed/expanded.
-  The animation can be disabled in the [preferences.](preferences.md)
+- **Comprimi di default**. permette di mantenere i campi compressi per impostazione predefinita. L'animazione può essere disabilitata nelle [preferenze](preferences.md).
 
-- **Exclude from unqualified searches (slower)** can be used if you want
-  the content of a certain field not to appear in unqualified [(not limited to a specific field)](searching.md#limiting-to-a-field)
-  searches.
+- **Escludi da ricerche non qualificate (più lento)** può essere utilizzato se non vuoi che il contenuto di un determinato campo appaia nelle ricerche non qualificate [(non limitate a un campo specifico)](searching.md#limiting-to-a-field).
 
-After you have added fields, you will probably want to add them to the front
-or back of your cards. For more information on that, please see the
-[templates](templates/intro.md) section.
+Dopo aver aggiunto i campi, probabilmente vorrai aggiungerli al fronte o al retro delle carte; per maggiori informazioni su come farlo, consulta la sezione [modelli](templates/intro.md).
 
 ## Changing Deck / Note Type
 
