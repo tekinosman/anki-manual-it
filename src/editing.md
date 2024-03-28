@@ -74,12 +74,9 @@ Le opzioni presenti in fondo alla schermata consentono di modificare diverse pro
 
 Dopo aver aggiunto i campi, probabilmente vorrai aggiungerli al fronte o al retro delle carte; per maggiori informazioni su come farlo, consulta la sezione [modelli](templates/intro.md).
 
-## Changing Deck / Note Type
+## Cambiare il mazzo o il tipo di nota
 
-While adding, you can click on the top left button to change note type,
-and the top right button to change deck. The window that opens up will
-not only allow you to select a deck or note type, but also to add new
-decks or manage your note types.
+Durante l'aggiunta di una nota, puoi cambiare il tipo di nota o il mazzo utilizzato facendo clic rispettivamente sui pulsanti in alto a sinistra e a destra. La schermata che si apre ti permette non solo di selezionare un mazzo o un tipo di nota esistente ma anche di aggiungere nuovi mazzi e gestire i tipi di nota già esistenti.
 
 ## Organizing Content
 
